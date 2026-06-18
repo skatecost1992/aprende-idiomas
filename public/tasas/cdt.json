@@ -1,0 +1,23 @@
+{
+  "lastUpdated": "2026-06-18",
+  "nota": "Valores de referencia iniciales. GitHub Actions los reemplaza con datos extraídos por el scraper (server/scraper).",
+  "colombia": [
+    { "entidad": "Bancamía", "plazo": "360 días", "tasa": 11.5 },
+    { "entidad": "Banco W", "plazo": "360 días", "tasa": 11.3 },
+    { "entidad": "Banco Popular", "plazo": "360 días", "tasa": 10.8 },
+    { "entidad": "Banco de Bogotá", "plazo": "360 días", "tasa": 10.4 },
+    { "entidad": "Davivienda", "plazo": "360 días", "tasa": 10.3 },
+    { "entidad": "Bancolombia", "plazo": "360 días", "tasa": 10.1 },
+    { "entidad": "BBVA Colombia", "plazo": "360 días", "tasa": 10.0 },
+    { "entidad": "Banco Caja Social", "plazo": "360 días", "tasa": 9.9 },
+    { "entidad": "Scotiabank Colpatria", "plazo": "360 días", "tasa": 9.7 }
+  ],
+  "mundo": [
+    { "pais": "Brasil (CDB)", "plazo": "1 año", "tasa": 10.5, "moneda": "BRL" },
+    { "pais": "México (pagaré)", "plazo": "1 año", "tasa": 9.5, "moneda": "MXN" },
+    { "pais": "India (FD)", "plazo": "1 año", "tasa": 7.0, "moneda": "INR" },
+    { "pais": "Estados Unidos (CD)", "plazo": "1 año", "tasa": 4.5, "moneda": "USD" },
+    { "pais": "Reino Unido", "plazo": "1 año", "tasa": 4.5, "moneda": "GBP" },
+    { "pais": "Zona Euro", "plazo": "1 año", "tasa": 3.0, "moneda": "EUR" }
+  ]
+}

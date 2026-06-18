@@ -1,0 +1,46 @@
+name: Actualizar tasas
+
+# Ejecuta el scraper periódicamente y publica los JSON estáticos en el repo.
+on:
+  schedule:
+    - cron: '0 9 * * *'    # cada día a las 09:00 UTC
+  workflow_dispatch:        # permite lanzarlo manualmente desde GitHub
+
+permissions:
+  contents: write           # necesario para hacer commit de los JSON
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configurar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Instalar dependencias del scraper
+        working-directory: server/scraper
+        run: npm install
+
+      - name: Instalar Chromium (Playwright)
+        working-directory: server/scraper
+        run: npx playwright install --with-deps chromium
+
+      - name: Generar JSON de tasas
+        working-directory: server/scraper
+        run: npm run generate
+
+      - name: Publicar cambios
+        run: |
+          git config user.name "tasas-bot"
+          git config user.email "tasas-bot@users.noreply.github.com"
+          git add public/tasas/cdt.json public/tasas/hipotecas.json
+          if git diff --staged --quiet; then
+            echo "Sin cambios en las tasas."
+          else
+            git commit -m "chore(tasas): actualización $(date -u +%F)"
+            git push
+          fi

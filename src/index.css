@@ -363,6 +363,10 @@ body {
 .inv-table tbody tr:hover { background: var(--card-hover); }
 .inv-rate { font-weight: 700; color: var(--accent); white-space: nowrap; }
 .inv-cur { color: var(--muted); font-weight: 600; font-size: .8rem; }
+.inv-link { color: var(--primary-hover); text-decoration: none; }
+.inv-link:hover { text-decoration: underline; }
+.inv-na { color: var(--muted); }
+.inv-fuentes { font-size: .85rem; color: var(--muted); margin: 4px 0 14px; line-height: 1.6; }
 .inv-disclaimer { color: var(--muted); font-size: .82rem; line-height: 1.5; background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px; }
 
 /* ---- Alfabeto ---- */

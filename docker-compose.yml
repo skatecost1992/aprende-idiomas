@@ -1,0 +1,27 @@
+# Levanta el frontend (Aprende) y el scraper de tasas (Playwright) juntos.
+#
+#   docker compose up --build
+#
+#   Frontend:  http://localhost:8080
+#   Scraper:   http://localhost:4000/api/tasas
+#
+# El navegador llama al scraper en localhost:4000, por eso VITE_RATES_API usa esa
+# URL (debe ser accesible desde el navegador del usuario, no desde la red interna).
+
+services:
+  scraper:
+    build: ./server/scraper
+    ports:
+      - "4000:4000"
+    restart: unless-stopped
+
+  web:
+    build:
+      context: .
+      args:
+        VITE_RATES_API: "http://localhost:4000/api/tasas"
+    ports:
+      - "8080:80"
+    depends_on:
+      - scraper
+    restart: unless-stopped

@@ -1,31 +1,44 @@
 import { useState } from 'react'
-import { cdtSeed, hipotecasSeed, DISCLAIMER } from '../data/investments.js'
-import { fetchRates, hasRatesApi } from '../utils/rates.js'
+import { cdtSeed, hipotecasSeed, DISCLAIMER, FUENTES } from '../data/investments.js'
+import { fetchRates } from '../utils/rates.js'
 
 // Apartado de Inversiones: muestra una tabla de tasas (CDT o créditos
-// hipotecarios) para Colombia y el mundo, con un botón para actualizar los
-// valores consultando un servicio en la web (si está configurado).
+// hipotecarios) para Colombia y el mundo. El botón "Actualizar" consulta el
+// servicio de scraping (Playwright) que extrae los datos de las páginas reales.
 const CONFIG = {
-  cdt: { title: 'Mejores tasas de CDT', tipo: 'cdt', seed: cdtSeed, col: 'CDT a plazo' },
-  hipotecas: { title: 'Créditos hipotecarios', tipo: 'hipotecas', seed: hipotecasSeed, col: 'Crédito de vivienda' },
+  cdt: { title: 'Mejores tasas de CDT', tipo: 'cdt', seed: cdtSeed },
+  hipotecas: { title: 'Créditos hipotecarios', tipo: 'hipotecas', seed: hipotecasSeed },
+}
+
+function rateVal(x) {
+  return x.tasa == null ? -Infinity : x.tasa
 }
 
 function Tabla({ titulo, filas, claveLugar }) {
-  // Ordena de mayor a menor tasa.
-  const orden = [...filas].sort((a, b) => b.tasa - a.tasa)
+  const orden = [...filas].sort((a, b) => rateVal(b) - rateVal(a))
   return (
     <div className="inv-block">
       <h3>{titulo}</h3>
       <table className="inv-table">
         <thead>
-          <tr><th>{claveLugar === 'pais' ? 'País' : 'Entidad'}</th><th>Plazo</th><th>Tasa</th></tr>
+          <tr>
+            <th>{claveLugar === 'pais' ? 'País' : 'Entidad'}</th>
+            <th>Plazo</th>
+            <th>Tasa</th>
+            <th>Fuente</th>
+          </tr>
         </thead>
         <tbody>
           {orden.map((f, i) => (
             <tr key={i}>
               <td>{f[claveLugar]}</td>
               <td>{f.plazo}</td>
-              <td className="inv-rate">{f.tasa}% {f.moneda ? <span className="inv-cur">{f.moneda}</span> : 'E.A.'}</td>
+              <td className="inv-rate">
+                {f.tasa == null
+                  ? <span className="inv-na" title={f.error || 'No disponible'}>—</span>
+                  : <>{f.tasa}% {f.moneda ? <span className="inv-cur">{f.moneda}</span> : 'E.A.'}</>}
+              </td>
+              <td>{f.fuente ? <a href={f.fuente} target="_blank" rel="noreferrer" className="inv-link">ver</a> : '—'}</td>
             </tr>
           ))}
         </tbody>
@@ -40,11 +53,6 @@ export default function Investments({ kind }) {
   const [status, setStatus] = useState('idle') // idle | loading | error
   const [msg, setMsg] = useState('')
 
-  // Si cambia el tipo (CDT/hipotecas), reinicia con su semilla.
-  if (data !== cfg.seed && status === 'idle' && data.__kind !== kind) {
-    // (no-op de seguridad; el remontaje por key en App ya garantiza el reinicio)
-  }
-
   async function actualizar() {
     setStatus('loading')
     setMsg('')
@@ -52,12 +60,12 @@ export default function Investments({ kind }) {
       const fresh = await fetchRates(cfg.tipo)
       setData({ ...fresh })
       setStatus('idle')
-      setMsg('Tasas actualizadas desde el servicio.')
+      setMsg('Tasas actualizadas con el servicio de scraping (Playwright).')
     } catch (e) {
       setStatus('error')
       setMsg(
         e.code === 'NO_API'
-          ? 'La actualización en vivo requiere conectar un servicio (VITE_RATES_API) que consulte las tasas en la web. Mostrando valores de referencia.'
+          ? 'No se encontró el JSON de tasas. Genéralo con el scraper (server/scraper: npm run generate) o conecta un servicio en vivo (VITE_RATES_API). Mostrando valores de referencia.'
           : 'No se pudo actualizar: ' + e.message + '. Mostrando valores de referencia.'
       )
     }
@@ -68,10 +76,10 @@ export default function Investments({ kind }) {
       <div className="inv-header">
         <div>
           <h2>💰 {cfg.title}</h2>
-          <p className="muted">Actualizado: {data.lastUpdated} · {hasRatesApi ? 'servicio en vivo disponible' : 'modo referencia'}</p>
+          <p className="muted">Actualizado: {data.lastUpdated}</p>
         </div>
         <button className="primary" onClick={actualizar} disabled={status === 'loading'}>
-          {status === 'loading' ? 'Consultando…' : '🔄 Actualizar'}
+          {status === 'loading' ? 'Consultando con Playwright…' : '🔄 Actualizar'}
         </button>
       </div>
 
@@ -79,6 +87,16 @@ export default function Investments({ kind }) {
 
       <Tabla titulo="🇨🇴 Colombia" filas={data.colombia} claveLugar="entidad" />
       <Tabla titulo="🌍 En el mundo" filas={data.mundo} claveLugar="pais" />
+
+      <div className="inv-fuentes">
+        <strong>Fuentes:</strong>{' '}
+        {FUENTES[kind].map((f, i) => (
+          <span key={f.url}>
+            {i > 0 && ' · '}
+            <a href={f.url} target="_blank" rel="noreferrer" className="inv-link">{f.nombre}</a>
+          </span>
+        ))}
+      </div>
 
       <p className="inv-disclaimer">⚠️ {DISCLAIMER}</p>
     </div>

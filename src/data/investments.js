@@ -8,6 +8,21 @@
 export const DISCLAIMER =
   'Valores de referencia con fines educativos. No constituyen una oferta ni asesoría financiera. Verifica siempre con la entidad.'
 
+// Fuentes públicas recomendadas para consultar/verificar tasas. El servicio de
+// scraping (server/scraper) extrae los datos de las páginas configuradas allí.
+export const FUENTES = {
+  cdt: [
+    { nombre: 'Superintendencia Financiera de Colombia', url: 'https://www.superfinanciera.gov.co' },
+    { nombre: 'Banco de la República', url: 'https://www.banrep.gov.co' },
+    { nombre: 'Trading Economics (mundo)', url: 'https://tradingeconomics.com' },
+  ],
+  hipotecas: [
+    { nombre: 'Superintendencia Financiera de Colombia', url: 'https://www.superfinanciera.gov.co' },
+    { nombre: 'Fondo Nacional del Ahorro', url: 'https://www.fna.gov.co' },
+    { nombre: 'Trading Economics (mundo)', url: 'https://tradingeconomics.com' },
+  ],
+}
+
 export const cdtSeed = {
   lastUpdated: '2026-06-18',
   // Colombia: tasa efectiva anual (% E.A.) para un CDT a 360 días (referencial).
