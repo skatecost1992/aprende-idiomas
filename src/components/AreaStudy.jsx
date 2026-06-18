@@ -2,6 +2,7 @@ import { AREA_LANGS } from '../data/knowledge.js'
 import { tracksForArea } from '../data/lessons.js'
 import AreaQuiz from './AreaQuiz.jsx'
 import Lessons from './Lessons.jsx'
+import IstqbQuiz from './IstqbQuiz.jsx'
 
 // Estudio de un área (Requerimientos 3 y 4). El tema (módulo) lo selecciona el
 // menú lateral y llega por la prop `moduleId`. Aquí se muestra su contenido y se
@@ -37,7 +38,9 @@ export default function AreaStudy({ area, progress, moduleId = 'vocabulario' }) 
         <div className="area-progress-bar"><div style={{ width: `${totalItems ? (learnedCount / totalItems) * 100 : 0}%` }} /></div>
       </div>
 
-      {isGuias ? (
+      {isGuias && trackId === 'istqb' ? (
+        <IstqbQuiz onFinish={(score, total) => progress.recordQuiz('area:' + area.id, score, total)} />
+      ) : isGuias ? (
         <Lessons area={area} progress={progress} trackId={trackId} />
       ) : moduleId === 'quiz' ? (
         <AreaQuiz

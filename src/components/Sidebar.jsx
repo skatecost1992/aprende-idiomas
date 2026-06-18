@@ -35,9 +35,12 @@ function initialOpen(view) {
     s.add('area:' + view.id)
     const tid = view.module && view.module.startsWith('guias:') ? view.module.slice(6) : null
     const t = tracksForArea(view.id).find((x) => x.id === tid)
-    if (t) {
+    if (t && t.subgroup) {
       s.add('sp:' + view.id + '/' + (t.specialty || 'General'))
-      if (t.subgroup) s.add('sub:' + view.id + '/' + (t.specialty || 'General') + '/' + t.subgroup)
+      s.add('sub:' + view.id + '/' + (t.specialty || 'General') + '/' + t.subgroup)
+    } else {
+      // Guías generales (track directo), Lenguaje técnico o Quiz -> Conceptos básicos
+      s.add('cb:' + view.id)
     }
   } else if (view.type === 'lang') {
     s.add('idiomas')
@@ -71,7 +74,7 @@ export default function Sidebar({ view, onArea, onLanguage, onHome, onInv }) {
   function moduleLeaf(areaId, id, icon, name) {
     const active = view.type === 'area' && view.id === areaId && view.module === id
     return (
-      <li>
+      <li key={id}>
         <button className={`side-tema ${active ? 'active' : ''}`} onClick={() => onArea(areaId, id)}>
           {icon} {name}
         </button>
@@ -81,9 +84,29 @@ export default function Sidebar({ view, onArea, onLanguage, onHome, onInv }) {
 
   function areaBody(area) {
     const specialties = buildSpecialties(area.id)
+    // Tracks "directos" (sin subgrupo, p. ej. Guías generales) -> Conceptos básicos.
+    const directos = specialties.flatMap((sp) => sp.direct)
+    const cbKey = 'cb:' + area.id
     return (
       <ul className="side-temas">
+        {/* Conceptos básicos: guías generales + lenguaje técnico + quiz del área */}
+        <li>
+          <button className="side-sub" onClick={() => toggle(cbKey)}>
+            <span>📁 Conceptos básicos</span>
+            <span className="chevron">{isOpen(cbKey) ? '▾' : '▸'}</span>
+          </button>
+          {isOpen(cbKey) && (
+            <ul className="side-temas">
+              {directos.map((t) => leaf(area.id, t))}
+              {TECNICO && moduleLeaf(area.id, TECNICO.id, TECNICO.icon, TECNICO.name)}
+              {moduleLeaf(area.id, 'quiz', '🎯', 'Quiz del área')}
+            </ul>
+          )}
+        </li>
+
+        {/* Especialidades con sus subgrupos */}
         {specialties.map((sp) => {
+          if (sp.subOrder.length === 0) return null // sus tracks directos ya están en Conceptos básicos
           const spKey = 'sp:' + area.id + '/' + sp.name
           return (
             <li key={sp.name}>
@@ -93,7 +116,6 @@ export default function Sidebar({ view, onArea, onLanguage, onHome, onInv }) {
               </button>
               {isOpen(spKey) && (
                 <ul className="side-temas">
-                  {sp.direct.map((t) => leaf(area.id, t))}
                   {sp.subOrder.map((sub) => {
                     const subKey = spKey + '/' + sub
                     return (
@@ -115,8 +137,6 @@ export default function Sidebar({ view, onArea, onLanguage, onHome, onInv }) {
             </li>
           )
         })}
-        {TECNICO && moduleLeaf(area.id, TECNICO.id, TECNICO.icon, TECNICO.name)}
-        {moduleLeaf(area.id, 'quiz', '🎯', 'Quiz del área')}
       </ul>
     )
   }

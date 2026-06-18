@@ -349,6 +349,30 @@ body {
 .study-tr { font-size: .8rem; color: var(--accent); background: var(--bg-soft); border: 1px solid var(--border); border-radius: 6px; padding: 1px 7px; }
 .area-quiz-def { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 16px; font-size: 1.1rem; text-align: center; margin-bottom: 18px; font-style: italic; }
 
+/* ---- Quiz ISTQB ---- */
+.istqb-config { display: flex; flex-direction: column; gap: 14px; max-width: 560px; }
+.istqb-field { display: flex; flex-direction: column; gap: 8px; }
+.istqb-field > span { color: var(--muted); font-size: .9rem; }
+.chips-row { display: flex; gap: 8px; flex-wrap: wrap; }
+.istqb-multi { color: var(--accent); font-size: .9rem; margin-bottom: 10px; }
+.istqb-options { display: flex; flex-direction: column; gap: 10px; margin-bottom: 16px; }
+.istqb-opt {
+  display: flex; align-items: flex-start; gap: 12px; text-align: left; width: 100%;
+  background: var(--card); border: 1px solid var(--border); color: var(--text);
+  padding: 13px 16px; border-radius: 12px; cursor: pointer; font-family: inherit; font-size: 1rem; transition: .15s;
+}
+.istqb-opt:hover:not(:disabled) { border-color: var(--primary); background: var(--card-hover); }
+.istqb-opt .istqb-letra {
+  flex-shrink: 0; width: 26px; height: 26px; border-radius: 50%; background: var(--bg-soft);
+  border: 1px solid var(--border); display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: .85rem;
+}
+.istqb-opt.sel { border-color: var(--primary); }
+.istqb-opt.sel .istqb-letra { background: var(--primary); color: #fff; border-color: var(--primary); }
+.istqb-opt.correct { background: rgba(34,197,94,.18); border-color: var(--green); }
+.istqb-opt.wrong { background: rgba(239,68,68,.18); border-color: var(--red); }
+.istqb-opt:disabled { cursor: default; }
+
 /* ---- Inversiones ---- */
 .inv-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
 .inv-msg { border-radius: 10px; padding: 10px 14px; margin-bottom: 16px; line-height: 1.5; font-size: .9rem; }

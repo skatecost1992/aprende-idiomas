@@ -1,0 +1,5069 @@
+[
+ {
+  "n": "1",
+  "pregunta": "?Cual de las siguientes afirmaciones describe un objetivo de prueba valido?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Demostrar que no hay defectos sin corregir en el sistema bajo prueba",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Demostrar que no habra fallos despues de la implementacion del sistema en produccion",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Reducir el nivel de riesgo del objeto de prueba y generar confianza en el nivel de calidad",
+    "correcta": true
+   },
+   {
+    "letra": "d",
+    "texto": "Verificar que no hay combinaciones de entradas sin probar",
+    "correcta": false
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "2",
+  "pregunta": "?Cual de las siguientes opciones muestra un ejemplo de actividades de prueba que contribuyen al exito?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Tener testers involucrados en diversas actividades del ciclo de vida del desarrollo de software (SDLC) ayudara a detectar defectos en los productos de trabajo",
+    "correcta": true
+   },
+   {
+    "letra": "b",
+    "texto": "Los testers intentan no molestar a los desarrolladores mientras codifican, para que los desarrolladores escriban mejor codigo",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "La colaboracion de los testers con los usuarios finales ayuda a mejorar la calidad de los informes de defectos durante la integracion de componentes y las pruebas del sistema",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Los testers certificados disenan casos de prueba mucho mejores que los testers no certificados",
+    "correcta": false
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "3",
+  "pregunta": "Ha sido asignado como tester a un equipo que produce un nuevo sistema de forma incremental. Ha notado que no se han realizado cambios en los casos de prueba de regresion existentes durante varias iteraciones y no se identificaron nuevos defectos de regresion. Su gerente esta satisfecho, pero usted no. ?Que principio de prueba explica su escepticismo?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Las pruebas se deterioran (Tests wear out)",
+    "correcta": true
+   },
+   {
+    "letra": "b",
+    "texto": "Falacia de ausencia de defectos",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Los defectos se agrupan",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Las pruebas exhaustivas son imposibles",
+    "correcta": false
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "4",
+  "pregunta": "Trabaja en un equipo que desarrolla una aplicacion movil para pedidos de comida. En la iteracion actual el equipo decidio implementar la funcionalidad de pago. ?Cual de las siguientes actividades es parte del analisis de prueba?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Estimar que probar la integracion con el servicio de pago tomara 8 personas-dia",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Decidir que el equipo debe probar si es posible compartir correctamente el pago entre muchos usuarios",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "Usar analisis de valores limite (BVA) para derivar datos de prueba para casos de prueba que verifican el procesamiento correcto del pago para el monto minimo permitido",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Analizar la discrepancia entre el resultado real y el esperado despues de ejecutar un caso de prueba y reportar un defecto",
+    "correcta": false
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "5",
+  "pregunta": "?Cuales de los siguientes factores tienen una influencia SIGNIFICATIVA en el enfoque de prueba? i. El SDLC ii. El numero de defectos detectados en proyectos anteriores iii. Los riesgos de producto identificados iv. Nuevos requisitos regulatorios que exigen pruebas formales de caja blanca v. La configuracion del entorno de prueba",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "i, ii tienen influencia significativa",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "i, iii, iv tienen influencia significativa",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "ii, iv, v tienen influencia significativa",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "iii, v tienen influencia significativa",
+    "correcta": false
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "6",
+  "pregunta": "?Cuales DOS de las siguientes tareas pertenecen PRINCIPALMENTE al rol de prueba?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Configurar entornos de prueba",
+    "correcta": true
+   },
+   {
+    "letra": "b",
+    "texto": "Mantener el backlog del producto",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Disenar soluciones para nuevos requisitos",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Crear el plan de prueba",
+    "correcta": false
+   },
+   {
+    "letra": "e",
+    "texto": "Analizar la base de prueba",
+    "correcta": true
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "7",
+  "pregunta": "?Cuales de las siguientes habilidades (i-v) son las MAS importantes de un tester? i. Tener conocimiento del dominio ii. Crear una vision del producto iii. Ser un buen jugador de equipo iv. Planificar y organizar el trabajo del equipo v. Pensamiento critico",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "ii e iv son importantes",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "i, iii y v son importantes",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "i, ii y v son importantes",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "iii e iv son importantes",
+    "correcta": false
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "8",
+  "pregunta": "?Como esta presente el enfoque de equipo completo en las interacciones entre testers y representantes de negocio?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Los representantes de negocio deciden los enfoques de automatizacion de pruebas",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Los testers ayudan a los representantes de negocio a definir una estrategia de prueba",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Los representantes de negocio no son parte del enfoque de equipo completo",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Los testers ayudan a los representantes de negocio a crear pruebas de aceptacion adecuadas",
+    "correcta": true
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "9",
+  "pregunta": "Considere la siguiente regla: \"para cada actividad del SDLC hay una actividad de prueba correspondiente\". ?En que modelos de SDLC se cumple esta regla?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Solo en modelos de desarrollo secuencial",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Solo en modelos de desarrollo iterativo",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Solo en modelos de desarrollo iterativo e incremental",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "En modelos de desarrollo secuencial, incremental e iterativo",
+    "correcta": true
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "10",
+  "pregunta": "?Cual de las siguientes afirmaciones describe MEJOR el enfoque de desarrollo guiado por pruebas de aceptacion (ATDD)?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "En ATDD, los criterios de aceptacion se crean tipicamente en formato dado/cuando/entonces",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "En ATDD, los casos de prueba se crean principalmente en pruebas de componente y son orientados al codigo",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "En ATDD, las pruebas se crean basadas en criterios de aceptacion para guiar el desarrollo del software relacionado",
+    "correcta": true
+   },
+   {
+    "letra": "d",
+    "texto": "En ATDD, las pruebas se basan en el comportamiento deseado del software, lo que facilita su comprension por los miembros del equipo",
+    "correcta": false
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "11",
+  "pregunta": "?Cual de los siguientes NO es un ejemplo del enfoque de desplazamiento a la izquierda (shift-left)?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Revisar los requisitos de usuario antes de que sean formalmente aceptados por los interesados",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Escribir una prueba de componente antes de que se escriba el codigo correspondiente",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Ejecutar una prueba de eficiencia de rendimiento para un componente durante las pruebas de componente",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Escribir un script de prueba antes de configurar el proceso de gestion de configuracion",
+    "correcta": true
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "12",
+  "pregunta": "?Cual de los siguientes argumentos usaria para convencer a su gerente de organizar retrospectivas al final de cada ciclo de lanzamiento?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Las retrospectivas son muy populares hoy en dia y a los clientes les agradaria que las incorporaramos a nuestros procesos",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Organizar retrospectivas ahorrara dinero a la organizacion porque sin ellas los representantes de usuarios finales no dan retroalimentacion inmediata del producto",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Las debilidades del proceso identificadas durante la retrospectiva pueden analizarse y servir como lista de tareas para el programa de mejora continua de la organizacion",
+    "correcta": true
+   },
+   {
+    "letra": "d",
+    "texto": "Las retrospectivas incluyen cinco valores incluyendo coraje y respeto, que son cruciales para mantener la mejora continua en la organizacion",
+    "correcta": false
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "13",
+  "pregunta": "?Que tipos de fallos (1-4) se ajustan MEJOR a que niveles de prueba (A-D)? 1. Fallos en el comportamiento del sistema que se desvian de las necesidades comerciales del usuario 2. Fallos en la comunicacion entre componentes 3. Fallos en la logica del codigo 4. Fallos en reglas de negocio implementadas incorrectamente A. Pruebas de componente B. Pruebas de integracion de componentes C. Pruebas de sistema D. Pruebas de aceptacion",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "1D, 2B, 3A, 4C",
+    "correcta": true
+   },
+   {
+    "letra": "b",
+    "texto": "1D, 2B, 3C, 4A",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "1B, 2A, 3D, 4C",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "1C, 2B, 3A, 4D",
+    "correcta": false
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "14",
+  "pregunta": "Esta probando una historia de usuario con tres criterios de aceptacion: AC1, AC2 y AC3. El historial de ejecucion tuvo tres ejecuciones en tres versiones consecutivas: Ejecucion 1: TC1(1)Fallo, TC2(2)Paso, TC3(3)Fallo Ejecucion 2: TC1(4)Paso, TC2(5)Fallo, TC3(6)Fallo Ejecucion 3: TC1(7)Paso, TC2(8)Paso, TC3(9)Paso Las pruebas se repiten una vez que se informa que todos los defectos han sido corregidos. ?Cuales de las pruebas anteriores se ejecutan como pruebas de regresion?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Solo 4, 7, 8, 9",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Solo 5, 7",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "Solo 4, 6, 8, 9",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Solo 5, 6",
+    "correcta": false
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "15",
+  "pregunta": "?Cual de los siguientes NO es un beneficio de las pruebas estaticas?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Tener una gestion de defectos menos costosa debido a la facilidad de detectar defectos mas tarde en el SDLC",
+    "correcta": true
+   },
+   {
+    "letra": "b",
+    "texto": "Corregir defectos encontrados durante las pruebas estaticas es generalmente mucho menos costoso que durante las pruebas dinamicas",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Encontrar defectos de codificacion que podrian no haberse encontrado realizando solo pruebas dinamicas",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Detectar vacios e inconsistencias en los requisitos",
+    "correcta": false
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "16",
+  "pregunta": "?Cual de los siguientes es un beneficio de la retroalimentacion temprana y frecuente?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Mejora el proceso de prueba para proyectos futuros",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Obliga a los clientes a priorizar sus requisitos basados en riesgos acordados",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Proporciona una medida para la calidad de los cambios",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Ayuda a evitar malentendidos sobre los requisitos",
+    "correcta": true
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "17",
+  "pregunta": "Las revisiones utilizadas en su organizacion tienen los siguientes atributos: - Existe el rol de escribano (scribe) - El proposito principal es evaluar la calidad - La reunion es dirigida por el autor del producto de trabajo - Hay preparacion individual - Se produce un informe de revision ?Que tipo de revision se utiliza MAS probablemente?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Revision informal",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Recorrido (Walkthrough)",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "Revision tecnica",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Inspeccion",
+    "correcta": false
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "18",
+  "pregunta": "?Cual de estas afirmaciones NO es un factor que contribuye al exito de las revisiones?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Los participantes deben dedicar tiempo adecuado a la revision",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Dividir los productos de trabajo grandes en partes pequenas para hacer el esfuerzo requerido menos intenso",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Los participantes deben evitar comportamientos que puedan indicar aburrimiento, exasperacion u hostilidad",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Los fallos encontrados deben reconocerse, valorarse y manejarse objetivamente",
+    "correcta": true
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "19",
+  "pregunta": "?Cual de los siguientes es una caracteristica de las tecnicas de prueba basadas en la experiencia?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Los casos de prueba se crean basados en informacion detallada de diseno",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Los elementos probados dentro de la seccion de codigo de interfaz se usan para medir la cobertura",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Las tecnicas de prueba dependen en gran medida del conocimiento del tester sobre el software y el dominio de negocio",
+    "correcta": true
+   },
+   {
+    "letra": "d",
+    "texto": "Los casos de prueba se usan para identificar desviaciones de los requisitos",
+    "correcta": false
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "20",
+  "pregunta": "Esta probando un formulario de busqueda de apartamentos simplificado con dos criterios: - piso (planta baja; primer piso; segundo piso o superior) - tipo de jardin (sin jardin; jardin pequeno; jardin grande) Cada apartamento en planta baja tiene jardin; los de pisos superiores no. Quiere aplicar particion de equivalencia (EP) para cubrir cada piso y cada tipo de jardin. ?Cual es el numero minimo de casos de prueba para lograr 100% de cobertura EP para particiones validas?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "3",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "4",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "5",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "6",
+    "correcta": false
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "21",
+  "pregunta": "Esta probando un sistema que calcula la calificacion final del curso: 0-50=reprobado | 51-60=suficiente | 61-70=satisfactorio | 71-80=bien | 81-90=muy bien | 91-100=excelente Casos de prueba: TC1=91(excelente), TC2=50(reprobado), TC3=81(muy bien), TC4=60(suficiente), TC5=70(satisfactorio), TC6=80(bien) ?Cual es la cobertura de analisis de valores limite de 2 valores (BVA) para el resultado final?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "50%",
+    "correcta": true
+   },
+   {
+    "letra": "b",
+    "texto": "60%",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "33.3%",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "100%",
+    "correcta": false
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "22",
+  "pregunta": "Su tienda favorita de alquiler de bicicletas introdujo un nuevo sistema CRM. Caracteristicas: miembros obtienen 20% de descuento (perdido si se incumple plazo), despues de 15 alquileres miembros reciben camiseta. Tabla de decision: R1-R8 con condiciones: Ser miembro / Incumplir plazo / 15 alquiler Acciones: R2,R4=20% descuento | R3,R4,R8=Camiseta regalo Basandose SOLO en la descripcion de caracteristicas, ?que regla describe una situacion imposible?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "R4",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "R2",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "R6",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "R8",
+    "correcta": true
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "23",
+  "pregunta": "Prueba un sistema cuyo ciclo de vida se modela con un diagrama de transicion de estados. Estados: INICIO -> MODO DEBUG (test) -> APAGADO (listo); INICIO -> EN OPERACION (ejecutar) -> EN ESPERA (pausa/reanudar) -> APAGADO (listo); EN OPERACION -> MODO DEBUG (error). ?Cual es el numero MINIMO de casos de prueba para lograr cobertura de transiciones validas?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "4",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "2",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "7",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "3",
+    "correcta": true
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "24",
+  "pregunta": "Su suite de pruebas logro 100% de cobertura de sentencias. ?Cual es la consecuencia de este hecho?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Cada instruccion en el codigo que contiene un defecto ha sido ejecutada al menos una vez",
+    "correcta": true
+   },
+   {
+    "letra": "b",
+    "texto": "Cualquier suite de pruebas con mas casos de prueba que la suya tambien lograra 100% de cobertura de sentencias",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Cada camino en el codigo ha sido ejecutado al menos una vez",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Cada combinacion de valores de entrada ha sido probada al menos una vez",
+    "correcta": false
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "25",
+  "pregunta": "?Cual de los siguientes NO es verdadero para las pruebas de caja blanca?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Durante las pruebas de caja blanca se considera toda la implementacion del software",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Las metricas de cobertura de caja blanca pueden ayudar a identificar pruebas adicionales para aumentar la cobertura de codigo",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Las tecnicas de prueba de caja blanca pueden usarse en pruebas estaticas",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Las pruebas de caja blanca pueden ayudar a identificar vacios en la implementacion de requisitos",
+    "correcta": true
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "26",
+  "pregunta": "?Cual de los siguientes describe MEJOR el concepto detras de la suposicion de errores (error guessing)?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "La suposicion de errores implica usar su conocimiento y experiencia de defectos encontrados en el pasado y errores tipicos cometidos por desarrolladores",
+    "correcta": true
+   },
+   {
+    "letra": "b",
+    "texto": "La suposicion de errores implica usar su experiencia personal de desarrollo y los errores que cometio como desarrollador",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "La suposicion de errores requiere que imagine que es el usuario del objeto de prueba y adivine los errores que el usuario podria cometer",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "La suposicion de errores requiere duplicar rapidamente la tarea de desarrollo para identificar los tipos de errores que podria cometer un desarrollador",
+    "correcta": false
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "27",
+  "pregunta": "En su proyecto ha habido un retraso en el lanzamiento de una aplicacion completamente nueva y la ejecucion de pruebas comenzo tarde, pero tiene conocimiento detallado del dominio y buenas habilidades analiticas. La lista completa de requisitos aun no se ha compartido con el equipo, pero la gerencia solicita algunos resultados de prueba. ?Que tecnica de prueba se ajusta MEJOR a esta situacion?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Pruebas basadas en listas de verificacion (Checklist-based)",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Suposicion de errores (Error guessing)",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Pruebas exploratorias (Exploratory testing)",
+    "correcta": true
+   },
+   {
+    "letra": "d",
+    "texto": "Pruebas de ramas (Branch testing)",
+    "correcta": false
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "28",
+  "pregunta": "?Cual de los siguientes describe MEJOR como se pueden documentar los criterios de aceptacion?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Realizar retrospectivas para determinar las necesidades reales de los interesados respecto a una historia de usuario",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Usar el formato dado/cuando/entonces para describir una condicion de prueba de ejemplo relacionada con una historia de usuario",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "Usar comunicacion verbal para reducir el riesgo de malentendidos sobre los criterios de aceptacion",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Documentar riesgos relacionados con una historia de usuario en un plan de prueba para facilitar las pruebas basadas en riesgo",
+    "correcta": false
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "29",
+  "pregunta": "Historia de usuario: \"Como Editor quiero revisar el contenido antes de publicarlo para asegurar que la gramatica sea correcta\" Criterios de aceptacion: - El usuario puede iniciar sesion con rol \"Editor\" - El editor puede ver paginas de contenido existentes - El editor puede editar el contenido de la pagina - El editor puede agregar comentarios de marcado - El editor puede guardar cambios - El editor puede reasignar al rol \"propietario del contenido\" ?Cual es el MEJOR ejemplo de una prueba ATDD para esta historia de usuario?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Probar si el editor puede guardar el documento despues de editar el contenido de la pagina",
+    "correcta": true
+   },
+   {
+    "letra": "b",
+    "texto": "Probar si el propietario del contenido puede iniciar sesion y realizar actualizaciones",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Probar si el editor puede programar el contenido editado para publicacion",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Probar si el editor puede reasignar a otro editor para realizar actualizaciones",
+    "correcta": false
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "30",
+  "pregunta": "?Como agregan valor los testers a la planificacion de iteracion y lanzamiento?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Los testers determinan la prioridad de las historias de usuario a desarrollar",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Los testers se enfocan solo en los aspectos funcionales del sistema a probar",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Los testers participan en la identificacion detallada y evaluacion de riesgos de las historias de usuario",
+    "correcta": true
+   },
+   {
+    "letra": "d",
+    "texto": "Los testers garantizan el lanzamiento de software de alta calidad mediante el diseno temprano de pruebas durante la planificacion del lanzamiento",
+    "correcta": false
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "31",
+  "pregunta": "?Cuales DOS de las siguientes opciones son criterios de salida para probar un sistema?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Disponibilidad del entorno de prueba",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "La capacidad del tester de iniciar sesion en el objeto de prueba",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Se alcanza la densidad de defectos estimada",
+    "correcta": true
+   },
+   {
+    "letra": "d",
+    "texto": "Los requisitos se traducen al formato dado/cuando/entonces",
+    "correcta": false
+   },
+   {
+    "letra": "e",
+    "texto": "Las pruebas de regresion estan automatizadas",
+    "correcta": true
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "32",
+  "pregunta": "Su equipo usa la tecnica de estimacion de tres puntos: - Estimacion mas optimista: 2 persona-horas - Estimacion mas probable: 11 persona-horas - Estimacion mas pesimista: 14 persona-horas ?Cual es la estimacion final?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "9 persona-horas",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "14 persona-horas",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "11 persona-horas",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "10 persona-horas",
+    "correcta": true
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "33",
+  "pregunta": "Casos de prueba para app buscadora de restaurantes: TC001(Seleccionar tipo comida, prioridad 3, sin dep) | TC002(Seleccionar restaurante, prioridad 2, dep:TC001) | TC003(Obtener direccion, prioridad 1, dep:TC002) | TC004(Llamar restaurante, prioridad 2, dep:TC002) | TC005(Hacer reserva, prioridad 3, dep:TC002) ?Cual caso de prueba se debe ejecutar en tercer lugar?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "TC 003",
+    "correcta": true
+   },
+   {
+    "letra": "b",
+    "texto": "TC 005",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "TC 002",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "TC 001",
+    "correcta": false
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "34",
+  "pregunta": "Asigne categorias de prueba (1-4) a cuadrantes de prueba agil (A-D): 1. Pruebas de usabilidad | 2. Pruebas de componente | 3. Pruebas funcionales | 4. Pruebas de confiabilidad A=C1(tecnologia, apoya dev) | B=C2(negocio, apoya dev) | C=C3(negocio, critica producto) | D=C4(tecnologia, critica producto)",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "1C, 2A, 3B, 4D",
+    "correcta": true
+   },
+   {
+    "letra": "b",
+    "texto": "1D, 2A, 3C, 4B",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "1C, 2B, 3D, 4A",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "1D, 2B, 3C, 4A",
+    "correcta": false
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "35",
+  "pregunta": "Durante un analisis de riesgo: Riesgo = tiempo de respuesta demasiado largo; Probabilidad = media; Impacto = alto. Respuesta: equipo independiente realiza pruebas de eficiencia de rendimiento durante pruebas del sistema + usuarios finales realizan pruebas alfa y beta antes del lanzamiento. ?Que medida se propone en respuesta a este riesgo?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Aceptacion del riesgo",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Plan de contingencia",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Mitigacion del riesgo",
+    "correcta": true
+   },
+   {
+    "letra": "d",
+    "texto": "Transferencia del riesgo",
+    "correcta": false
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "36",
+  "pregunta": "?Que producto de trabajo puede usar un equipo agil para mostrar la cantidad de trabajo completado y la cantidad de trabajo total restante para una iteracion determinada?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Criterios de aceptacion",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Informe de defecto",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Informe de finalizacion de pruebas",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Grafico de quemado (Burndown chart)",
+    "correcta": true
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "37",
+  "pregunta": "Necesita actualizar uno de los scripts de prueba automatizados para alinearse con un nuevo requisito. ?Que proceso indica que crea una nueva version del script de prueba en el repositorio de pruebas?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Gestion de trazabilidad",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Pruebas de mantenimiento",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Gestion de configuracion",
+    "correcta": true
+   },
+   {
+    "letra": "d",
+    "texto": "Ingenieria de requisitos",
+    "correcta": false
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "38",
+  "pregunta": "Recibio el siguiente informe de defecto devuelto como \"no reproducible\": \"La aplicacion se cuelga - 2022-May-03 - John Doe - Rechazado. La aplicacion se cuelga despues de ingresar 'Entrada de prueba: $a' en el campo Nombre en la pantalla de creacion de nuevo usuario. Se intento cerrar sesion, iniciar sesion con cuenta test_admin01, mismo problema. No se recibio mensaje de error; el registro contiene notificacion de error fatal. Basado en TC-1305, la aplicacion deberia aceptar la entrada. Corregir con alta prioridad, relacionado con REQ-0012.\" ?Que informacion critica FALTA en este informe de prueba?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Resultado esperado y resultado real",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Referencias y estado del defecto",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Entorno de prueba y elemento de prueba",
+    "correcta": true
+   },
+   {
+    "letra": "d",
+    "texto": "Prioridad y severidad",
+    "correcta": false
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "39",
+  "pregunta": "?Que actividad de prueba soporta una herramienta de preparacion de datos?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Monitoreo de prueba y control de prueba",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Analisis de prueba",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Diseno de prueba e implementacion de prueba",
+    "correcta": true
+   },
+   {
+    "letra": "d",
+    "texto": "Finalizacion de prueba",
+    "correcta": false
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "40",
+  "pregunta": "?Que elemento identifica correctamente un riesgo potencial de realizar automatizacion de pruebas? APENDICE: PREGUNTAS ADICIONALES",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Puede introducir regresiones desconocidas en produccion",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Es posible que no se asignen suficientes esfuerzos para mantener el testware",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "Es posible que las herramientas de prueba y el testware asociado no sean suficientemente confiables",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Puede reducir el tiempo asignado para las pruebas manuales",
+    "correcta": false
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "A1",
+  "pregunta": "Le dieron la tarea de analizar y corregir las causas de fallos en un nuevo sistema. ?Que actividad esta realizando?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Depuracion (Debugging)",
+    "correcta": true
+   },
+   {
+    "letra": "b",
+    "texto": "Pruebas de software",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Elicitacion de requisitos",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Gestion de defectos",
+    "correcta": false
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "A2",
+  "pregunta": "En muchas organizaciones de software el departamento de pruebas se llama departamento de Aseguramiento de la Calidad (QA). ?Es esta afirmacion correcta o no y por que?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Es correcto. Pruebas y QA significan exactamente lo mismo",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Es correcto. Estos nombres pueden usarse indistintamente porque tanto las pruebas como el QA enfocan sus actividades en los mismos temas de calidad",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "No es correcto. Las pruebas son algo mas; incluyen todas las actividades relacionadas con la calidad. El QA se enfoca en procesos relacionados con la calidad",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "No es correcto. El QA se enfoca en procesos relacionados con la calidad mientras que las pruebas se concentran en demostrar que un componente o sistema es apto para el proposito y detectar defectos",
+    "correcta": true
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "A3",
+  "pregunta": "Un telefono sonando en un cubicle vecino distrae a un programador causandole programar incorrectamente la logica que verifica el limite superior de una variable de entrada. Mas tarde, durante las pruebas del sistema, un tester nota que el campo acepta valores de entrada no validos. ?Cual de los siguientes describe correctamente un limite superior codificado incorrectamente?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "La causa raiz",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Un fallo (failure)",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Un error",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Un defecto",
+    "correcta": true
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "A4",
+  "pregunta": "Considere el siguiente testware: Test Charter #04.018, Duracion 1h, Explorar: pagina de Registro, Con: diferentes conjuntos de datos de entrada incorrectos, Para descubrir: defectos relacionados con la aceptacion del proceso de registro con entrada incorrecta. ?Que actividad de prueba produce este testware como salida?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Planificacion de prueba",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Monitoreo y control de prueba",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Analisis de prueba",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Diseno de prueba",
+    "correcta": true
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "A5",
+  "pregunta": "?Cual de los siguientes es el MEJOR ejemplo de como la trazabilidad apoya las pruebas?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Realizar el analisis de impacto de un cambio dara informacion sobre la completitud de las pruebas",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Analizar la trazabilidad entre casos de prueba y resultados dara informacion sobre el nivel estimado de riesgo residual",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Realizar el analisis de impacto de un cambio ayudara a seleccionar los casos de prueba correctos para pruebas de regresion",
+    "correcta": true
+   },
+   {
+    "letra": "d",
+    "texto": "Analizar la trazabilidad entre la base de prueba, los objetos de prueba y los casos de prueba ayudara a seleccionar datos de prueba para lograr la cobertura asumida del objeto de prueba",
+    "correcta": false
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "A6",
+  "pregunta": "?Cual de los siguientes explica MEJOR un beneficio de la independencia de las pruebas?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "El uso de un equipo de prueba independiente permite a la gerencia del proyecto asignar la responsabilidad de la calidad del entregable final al equipo de prueba",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Si se puede contratar un equipo de prueba externo a la organizacion, hay beneficios distintos en terminos de no dejarse influir facilmente por las preocupaciones de entrega",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Un equipo de prueba independiente puede trabajar por separado de los desarrolladores, sin necesidad de distraerse con cambios en los requisitos del proyecto",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Cuando las especificaciones contienen ambiguedades e inconsistencias, se hacen suposiciones sobre su interpretacion, y un tester independiente puede ser util para cuestionar esas suposiciones",
+    "correcta": true
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "A7",
+  "pregunta": "Trabaja como tester en un equipo que sigue el modelo V. ?Cuales de las siguientes actividades PUEDEN realizarse en las fases iniciales del SDLC?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Ejecucion de pruebas dinamicas",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Pruebas estaticas",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "Planificacion de prueba",
+    "correcta": true
+   },
+   {
+    "letra": "d",
+    "texto": "Ejecucion de pruebas de aceptacion",
+    "correcta": false
+   },
+   {
+    "letra": "e",
+    "texto": "Pruebas de mantenimiento",
+    "correcta": false
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "A8",
+  "pregunta": "?Cuales de los siguientes son ventajas de DevOps? i. Lanzamiento mas rapido y menor tiempo al mercado ii. Aumenta la necesidad de pruebas manuales repetitivas iii. Disponibilidad constante de software ejecutable iv. Reduccion en el numero de pruebas de regresion v. La configuracion del framework de automatizacion es economica",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "i, ii, iv son ventajas",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "iii, v son ventajas",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "i, iii son ventajas",
+    "correcta": true
+   },
+   {
+    "letra": "d",
+    "texto": "ii, iv, v son ventajas",
+    "correcta": false
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "A9",
+  "pregunta": "Trabaja como tester en un proyecto de app de pedidos de comida. El requisito dice: \"El pedido debe procesarse en menos de 10 segundos en el 95% de los casos\". Creo casos de prueba midiendo el tiempo de procesamiento. ?Que tipo de prueba realizo?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Funcional, porque los casos de prueba cubren el requisito de negocio del usuario para el sistema",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "No funcional, porque miden el rendimiento del sistema",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "Funcional, porque los casos de prueba interactuan con la interfaz de usuario",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Caja blanca, porque necesitamos conocer la estructura interna del programa para medir el tiempo de procesamiento",
+    "correcta": false
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "A10",
+  "pregunta": "La estrategia de prueba de su organizacion sugiere que cuando un sistema va a ser retirado, se debe probar la migracion de datos. ?Como parte de que tipo de prueba se realizaria esto MAS probablemente?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Pruebas de mantenimiento",
+    "correcta": true
+   },
+   {
+    "letra": "b",
+    "texto": "Pruebas de regresion",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Pruebas de confiabilidad",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Pruebas de integracion",
+    "correcta": false
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "A11",
+  "pregunta": "Lista de productos de trabajo: i. Requisitos de negocio | ii. Cronograma | iii. Presupuesto de prueba | iv. Codigo ejecutable de terceros | v. Historias de usuario y criterios de aceptacion ?Cuales pueden ser revisados?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "i e iv pueden revisarse",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "i, ii, iii e iv pueden revisarse",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "i, ii, iii y v pueden revisarse",
+    "correcta": true
+   },
+   {
+    "letra": "d",
+    "texto": "iii, iv, v pueden revisarse",
+    "correcta": false
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "A12",
+  "pregunta": "Decida cuales afirmaciones (i-v) son verdaderas para las pruebas estaticas: i. Los comportamientos externos anormales son mas faciles de identificar ii. Las discrepancias de un estandar de codificacion son mas faciles de encontrar iii. Identifica fallos causados por defectos cuando se ejecuta el software iv. Su objetivo de prueba es identificar defectos lo antes posible v. La cobertura faltante para requisitos de seguridad criticos es mas facil de encontrar",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "i, iv, v son verdaderas para pruebas estaticas",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "i, iii, iv son verdaderas para pruebas estaticas",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "ii, iii son verdaderas para pruebas estaticas",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "ii, iv, v son verdaderas para pruebas estaticas",
+    "correcta": true
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "A13",
+  "pregunta": "?Cual de las siguientes afirmaciones sobre revisiones formales es VERDADERA?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Algunas revisiones no requieren mas de un rol",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "El proceso de revision tiene varias actividades",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "La documentacion a revisar no se distribuye antes de la reunion de revision, con excepcion del producto de trabajo para tipos de revision especificos",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Los defectos encontrados durante la revision no se reportan ya que no se encuentran mediante pruebas dinamicas",
+    "correcta": false
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "A14",
+  "pregunta": "?Que tarea puede asumir la gerencia durante una revision formal?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Asumir la responsabilidad general de la revision",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Decidir que se va a revisar",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "Garantizar el funcionamiento efectivo de las reuniones de revision y moderar si es necesario",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Registrar la informacion de revision como las decisiones de revision",
+    "correcta": false
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "A15",
+  "pregunta": "Un sistema de almacenamiento de vino alarma si la temperatura T se desvía del optimo 12°C: T=12 → optima; T<12 → demasiado baja; T>12 → demasiado alta. Usando BVA de 3 puntos, ?cual es el conjunto MINIMO de entradas de prueba para 100% de cobertura?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "11, 12, 13",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "10, 12, 14",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "10, 11, 12, 13, 14",
+    "correcta": true
+   },
+   {
+    "letra": "d",
+    "texto": "10, 11, 13, 14",
+    "correcta": false
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "A16",
+  "pregunta": "?Cual de las siguientes afirmaciones sobre las pruebas de ramas (branch testing) es CORRECTA?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Si un programa incluye solo ramas incondicionales, se puede lograr 100% de cobertura de ramas sin ejecutar ningun caso de prueba",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Si los casos de prueba ejercen todas las ramas incondicionales, se logra 100% de cobertura de ramas",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Si se logra 100% de cobertura de sentencias, entonces tambien se logra 100% de cobertura de ramas",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Si se logra 100% de cobertura de ramas, entonces se ejercen todos los resultados de decision en cada sentencia de decision del codigo",
+    "correcta": true
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "A17",
+  "pregunta": "Prueba una aplicacion movil bancaria evaluando cada pantalla y campo contra una lista general de mejores practicas de interfaz de usuario de un libro popular sobre usabilidad. ?Que tecnica de prueba usa?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Caja negra",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Pruebas exploratorias",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Pruebas basadas en listas de verificacion (Checklist-based)",
+    "correcta": true
+   },
+   {
+    "letra": "d",
+    "texto": "Suposicion de errores",
+    "correcta": false
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "A18",
+  "pregunta": "?Cual de los siguientes describe MEJOR el enfoque colaborativo de escritura de historias de usuario?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Las historias de usuario son creadas por testers y desarrolladores y luego aceptadas por representantes de negocio",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Las historias de usuario son creadas conjuntamente por representantes de negocio, desarrolladores y testers",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "Las historias de usuario son creadas por representantes de negocio y verificadas por desarrolladores y testers",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Las historias de usuario se crean de manera que sean independientes, negociables, valiosas, estimables, pequenas y comprobables",
+    "correcta": false
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "A19",
+  "pregunta": "Una seccion del plan de prueba dice: 'Las pruebas se realizaran usando pruebas de componente y de integracion de componentes. Los reglamentos requieren demostrar 100% de cobertura de ramas para cada componente clasificado como critico.' ?A que parte del plan de prueba pertenece esto?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Comunicacion",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Registro de riesgos",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Contexto de las pruebas",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Enfoque de prueba",
+    "correcta": true
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "A20",
+  "pregunta": "El equipo usa planning poker. Regla: si la variacion es pequena y no hay tiempo, aplicar 'aceptar el numero con mas votos'. Ronda 1: 21,2,5,34,13,8,2 | Ronda 2: 13,8,8,34,13,8,5 | Ronda 3: 13,8,13,13,13,13,8 ?Cual es el MEJOR siguiente paso?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "El product owner debe intervenir y tomar una decision final",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Aceptar 13 como estimacion final ya que tiene mas votos",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "No se necesita mas accion. Se ha alcanzado el consenso",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Eliminar la nueva caracteristica del lanzamiento actual porque no se alcanzo consenso",
+    "correcta": false
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "A21",
+  "pregunta": "?Cual de las siguientes es VERDADERA respecto a la piramide de pruebas?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Enfatiza tener muchas mas pruebas en los niveles de prueba inferiores",
+    "correcta": true
+   },
+   {
+    "letra": "b",
+    "texto": "Sugiere que cada prueba de nivel inferior verifica una gran parte de la funcionalidad",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Describe la distribucion de tipos de prueba a lo largo del SDLC",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "No tiene impacto en la construccion de pruebas automatizadas",
+    "correcta": false
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "A22",
+  "pregunta": "Durante el analisis de riesgo: Riesgo = 'El sistema permite un descuento demasiado alto para un cliente'. Impacto del riesgo = muy alto. ?Que se puede decir sobre la probabilidad del riesgo?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Tambien es muy alta. El alto impacto del riesgo siempre implica alta probabilidad",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Es muy baja. El alto impacto del riesgo siempre implica baja probabilidad",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "No se puede decir nada sobre la probabilidad. El impacto y la probabilidad del riesgo son independientes.",
+    "correcta": true
+   },
+   {
+    "letra": "d",
+    "texto": "La probabilidad del riesgo no es importante con tan alto impacto. No es necesario definirla.",
+    "correcta": false
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "A23",
+  "pregunta": "Identifique los riesgos de proyecto entre: i. La gerencia mueve a dos testers experimentados | ii. El sistema no cumple con estandares de seguridad | iii. El tiempo de respuesta del sistema excede los requisitos | iv. Los interesados tienen expectativas incorrectas | v. Las personas con discapacidad tienen problemas usando el sistema",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "i, iv son riesgos de proyecto",
+    "correcta": true
+   },
+   {
+    "letra": "b",
+    "texto": "iv, v son riesgos de proyecto",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "i, iii son riesgos de proyecto",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "ii, v son riesgos de proyecto",
+    "correcta": false
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "A24",
+  "pregunta": "?Cual de los siguientes es un ejemplo de como el analisis de riesgos de producto influye en la exhaustividad y el alcance de las pruebas?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "El gerente de prueba monitorea y reporta el nivel de todos los riesgos conocidos diariamente",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Uno de los riesgos identificados fue 'Falta de soporte de bases de datos open-source', por lo que el equipo decidio integrar el sistema con una base de datos open-source",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Durante el analisis de riesgo cuantitativo, el equipo estimo el nivel total de todos los riesgos identificados",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "El analisis de riesgo revelo un nivel muy alto de riesgos de rendimiento, por lo que se decidio realizar pruebas detalladas de eficiencia de rendimiento al inicio del SDLC",
+    "correcta": true
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "A25",
+  "pregunta": "?Cuales DOS de las siguientes opciones son metricas comunes usadas para informar sobre el nivel de calidad del objeto de prueba?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Numero de defectos encontrados durante las pruebas del sistema",
+    "correcta": true
+   },
+   {
+    "letra": "b",
+    "texto": "Esfuerzo total en diseno de prueba dividido por el numero de casos de prueba disenados",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Numero de procedimientos de prueba ejecutados",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Numero de defectos encontrados dividido por el tamano de un producto de trabajo",
+    "correcta": true
+   },
+   {
+    "letra": "e",
+    "texto": "Tiempo necesario para reparar un defecto",
+    "correcta": false
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "A26",
+  "pregunta": "?Cual de las siguientes piezas de informacion en un informe de progreso de prueba es la MENOS util para los representantes de negocio?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Impedimentos para las pruebas",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Cobertura de ramas lograda",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "Progreso de las pruebas",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Nuevos riesgos dentro del ciclo de prueba",
+    "correcta": false
+   }
+  ],
+  "examen": "A"
+ },
+ {
+  "n": "1",
+  "pregunta": "¿Cuál de los siguientes es un ejemplo de por qué las pruebas son necesarias?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Las pruebas dinámicas aumentan la calidad al hacer que los objetos de prueba fallen de maneras que nunca podrían ser logradas por los usuarios",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Las pruebas estáticas son utilizadas por los desarrolladores para identificar fallos en su código antes de lo que se puede lograr mediante las pruebas dinámicas",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "El análisis estático proporciona evidencia a los clientes de que los elementos del sistema que no proporcionan salidas están listos para su lanzamiento",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Las revisiones aumentan la calidad de las especificaciones de requisitos y llevan a que se necesiten menos cambios en los productos de trabajo derivados",
+    "correcta": true
+   }
+  ],
+  "examen": "B"
+ },
+ {
+  "n": "2",
+  "pregunta": "¿Cuál de las siguientes afirmaciones sobre el aseguramiento de calidad (QA) y/o el control de calidad (QC) es correcta?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "QA se realiza como parte de las pruebas",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Las pruebas se realizan como parte de QC",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "Las pruebas son otro término para QC",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Las pruebas se realizan como parte de QA",
+    "correcta": false
+   }
+  ],
+  "examen": "B"
+ },
+ {
+  "n": "3",
+  "pregunta": "Uno de los 'principios de las pruebas' establece que las pruebas exhaustivas son imposibles. ¿Cuál de los siguientes es un ejemplo de cómo abordar este principio en la práctica?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Crear casos de prueba que cubran cada salida posible especificada",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Documentar todas las variaciones posibles de entradas de prueba y priorizarlas en función de la importancia",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Comenzar las pruebas lo antes posible con revisiones y otros enfoques de pruebas estáticas",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Usar la partición de equivalencia y el análisis de valores límite para generar casos de prueba",
+    "correcta": true
+   }
+  ],
+  "examen": "B"
+ },
+ {
+  "n": "4",
+  "pregunta": "¿Qué actividad de prueba implica trabajar con requisitos de datos de prueba, condiciones de prueba, requisitos del entorno de prueba y casos de prueba?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Diseño de pruebas",
+    "correcta": true
+   },
+   {
+    "letra": "b",
+    "texto": "Ejecución de pruebas",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Análisis de pruebas",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Implementación de pruebas",
+    "correcta": false
+   }
+  ],
+  "examen": "B"
+ },
+ {
+  "n": "5",
+  "pregunta": "¿Cuál de los siguientes es MÁS probable que impacte cómo se realizan las pruebas para un objeto de prueba dado?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "El nivel promedio de experiencia del equipo de marketing de la organización",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "El conocimiento de los usuarios de que se está desarrollando un nuevo sistema para ellos",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "El número de años de experiencia de los miembros del equipo de pruebas",
+    "correcta": true
+   },
+   {
+    "letra": "d",
+    "texto": "La estructura organizativa del usuario final para una aplicación comercial de transmisión de música",
+    "correcta": false
+   }
+  ],
+  "examen": "B"
+ },
+ {
+  "n": "6",
+  "pregunta": "¿Cuál de las siguientes afirmaciones es un ejemplo CORRECTO del valor de la trazabilidad?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "La trazabilidad entre los riesgos mitigados y los casos de prueba que pasaron proporciona un medio para determinar el nivel de riesgo residual",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "La trazabilidad entre los requisitos del usuario y los resultados de las pruebas proporciona un medio para medir el progreso del proyecto frente a los objetivos empresariales",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "La trazabilidad entre los probadores y los casos de prueba que fallaron proporciona un medio para determinar el nivel de habilidad de los probadores",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "La trazabilidad entre los riesgos identificados y las condiciones de prueba escritas proporciona un medio para determinar qué riesgos vale la pena probar",
+    "correcta": false
+   }
+  ],
+  "examen": "B"
+ },
+ {
+  "n": "7",
+  "pregunta": "¿Cuál de los siguientes es MÁS probable que sea un ejemplo de un probador usando una habilidad genérica al realizar pruebas?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "El profundo conocimiento del probador sobre una variedad de videojuegos significó que se llevó bien con uno de los desarrolladores que también era aficionado a los juegos",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "El probador era un ex piloto y pudo comprender mejor los criterios de aceptación para el sistema de control del helicóptero",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "El probador trabajó anteriormente como programador y usó sus habilidades en esta área para comunicarse mejor con los analistas de negocios",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "El probador fue muy cuidadoso de no cometer errores cuando metodicamente generó casos de prueba antes de comenzar su sesión de pruebas exploratorias",
+    "correcta": false
+   }
+  ],
+  "examen": "B"
+ },
+ {
+  "n": "8",
+  "pregunta": "¿Cuál de los siguientes es una ventaja del enfoque de equipo completo?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Permite a los miembros del equipo asumir cualquier rol en cualquier momento",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Solo necesita un único equipo para apoyar el proyecto de desarrollo completo",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Integra representantes empresariales junto a los desarrolladores en el mismo equipo",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Genera una sinergia de equipo que beneficia al proyecto completo",
+    "correcta": true
+   }
+  ],
+  "examen": "B"
+ },
+ {
+  "n": "9",
+  "pregunta": "¿Cuál de las siguientes afirmaciones sobre el ciclo de vida de desarrollo de software elegido es CORRECTA?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Si se utiliza el desarrollo de software ágil, la automatización de las pruebas del sistema reemplaza la necesidad de las pruebas de regresión",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Si se utiliza un modelo de desarrollo secuencial, entonces las pruebas dinámicas generalmente se restringen a etapas posteriores del ciclo de vida",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "Si se utiliza un modelo de desarrollo iterativo, entonces las pruebas de componentes generalmente son realizadas manualmente por los desarrolladores",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Si se utiliza un modelo de desarrollo incremental, entonces las pruebas estáticas se realizan en incrementos tempranos y las pruebas dinámicas en incrementos posteriores",
+    "correcta": false
+   }
+  ],
+  "examen": "B"
+ },
+ {
+  "n": "10",
+  "pregunta": "¿Cuál de los siguientes es una buena práctica de pruebas que se aplica a todos los ciclos de vida de desarrollo de software?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Los probadores deben revisar los productos de trabajo como parte de la siguiente fase de desarrollo",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Los probadores deben revisar los productos de trabajo tan pronto como estén disponibles los borradores",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "Los probadores deben revisar los productos de trabajo antes de que comience el análisis y diseño de pruebas",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Los probadores deben revisar los productos de trabajo inmediatamente después de que se publiquen",
+    "correcta": false
+   }
+  ],
+  "examen": "B"
+ },
+ {
+  "n": "11",
+  "pregunta": "¿Cuál de los siguientes es un ejemplo de un enfoque de prueba primero para el desarrollo?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Desarrollo Guiado por Pruebas (TDD)",
+    "correcta": true
+   },
+   {
+    "letra": "b",
+    "texto": "Desarrollo Guiado por Cobertura",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Desarrollo Guiado por Calidad",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Desarrollo Guiado por Características",
+    "correcta": false
+   }
+  ],
+  "examen": "B"
+ },
+ {
+  "n": "12",
+  "pregunta": "¿Cuál de las siguientes afirmaciones sobre DevOps es CORRECTA?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Para acelerar los lanzamientos, la integración continua se utiliza para alentar a los desarrolladores a enviar código rápidamente sin necesidad de completar las pruebas de componentes",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Para poder actualizar y lanzar sistemas con mayor frecuencia, se requieren muchas pruebas de regresión automatizadas para reducir el riesgo de regresión",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "Para tratar a los desarrolladores y a las operaciones de manera igual, los probadores asignarán más esfuerzo a las pruebas de lanzamiento por operaciones usando un enfoque shift-right",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Para crear mayor sinergia entre probadores, desarrolladores y operaciones, las pruebas deben estar completamente automatizadas sin pruebas manuales",
+    "correcta": false
+   }
+  ],
+  "examen": "B"
+ },
+ {
+  "n": "13",
+  "pregunta": "¿Cuál de los siguientes es MÁS probable que se realice como parte de las pruebas del sistema?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Pruebas de seguridad de un sistema de gestión de crédito por un equipo de pruebas independiente",
+    "correcta": true
+   },
+   {
+    "letra": "b",
+    "texto": "Prueba de la interfaz de un sistema de cambio de divisas con un sistema bancario externo",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Pruebas beta de un sistema de aprendizaje remoto por desarrolladores de software educativo",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Prueba de las interacciones entre la interfaz de usuario y la base de datos de un sistema de recursos humanos",
+    "correcta": false
+   }
+  ],
+  "examen": "B"
+ },
+ {
+  "n": "14",
+  "pregunta": "¿Cuál de las siguientes afirmaciones es CORRECTA?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Las pruebas de regresión aumentan en número a medida que avanza el proyecto, mientras que el número de pruebas de confirmación disminuye a medida que avanza el proyecto",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Las pruebas de regresión se crean y ejecutan cuando el objeto de prueba se corrige, mientras que las pruebas de confirmación se ejecutan cada vez que el objeto de prueba se mejora",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Las pruebas de regresión se ocupan de verificar que el entorno operativo permanezca sin cambios, mientras que las pruebas de confirmación se ocupan de probar los cambios en el objeto de prueba",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Las pruebas de regresión se ocupan de los efectos adversos en el código sin cambios, mientras que las pruebas de confirmación se ocupan de probar el código cambiado",
+    "correcta": true
+   }
+  ],
+  "examen": "B"
+ },
+ {
+  "n": "15",
+  "pregunta": "¿Cuál de los siguientes es un ejemplo de un defecto que puede encontrarse mediante pruebas estáticas pero NO mediante pruebas dinámicas?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Falta de usabilidad proporcionada a través de la interfaz de usuario",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Código sin ninguna ruta que lo alcance",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "Tiempos de respuesta deficientes para la mayoría de los usuarios esperados",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Características requeridas que no están implementadas en el código",
+    "correcta": false
+   }
+  ],
+  "examen": "B"
+ },
+ {
+  "n": "16",
+  "pregunta": "¿Cuál de los siguientes es un beneficio de la retroalimentación temprana y frecuente de los interesados?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Los gerentes están al tanto de qué desarrolladores son menos productivos",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Permite a los gerentes de proyecto priorizar sus interacciones con los interesados",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Facilita la comunicación temprana de posibles problemas de calidad",
+    "correcta": true
+   },
+   {
+    "letra": "d",
+    "texto": "Los usuarios finales comprenden mejor por qué se retrasa la entrega del producto de trabajo",
+    "correcta": false
+   }
+  ],
+  "examen": "B"
+ },
+ {
+  "n": "17",
+  "pregunta": "Dadas las siguientes descripciones de tareas: 1. Se seleccionan las características de calidad a evaluar y los criterios de salida 2. Todos tienen acceso al producto de trabajo 3. Las anomalías se identifican en el producto de trabajo 4. Las anomalías se discuten Y las siguientes actividades de revisión: A. Revisión individual B. Inicio de la revisión C. Planificación D. Comunicación y análisis ¿Cuál de los siguientes coincide MEJOR con las descripciones de tareas y las actividades?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "1B, 2C, 3D, 4A",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "1B, 2D, 3C, 4A",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "1C, 2A, 3B, 4D",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "1C, 2B, 3A, 4D",
+    "correcta": true
+   }
+  ],
+  "examen": "B"
+ },
+ {
+  "n": "18",
+  "pregunta": "Dados los siguientes roles en revisiones: 1. Secretario 2. Líder de revisión 3. Facilitador 4. Gerente Y las siguientes responsabilidades en revisiones: A. Asegura el funcionamiento efectivo de las reuniones de revisión y la creación de un entorno de revisión seguro B. Registra la información de la revisión, como las decisiones y las nuevas anomalías encontradas durante la reunión de revisión C. Decide qué se va a revisar y proporciona recursos, como personal y tiempo para la revisión D. Asume la responsabilidad general de la revisión, como organizar cuándo y dónde se llevará a cabo la revisión ¿Cuál de los siguientes coincide MEJOR con los roles y responsabilidades?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "1A, 2B, 3D, 4C",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "1A, 2C, 3B, 4D",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "1B, 2D, 3A, 4C",
+    "correcta": true
+   },
+   {
+    "letra": "d",
+    "texto": "1B, 2D, 3C, 4A",
+    "correcta": false
+   }
+  ],
+  "examen": "B"
+ },
+ {
+  "n": "19",
+  "pregunta": "¿Cuál de las siguientes afirmaciones describe MEJOR la diferencia entre las pruebas de tabla de decisiones y las pruebas de ramas?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "En las pruebas de tabla de decisiones, los casos de prueba se derivan de las sentencias de decisión en el código. En las pruebas de ramas, los casos de prueba se derivan del conocimiento del flujo de control del objeto de prueba.",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "En las pruebas de tabla de decisiones, los casos de prueba se derivan de la especificación que describe la lógica de negocio. En las pruebas de ramas, los casos de prueba se basan en la anticipación de posibles defectos en el código fuente.",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "En las pruebas de tabla de decisiones, los casos de prueba se derivan del conocimiento del flujo de control del objeto de prueba. En las pruebas de ramas, los casos de prueba se derivan de la especificación que describe la lógica de negocio.",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "En las pruebas de tabla de decisiones, los casos de prueba son independientes de cómo se implementa el software. En las pruebas de ramas, los casos de prueba solo pueden crearse después del diseño o la implementación del código.",
+    "correcta": true
+   }
+  ],
+  "examen": "B"
+ },
+ {
+  "n": "20",
+  "pregunta": "Los clientes de la cadena de lavado de autos TestWash tienen tarjetas con un registro del número de lavados que han comprado hasta el momento. El valor inicial es 0. Al entrar al lavado de autos, el sistema aumenta el número en la tarjeta en uno. Para cada décimo lavado el sistema da un descuento del 10%, y para cada vigésimo lavado, el sistema da un descuento adicional del 40% (es decir, un descuento total del 50%). ¿Cuál de los siguientes conjuntos de datos de entrada logra la mayor cobertura de partición de equivalencia?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "19, 20, 30",
+    "correcta": true
+   },
+   {
+    "letra": "b",
+    "texto": "11, 12, 20",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "1, 10, 50",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "10, 29, 30, 31",
+    "correcta": false
+   }
+  ],
+  "examen": "B"
+ },
+ {
+  "n": "21",
+  "pregunta": "Está probando un formulario que verifica la corrección de la longitud de la contraseña dada como entrada. El formulario acepta una contraseña con la longitud correcta y rechaza una contraseña que es demasiado corta o demasiado larga. La longitud de la contraseña es correcta si tiene entre 6 y 12 caracteres inclusive. Su conjunto de casos de prueba logra 100% de cobertura de BVA de 2 valores. El equipo decidió que, debido al alto riesgo de este componente, se deben agregar casos de prueba para garantizar 100% de cobertura de BVA de 3 valores. ¿Qué longitudes de contraseña adicionales deben probarse para lograr esto?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "4, 5, 13, 14",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "7, 11",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "1, 5, 13",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "1, 4, 7, 11, 14",
+    "correcta": true
+   }
+  ],
+  "examen": "B"
+ },
+ {
+  "n": "22",
+  "pregunta": "La siguiente tabla de decisiones contiene las reglas para determinar el riesgo de aterosclerosis: Regla 1: Colesterol ≤124, Presión ≤140 → muy bajo Regla 2: Colesterol ≤124, Presión >140 → bajo Regla 3: Colesterol 125-200, Presión ≤140 → medio Regla 4: Colesterol 125-200, Presión >140 → alto Regla 5: Colesterol ≥201, Presión – → muy alto Casos de prueba diseñados: TC1: Colesterol=125, PA=141 | TC2: Colesterol=200, PA=201 TC3: Colesterol=124, PA=201 | TC4: Colesterol=109, PA=200 | TC5: Colesterol=201, PA=140 ¿Qué cobertura de tabla de decisiones logran estos casos de prueba?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "40%",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "60%",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "80%",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "100%",
+    "correcta": false
+   }
+  ],
+  "examen": "B"
+ },
+ {
+  "n": "23",
+  "pregunta": "Un sistema de almacenamiento puede almacenar hasta tres elementos (estados: INICIO, NO LLENO, LLENO). Transiciones por eventos Add/Remove según el diagrama de transición de estados. ¿Cuál de los siguientes casos de prueba, representados como secuencias de eventos, logra el mayor nivel de cobertura de transiciones válidas?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Agregar, Quitar, Agregar, Agregar, Agregar",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Agregar, Agregar, Agregar, Agregar, Quitar, Quitar",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Agregar, Agregar, Agregar, Quitar, Quitar",
+    "correcta": true
+   },
+   {
+    "letra": "d",
+    "texto": "Agregar, Agregar, Agregar, Quitar, Agregar",
+    "correcta": false
+   }
+  ],
+  "examen": "B"
+ },
+ {
+  "n": "24",
+  "pregunta": "Ejecuta dos casos de prueba, T1 y T2, sobre el mismo código. El caso de prueba T1 logró un 40% de cobertura de sentencias y el caso de prueba T2 logró un 65% de cobertura de sentencias. ¿Cuál de las siguientes afirmaciones debe ser necesariamente verdadera?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "El conjunto de pruebas compuesto por T1 y T2 logra el 105% de cobertura de sentencias",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Existe al menos una sentencia que debe haber sido ejecutada tanto por T1 como por T2",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "Al menos el 5% de las sentencias en el código probado no son ejecutables",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "El conjunto de pruebas compuesto por T1 y T2 logra la cobertura completa de ramas",
+    "correcta": false
+   }
+  ],
+  "examen": "B"
+ },
+ {
+  "n": "25",
+  "pregunta": "Sea la métrica de cobertura de ramas definida como BCov = (X / Y) * 100%. ¿Qué representan X e Y en esta fórmula?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "X = número de resultados de decisión ejercidos por los casos de prueba Y = número total de resultados de decisión en el código",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "X = número de ramas condicionales ejercidas por los casos de prueba Y = número total de ramas en el código",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "X = número de ramas ejercidas por los casos de prueba Y = número total de ramas en el código",
+    "correcta": true
+   },
+   {
+    "letra": "d",
+    "texto": "X = número de ramas condicionales ejercidas por los casos de prueba Y = número total de resultados de decisión en el código",
+    "correcta": false
+   }
+  ],
+  "examen": "B"
+ },
+ {
+  "n": "26",
+  "pregunta": "¿Cuáles DOS de las siguientes afirmaciones proporcionan la MEJOR justificación para usar pruebas exploratorias?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "A los probadores no se les ha asignado suficiente tiempo para el diseño y la ejecución de pruebas",
+    "correcta": true
+   },
+   {
+    "letra": "b",
+    "texto": "La estrategia de prueba existente requiere que los probadores usen técnicas formales de prueba de caja negra",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "La especificación está escrita en un lenguaje formal que puede ser procesado por una herramienta",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Los probadores son miembros de un equipo ágil y tienen buenas habilidades de programación",
+    "correcta": false
+   },
+   {
+    "letra": "e",
+    "texto": "Los probadores tienen experiencia en el dominio empresarial y tienen buenas habilidades analíticas",
+    "correcta": true
+   }
+  ],
+  "examen": "B"
+ },
+ {
+  "n": "27",
+  "pregunta": "¿Cuál de los siguientes MEJOR se adapta como elemento de la lista de verificación utilizada en las pruebas basadas en lista de verificación?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "\"El desarrollador cometió un error al implementar el código\"",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "\"La cobertura de sentencias lograda supera el 85%\"",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "\"El programa funciona correctamente en cuanto a los requisitos funcionales y no funcionales\"",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "\"Los mensajes de error están escritos en un lenguaje que el usuario puede entender\"",
+    "correcta": true
+   }
+  ],
+  "examen": "B"
+ },
+ {
+  "n": "28",
+  "pregunta": "Considere los siguientes criterios de aceptación para una historia de usuario escritos desde la perspectiva del propietario de una tienda en línea: Dado que el usuario ha iniciado sesión y está en la página de inicio, Cuando el usuario hace clic en el botón \"Agregar elemento\", Entonces el formulario \"Crear elemento\" debe aparecer, Y el usuario debe poder ingresar un nombre y precio para el nuevo elemento. ¿En qué formato están escritos estos criterios de aceptación?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Orientado a reglas",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Orientado a escenarios",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "Orientado al producto",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Orientado al proceso",
+    "correcta": false
+   }
+  ],
+  "examen": "B"
+ },
+ {
+  "n": "29",
+  "pregunta": "Su equipo analiza la siguiente historia de usuario: \"Como cliente registrado, quiero poder ver mis pedidos anteriores en el sitio web de la empresa, para poder hacer un seguimiento de mis compras.\" ¿Cuál de los siguientes casos de prueba NO será relevante para esta historia de usuario?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Entrada: el cliente inicia sesión y hace clic en el botón \"ver historial de pedidos\" Resultado esperado: el sistema muestra una lista de todos los pedidos anteriores del cliente, incluyendo la fecha, número de pedido y costo total",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Entrada: el cliente hace clic en un pedido de la lista de pedidos Resultado esperado: el sistema muestra los artículos individuales comprados, junto con sus precios y cantidades",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Entrada: el cliente hace clic en el botón \"Ordenar ascendente\" en la pantalla de historial de pedidos Resultado esperado: el sistema muestra el historial de pedidos ordenado por número de pedido en orden ascendente",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Entrada: un cliente no registrado se registra como nuevo cliente con una dirección de correo electrónico válida que no existe en la base de datos de clientes Resultado esperado: el sistema acepta el registro y crea la cuenta",
+    "correcta": true
+   }
+  ],
+  "examen": "B"
+ },
+ {
+  "n": "30",
+  "pregunta": "Su equipo sigue el proceso que utiliza el pipeline de entrega DevOps. Los primeros tres pasos son: (1) Desarrollo de código (2) Enviar código a un sistema de control de versiones y fusionarlo en la rama \"test\" (3) Realizar pruebas de componentes para el código enviado ¿Cuál de los siguientes es el MEJOR candidato para ser el criterio de entrada del paso (2) de este pipeline?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "El análisis estático no devuelve advertencias de alta gravedad para el código enviado",
+    "correcta": true
+   },
+   {
+    "letra": "b",
+    "texto": "El control de versiones del sistema no informa conflictos al fusionar el código en la rama \"test\"",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Las pruebas de componentes están compiladas y listas para ser ejecutadas",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "La cobertura de sentencias es al menos del 80%",
+    "correcta": false
+   }
+  ],
+  "examen": "B"
+ },
+ {
+  "n": "31",
+  "pregunta": "Desea estimar el esfuerzo de prueba para el nuevo proyecto utilizando la estimación basada en ratios. Datos históricos: P1: Desarrollo=$800,000 Pruebas=$40,000 P2: Desarrollo=$1,200,000 Pruebas=$130,000 P3: Desarrollo=$600,000 Pruebas=$70,000 P4: Desarrollo=$1,000,000 Pruebas=$120,000 El esfuerzo de desarrollo estimado para el nuevo proyecto es de $800,000. ¿Cuál es su estimación del esfuerzo de prueba?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "$40,000",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "$80,000",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "$81,250",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "$82,500",
+    "correcta": false
+   }
+  ],
+  "examen": "B"
+ },
+ {
+  "n": "32",
+  "pregunta": "Está probando una aplicación web. Siete casos de prueba con prioridades (1=mayor prioridad): TC1: BUSCAR producto A – Prioridad 4 TC2: BUSCAR producto B – Prioridad 4 TC3: VER producto A – Prioridad 3 TC4: VER producto B – Prioridad 2 TC5: AGREGAR producto A – Prioridad 3 TC6: AGREGAR producto B – Prioridad 1 TC7: ORDENAR – Prioridad 5 Dependencias: BUSCAR→VER→AGREGAR→ORDENAR para cada producto. ¿Qué caso de prueba debe ejecutarse como el cuarto?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "TC3",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "TC1",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "TC7",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "TC2",
+    "correcta": false
+   }
+  ],
+  "examen": "B"
+ },
+ {
+  "n": "33",
+  "pregunta": "Según el modelo de cuadrantes de prueba, ¿cuál de los siguientes cae en el cuadrante Q1 (\"orientado a la tecnología\" y \"apoya al equipo\")?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Pruebas de usabilidad",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Pruebas funcionales",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Pruebas de aceptación del usuario",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Pruebas de integración de componentes",
+    "correcta": true
+   }
+  ],
+  "examen": "B"
+ },
+ {
+  "n": "34",
+  "pregunta": "Dados los siguientes riesgos: 1. La implementación ineficiente del bucle provoca respuestas largas del sistema 2. Los consumidores cambian sus preferencias 3. Inundación de la sala de servidores 4. Los pacientes mayores de cierta edad reciben informes inexactos Y las siguientes actividades de mitigación: A. Aceptación del riesgo B. Pruebas de eficiencia de rendimiento C. Uso del análisis de valores límite como técnica de prueba D. Transferencia del riesgo ¿Cuál de los siguientes coincide MEJOR con los riesgos y las actividades de mitigación?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "1C, 2D, 3A, 4B",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "1B, 2D, 3A, 4C",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "1B, 2A, 3D, 4C",
+    "correcta": true
+   },
+   {
+    "letra": "d",
+    "texto": "1C, 2A, 3D, 4B",
+    "correcta": false
+   }
+  ],
+  "examen": "B"
+ },
+ {
+  "n": "35",
+  "pregunta": "¿Cuál de los siguientes es una métrica de calidad del producto?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Tiempo medio hasta el fallo",
+    "correcta": true
+   },
+   {
+    "letra": "b",
+    "texto": "Número de defectos encontrados",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Cobertura de requisitos",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Porcentaje de detección de defectos",
+    "correcta": false
+   }
+  ],
+  "examen": "B"
+ },
+ {
+  "n": "36",
+  "pregunta": "Es miembro de un equipo de pruebas ubicado en América del Norte, desarrollando un producto para un cliente ubicado en Europa. El equipo es ágil y sigue el enfoque DevOps con un pipeline CI/CD. ¿Cuál de los siguientes es el MENOS efectivo para comunicar el progreso de las pruebas al cliente?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Cara a cara",
+    "correcta": true
+   },
+   {
+    "letra": "b",
+    "texto": "Paneles de control (Dashboards)",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Correo electrónico",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Videoconferencia",
+    "correcta": false
+   }
+  ],
+  "examen": "B"
+ },
+ {
+  "n": "37",
+  "pregunta": "¿Cuál de los siguientes describe MEJOR un ejemplo de cómo la gestión de configuración (GC) apoya las pruebas?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Teniendo el número de versión del entorno, la herramienta de GC puede recuperar los números de versión de las bibliotecas, stubs y drivers utilizados en ese entorno",
+    "correcta": true
+   },
+   {
+    "letra": "b",
+    "texto": "Teniendo un registro de los valores de las entradas, la herramienta de GC puede ejecutar los casos de prueba para estas configuraciones y calcular la cobertura",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Teniendo datos sobre la fecha de compra de una licencia de software, la herramienta de GC genera automáticamente información sobre el hecho de que la licencia del producto está llegando a su fin",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Teniendo el número de versión del caso de prueba, la herramienta de GC puede generar automáticamente datos de prueba para ese caso de prueba",
+    "correcta": false
+   }
+  ],
+  "examen": "B"
+ },
+ {
+  "n": "38",
+  "pregunta": "Está probando una función de ordenamiento. Resultados del registro de pruebas: TC1: Entrada: 3 → Salida: 3 (pasado) TC2: Entrada: 3 11 6 5 → Salida: 3 5 6 11 (pasado) TC3: Entrada: 8 7 3 7 1 → Salida: 1 3 7 8 (fallado) TC4: Entrada: -2 -2 -2 -3 -3 → Salida: -3 -2 (fallado) TC5: Entrada: 0 -2 0 3 4 4 → Salida: -2 0 3 4 (fallado) ¿Cuál de los siguientes proporciona la MEJOR descripción del fallo para usar en un informe de defecto?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "El sistema falla al ordenar varios conjuntos de números. Referencia: TC3, TC4, TC5.",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "El sistema parece ignorar los duplicados al ordenar. Referencia: TC3, TC4, TC5.",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "El sistema falla al ordenar números negativos. Referencia: TC4, TC5.",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "TC3, TC4 y TC5 tienen defectos (datos de entrada duplicados) y deben corregirse.",
+    "correcta": false
+   }
+  ],
+  "examen": "B"
+ },
+ {
+  "n": "39",
+  "pregunta": "Dadas las siguientes descripciones: 1. Soporte de seguimiento de flujo de trabajo 2. Facilitar la comunicación 3. Máquinas virtuales 4. Soporte de revisiones Y las siguientes categorías de herramientas de prueba: A. Herramientas de prueba estática B. Herramientas de apoyo a la escalabilidad y estandarización del despliegue C. Herramientas DevOps D. Herramientas de colaboración ¿Cuál de los siguientes coincide MEJOR con las descripciones y las categorías?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "1A, 2B, 3C, 4D",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "1B, 2D, 3C, 4A",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "1C, 2D, 3B, 4A",
+    "correcta": true
+   },
+   {
+    "letra": "d",
+    "texto": "1D, 2C, 3A, 4B",
+    "correcta": false
+   }
+  ],
+  "examen": "B"
+ },
+ {
+  "n": "40",
+  "pregunta": "¿Cuál de los siguientes es MÁS probable que sea un beneficio de la automatización de pruebas?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Proporciona medidas de cobertura que son demasiado complicadas para que los humanos las deriven",
+    "correcta": true
+   },
+   {
+    "letra": "b",
+    "texto": "Comparte la responsabilidad de las pruebas con el proveedor de la herramienta",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Elimina la necesidad de pensamiento crítico al analizar los resultados de las pruebas",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Genera casos de prueba a partir de un análisis del código del programa",
+    "correcta": false
+   }
+  ],
+  "examen": "B"
+ },
+ {
+  "n": "1",
+  "pregunta": "¿Cuál de las siguientes es un objetivo típico de las pruebas?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Validar que se cumplan los requisitos documentados",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Provocar fallos e identificar defectos",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "Iniciar errores e identificar las causas raíz",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Verificar que el objeto de prueba cumple las expectativas del usuario",
+    "correcta": false
+   }
+  ],
+  "examen": "C"
+ },
+ {
+  "n": "2",
+  "pregunta": "¿Cuál de las siguientes afirmaciones describe MEJOR la diferencia entre las pruebas y la depuración?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Las pruebas provocan fallos mientras que la depuración corrige fallos",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Las pruebas son una actividad negativa mientras que la depuración es una actividad positiva",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Las pruebas determinan que existen defectos mientras que la depuración elimina los defectos",
+    "correcta": true
+   },
+   {
+    "letra": "d",
+    "texto": "Las pruebas encuentran la causa de los defectos mientras que la depuración corrige la causa de los defectos",
+    "correcta": false
+   }
+  ],
+  "examen": "C"
+ },
+ {
+  "n": "3",
+  "pregunta": "La 'falacia de la ausencia de defectos' es uno de los principios de las pruebas. ¿Cuál de las siguientes es un ejemplo de cómo abordar este principio en la práctica?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Explicar que no es posible que las pruebas demuestren la ausencia de defectos",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Apoyar a los usuarios finales para que realicen pruebas de aceptación",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "Garantizar que no queden defectos de implementación en el sistema entregado",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Modificar las pruebas que no provocan fallos para garantizar que queden pocos defectos",
+    "correcta": false
+   }
+  ],
+  "examen": "C"
+ },
+ {
+  "n": "4",
+  "pregunta": "¿Cuáles de las siguientes actividades de prueba son las que MÁS probablemente impliquen la aplicación del análisis de valores límite y la partición de equivalencia?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Implementación de pruebas",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Diseño de pruebas",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "Ejecución de pruebas",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Monitoreo de pruebas",
+    "correcta": false
+   },
+   {
+    "letra": "e",
+    "texto": "Análisis de pruebas",
+    "correcta": true
+   }
+  ],
+  "examen": "C"
+ },
+ {
+  "n": "5",
+  "pregunta": "Dado el siguiente testware: 1. Elementos de cobertura 2. Solicitudes de cambio 3. Calendario de ejecución de pruebas 4. Condiciones de prueba priorizadas Y las siguientes actividades de prueba: A. Análisis de pruebas B. Diseño de pruebas C. Implementación de pruebas D. Finalización de pruebas ¿Cuál de las siguientes opciones muestra MEJOR el testware producido por las actividades?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "1B, 2D, 3C, 4A",
+    "correcta": true
+   },
+   {
+    "letra": "b",
+    "texto": "1B, 2D, 3A, 4C",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "1D, 2C, 3A, 4B",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "1D, 2C, 3B, 4A",
+    "correcta": false
+   }
+  ],
+  "examen": "C"
+ },
+ {
+  "n": "6",
+  "pregunta": "¿Cuál de las siguientes afirmaciones sobre los diferentes roles de prueba es la que tiene MÁS probabilidades de ser CORRECTA?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "En el desarrollo de software ágil, el rol de gestión de pruebas es responsabilidad principal del equipo, mientras que el rol de pruebas es responsabilidad principalmente de un individuo externo al equipo",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "El rol de pruebas es principalmente responsable del monitoreo y control de pruebas, mientras que el rol de gestión de pruebas es principalmente responsable de la planificación y finalización de pruebas",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "En el desarrollo de software ágil, las actividades de gestión de pruebas que abarcan múltiples equipos las realiza un gestor de pruebas externo al equipo, mientras que algunas tareas de gestión de pruebas las realiza el propio equipo",
+    "correcta": true
+   },
+   {
+    "letra": "d",
+    "texto": "El rol de gestión de pruebas es principalmente responsable del análisis y diseño de pruebas, mientras que el rol de pruebas es principalmente responsable de la implementación y ejecución de pruebas",
+    "correcta": false
+   }
+  ],
+  "examen": "C"
+ },
+ {
+  "n": "7",
+  "pregunta": "¿Cuál de las siguientes es una ventaja del enfoque de equipo completo?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Equipos sin probadores",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Mejora de la dinámica del equipo",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "Miembros del equipo especializados",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Tamaños de equipo más grandes",
+    "correcta": false
+   }
+  ],
+  "examen": "C"
+ },
+ {
+  "n": "8",
+  "pregunta": "¿Cuál de las siguientes afirmaciones sobre la independencia de las pruebas es CORRECTA?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Los probadores independientes encontrarán defectos debido a su diferente perspectiva técnica respecto a los desarrolladores, pero su independencia puede llevar a una relación de adversarios con los desarrolladores",
+    "correcta": true
+   },
+   {
+    "letra": "b",
+    "texto": "La familiaridad de los desarrolladores con su propio código significa que solo encuentran unos pocos defectos en él; sin embargo, su bagaje de software compartido con los probadores significa que estos defectos también serían encontrados por los probadores",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Las pruebas independientes requieren probadores que estén fuera del equipo del desarrollador e idealmente fuera de la organización; sin embargo, estos probadores encuentran difícil comprender el dominio de la aplicación",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Los probadores de fuera del equipo del desarrollador son más independientes que los probadores de dentro del equipo, pero los probadores de dentro del equipo tienen más probabilidades de ser culpados por los retrasos en la liberación del producto",
+    "correcta": false
+   }
+  ],
+  "examen": "C"
+ },
+ {
+  "n": "9",
+  "pregunta": "¿Cuál de las siguientes es una buena práctica de prueba que se aplica a todos los ciclos de vida del desarrollo de software?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Para cada nivel de prueba, hay un nivel de desarrollo correspondiente",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Para cada objetivo de prueba, hay un objetivo de desarrollo correspondiente",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Para cada actividad de prueba, hay una actividad de usuario correspondiente",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Para cada actividad de desarrollo, hay una actividad de prueba correspondiente",
+    "correcta": true
+   }
+  ],
+  "examen": "C"
+ },
+ {
+  "n": "10",
+  "pregunta": "¿Cuál de los siguientes es un ejemplo de un enfoque de desarrollo donde las pruebas van primero?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Desarrollo guiado por pruebas de componentes",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Desarrollo guiado por pruebas de integración",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Desarrollo guiado por pruebas de sistema",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Desarrollo guiado por pruebas de aceptación (ATDD)",
+    "correcta": true
+   }
+  ],
+  "examen": "C"
+ },
+ {
+  "n": "11",
+  "pregunta": "¿Cuál de las siguientes proporciona la MEJOR descripción del desplazamiento a la izquierda (shift-left)?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Cuando los desarrolladores lo acuerdan, las actividades manuales del lado izquierdo del proceso de prueba se automatizan para respaldar el principio 'las pruebas tempranas ahorran tiempo y dinero'",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Cuando es rentable, las actividades de prueba se trasladan antes en el ciclo de vida del desarrollo de software (SDLC) para reducir el costo total de calidad al reducir el número de defectos encontrados más adelante en el SDLC",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "Cuando tienen tiempo libre disponible, los probadores deben automatizar las pruebas de regresión, comenzando con las pruebas de componentes y las pruebas de integración de componentes",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Cuando están disponibles, los probadores reciben capacitación para realizar tareas al principio del SDLC para permitir que más actividades de prueba se automaticen más adelante en el SDLC",
+    "correcta": false
+   }
+  ],
+  "examen": "C"
+ },
+ {
+  "n": "12",
+  "pregunta": "¿Cuál de las siguientes es la que MENOS probabilidades tiene de ocurrir como resultado de una retrospectiva?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "La calidad de los futuros objetos de prueba mejora al identificar mejoras en las prácticas de desarrollo",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "La eficiencia de las pruebas mejora al acelerar la configuración de los entornos de prueba mediante la automatización",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "La comprensión de los usuarios finales sobre los procesos de desarrollo y prueba mejora",
+    "correcta": true
+   },
+   {
+    "letra": "d",
+    "texto": "Los scripts de prueba automatizados se mejoran gracias a los comentarios de los desarrolladores",
+    "correcta": false
+   }
+  ],
+  "examen": "C"
+ },
+ {
+  "n": "13",
+  "pregunta": "¿Qué nivel de prueba es el que MÁS probablemente se está realizando si las pruebas se centran en la validación y no las realizan los probadores?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Pruebas de componentes",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Pruebas de integración de componentes",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Pruebas de integración del sistema",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Pruebas de aceptación",
+    "correcta": true
+   }
+  ],
+  "examen": "C"
+ },
+ {
+  "n": "14",
+  "pregunta": "El software del sistema de navegación ha sido actualizado debido a que sugería rutas que infringen las leyes de tráfico, como conducir en sentido contrario en calles de un solo sentido. ¿Cuál de las siguientes describe MEJOR las pruebas que se realizarán?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Solo pruebas de confirmación",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Pruebas de confirmación y luego pruebas de regresión",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "Solo pruebas de regresión",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Pruebas de regresión y luego pruebas de confirmación",
+    "correcta": false
+   }
+  ],
+  "examen": "C"
+ },
+ {
+  "n": "15",
+  "pregunta": "Dados los siguientes ejemplos de defectos: i. Dos partes diferentes de la especificación de diseño no concuerdan debido a la complejidad del diseño ii. El tiempo de respuesta es demasiado largo y hace que los usuarios pierdan la paciencia iii. Una ruta en el código no puede alcanzarse durante la ejecución iv. Una variable se declara pero nunca se usa posteriormente en el programa v. La cantidad de memoria que necesita el programa para generar un informe es demasiado alta ¿Cuál de los siguientes identifica MEJOR los ejemplos de defectos que podrían encontrarse mediante pruebas estáticas (en lugar de pruebas dinámicas)?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "ii, v",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "iii, v",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "i, ii, iv",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "i, iii, iv",
+    "correcta": true
+   }
+  ],
+  "examen": "C"
+ },
+ {
+  "n": "16",
+  "pregunta": "¿Cuál de las siguientes es un beneficio de la retroalimentación temprana y frecuente de los interesados?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Los cambios en los requisitos se comprenden y se implementan antes",
+    "correcta": true
+   },
+   {
+    "letra": "b",
+    "texto": "Garantiza que los interesados empresariales comprendan los requisitos del usuario",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Permite a los propietarios de productos cambiar sus requisitos con la frecuencia que deseen",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Se informa a los usuarios finales qué requisitos no se implementarán antes del lanzamiento",
+    "correcta": false
+   }
+  ],
+  "examen": "C"
+ },
+ {
+  "n": "17",
+  "pregunta": "Dados los siguientes tipos de revisión: 1. Revisión técnica 2. Revisión informal 3. Inspección 4. Recorrido (Walkthrough) Y las siguientes descripciones: A. Incluye objetivos como lograr consenso, generar nuevas ideas y motivar a los autores a mejorar B. Incluye objetivos como educar a los revisores, lograr consenso, generar nuevas ideas y detectar defectos potenciales C. El objetivo principal es detectar defectos potenciales y requiere la recopilación de métricas para apoyar la mejora del proceso D. El objetivo principal es detectar defectos potenciales y no genera resultados documentados formales ¿Cuál de las siguientes opciones relaciona MEJOR los tipos de revisión con las descripciones?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "1A, 2B, 3C, 4D",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "1A, 2D, 3C, 4B",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "1B, 2C, 3D, 4A",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "1C, 2D, 3A, 4B",
+    "correcta": false
+   }
+  ],
+  "examen": "C"
+ },
+ {
+  "n": "18",
+  "pregunta": "¿Cuál de los siguientes es un factor que contribuye al éxito de una revisión?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Asegurarse de que la dirección participe como revisora",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Dividir los productos de trabajo grandes en partes más pequeñas",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "Establecer la evaluación de los revisores como un objetivo",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Planificar cubrir un documento por revisión",
+    "correcta": false
+   }
+  ],
+  "examen": "C"
+ },
+ {
+  "n": "19",
+  "pregunta": "¿Cuál es la PRINCIPAL diferencia entre las técnicas de prueba de caja negra y las técnicas de prueba basadas en la experiencia?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "El objeto de prueba",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "El nivel de prueba en el que se utiliza la técnica de prueba",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "La base de prueba",
+    "correcta": true
+   },
+   {
+    "letra": "d",
+    "texto": "El ciclo de vida del desarrollo de software (SDLC) en el que se puede utilizar la técnica de prueba",
+    "correcta": false
+   }
+  ],
+  "examen": "C"
+ },
+ {
+  "n": "20",
+  "pregunta": "Está probando un validador de PIN que acepta PINs válidos y rechaza PINs inválidos. Un PIN es una secuencia de dígitos. Un PIN es válido si consta de cuatro dígitos que no son todos iguales. Ha identificado las siguientes particiones de equivalencia válidas: Variable: Longitud del código PIN (cid:127) La partición \"longitud correcta\" - PINs de cuatro dígitos (cid:127) La partición \"longitud incorrecta\" - PINs con longitud diferente a 4 Variable: Número de dígitos diferentes (cid:127) La partición \"número de dígitos diferentes correcto\" - PINs con al menos dos dígitos diferentes (cid:127) La partición \"número de dígitos diferentes incorrecto\" - PINs con todos los dígitos iguales ¿Cuál de los siguientes es el MEJOR conjunto de datos de entrada para cubrir las particiones de equivalencia identificadas?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "12, 1111, 1234, 12345",
+    "correcta": true
+   },
+   {
+    "letra": "b",
+    "texto": "1, 123, 1111, 1234",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "11, 12, 1111, 12345",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "123, 1222, 12345",
+    "correcta": false
+   }
+  ],
+  "examen": "C"
+ },
+ {
+  "n": "21",
+  "pregunta": "Se pidió a un desarrollador que implementara la siguiente regla de negocio: ENTRADA: valor (número entero) SI (valor £ 100 O valor ‡ 200) ENTONCES escribir \"valor incorrecto\" SI NO escribir \"valor correcto\" Diseña los casos de prueba usando el análisis de valores límite de 2 valores. ¿Cuál de los siguientes conjuntos de entradas de prueba logra la mayor cobertura?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "100, 150, 200, 201",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "99, 100, 200, 201",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "98, 99, 100, 101",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "101, 150, 199, 200",
+    "correcta": true
+   }
+  ],
+  "examen": "C"
+ },
+ {
+  "n": "22",
+  "pregunta": "Está trabajando en un proyecto para desarrollar un sistema que analice los resultados de los exámenes de conducción. Se le pidió que diseñara casos de prueba basados en la siguiente tabla de decisión. R1 R2 R3 C1: ¿Es el primer intento? – – F C2: ¿Examen teórico aprobado? T F – C3: ¿Examen práctico aprobado? T – F ¿Emitir licencia de conducir? X ¿Solicitar clases adicionales? X ¿Solicitar repetir el examen? X ¿Qué datos de prueba mostrarán que hay reglas contradictorias en la tabla de decisión?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "C1 = V, C2 = V, C3 = F",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "C1 = V, C2 = F, C3 = V",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "C1 = V, C2 = V, C3 = V y C1 = F, C2 = V, C3 = V",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "C1 = F, C2 = F, C3 = F",
+    "correcta": true
+   }
+  ],
+  "examen": "C"
+ },
+ {
+  "n": "23",
+  "pregunta": "Está diseñando casos de prueba basados en el siguiente diagrama de transición de estados (sistema de reserva de habitaciones de hotel con estados: INICIO fi SOLICITANDO fi CONFIRMADO fi FIN; SOLICITANDO fi LISTA DE ESPERA fi CONFIRMADO o FIN). ¿Cuál es el NÚMERO MÍNIMO de casos de prueba necesarios para lograr el 100% de cobertura de transiciones válidas?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "3",
+    "correcta": true
+   },
+   {
+    "letra": "b",
+    "texto": "2",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "5",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "6",
+    "correcta": false
+   }
+  ],
+  "examen": "C"
+ },
+ {
+  "n": "24",
+  "pregunta": "Desea aplicar pruebas de ramas al código representado por un grafo de flujo de control con 7 nodos y 8 aristas. ¿Cuántos elementos de cobertura necesita probar?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "2",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "4",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "8",
+    "correcta": true
+   },
+   {
+    "letra": "d",
+    "texto": "7",
+    "correcta": false
+   }
+  ],
+  "examen": "C"
+ },
+ {
+  "n": "25",
+  "pregunta": "¿Cómo puede ser útil la prueba de caja blanca en apoyo de la prueba de caja negra?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Las medidas de cobertura de caja blanca pueden ayudar a los probadores a evaluar las pruebas de caja negra en términos de la cobertura de código lograda por dichas pruebas",
+    "correcta": true
+   },
+   {
+    "letra": "b",
+    "texto": "El análisis de cobertura de caja blanca puede ayudar a los probadores a identificar fragmentos de código fuente inalcanzables",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Las pruebas de ramas engloban las técnicas de prueba de caja negra, por lo que lograr una cobertura total de ramas garantiza lograr la cobertura total de cualquier técnica de caja negra",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Las técnicas de prueba de caja blanca pueden proporcionar elementos de cobertura para las técnicas de caja negra",
+    "correcta": false
+   }
+  ],
+  "examen": "C"
+ },
+ {
+  "n": "26",
+  "pregunta": "Considere la siguiente lista: (cid:127) Entrada correcta no aceptada (cid:127) Entrada incorrecta aceptada (cid:127) Formato de salida incorrecto (cid:127) División por cero ¿Qué técnica de prueba utiliza MÁS PROBABLEMENTE el probador que usa esta lista al realizar pruebas?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Pruebas exploratorias",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Ataque de fallos (Fault attack)",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "Pruebas basadas en listas de verificación",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Análisis de valores límite",
+    "correcta": false
+   }
+  ],
+  "examen": "C"
+ },
+ {
+  "n": "27",
+  "pregunta": "¿Cuál de las siguientes describe MEJOR cómo el uso de pruebas basadas en listas de verificación puede resultar en una mayor cobertura?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Los elementos de la lista de verificación pueden definirse con un nivel de detalle suficientemente bajo para que el probador pueda implementar y ejecutar casos de prueba detallados basados en estos elementos",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Las listas de verificación pueden automatizarse, por lo que cada vez que una ejecución de prueba automatizada cubre los elementos de la lista de verificación, se obtiene cobertura adicional",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Cada elemento de la lista de verificación debe probarse de forma separada e independiente, de modo que los elementos cubran diferentes áreas del software",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Dos probadores que diseñen y ejecuten pruebas basadas en los mismos elementos de lista de verificación de alto nivel normalmente realizarán las pruebas de maneras ligeramente diferentes",
+    "correcta": true
+   }
+  ],
+  "examen": "C"
+ },
+ {
+  "n": "28",
+  "pregunta": "¿Cuál de las siguientes proporciona el MEJOR ejemplo de un criterio de aceptación orientado a escenarios?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "La aplicación debe permitir a los usuarios eliminar su cuenta y todos los datos asociados cuando lo soliciten",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Cuando un cliente agrega un artículo a su carrito y procede al pago, se le debe solicitar que inicie sesión o cree una cuenta si aún no lo ha hecho",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "SI (contain(product(23).Name, cart.products())) ENTONCES return FALSE",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "El sitio web debe cumplir con los Estándares de Accesibilidad ICT 508 y garantizar que todo el contenido sea accesible para usuarios con discapacidades",
+    "correcta": false
+   }
+  ],
+  "examen": "C"
+ },
+ {
+  "n": "29",
+  "pregunta": "Está utilizando el desarrollo guiado por pruebas de aceptación y diseñando casos de prueba basados en la siguiente historia de usuario: \"Como usuario Regular o Especial, quiero poder usar mi tarjeta electrónica de piso para acceder a pisos específicos.\" Criterios de Aceptación: AC1: Los usuarios Regulares tienen acceso a los pisos 1 al 3 AC2: El piso 4 solo es accesible para usuarios Especiales AC3: Los usuarios Especiales tienen todos los derechos de acceso de los usuarios Regulares ¿Qué caso de prueba es el MÁS razonable para probar AC3?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Verificar que un usuario Regular pueda acceder a los pisos 1 y 3",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Verificar que un usuario Regular no pueda acceder al piso 4",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Verificar que un usuario Especial pueda acceder al piso 5",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Verificar que un usuario Especial pueda acceder a los pisos 1, 2 y 3",
+    "correcta": true
+   }
+  ],
+  "examen": "C"
+ },
+ {
+  "n": "30",
+  "pregunta": "¿Cuál de las siguientes NO es un propósito de un plan de pruebas?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Definir los datos de prueba y los resultados esperados para las pruebas de componentes y las pruebas de integración de componentes",
+    "correcta": true
+   },
+   {
+    "letra": "b",
+    "texto": "Definir como criterios de salida del nivel de prueba de componentes que \"se debe lograr el 100% de cobertura de sentencias y el 100% de cobertura de ramas\"",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Describir qué campos debe contener el informe de progreso de pruebas y cuál debe ser la forma de dicho informe",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Explicar por qué las pruebas de integración del sistema quedarán excluidas de las pruebas, aunque la estrategia de prueba requiera este nivel de prueba",
+    "correcta": false
+   }
+  ],
+  "examen": "C"
+ },
+ {
+  "n": "31",
+  "pregunta": "Al comienzo de cada iteración, el equipo estima la cantidad de trabajo (en persona-días). Sea E(n) la cantidad estimada de trabajo para la iteración n, y A(n) la cantidad real de trabajo. A partir de la tercera iteración, el equipo utiliza el siguiente modelo de estimación: E(n) = (3 × A(n-1) + A(n-2)) / 4 Del gráfico: A(4) = 6 persona-días, A(3) = 8 persona-días. ¿Cuál es la cantidad estimada de trabajo para la iteración #5?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "10,5 persona-días",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "8,25 persona-días",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "6,5 persona-días",
+    "correcta": true
+   },
+   {
+    "letra": "d",
+    "texto": "9,4 persona-días",
+    "correcta": false
+   }
+  ],
+  "examen": "C"
+ },
+ {
+  "n": "32",
+  "pregunta": "Está preparando un calendario de ejecución de pruebas para ejecutar siete casos de prueba TC 1 a TC 7 con las siguientes prioridades (1=más alta, 3=más baja) y dependencias: TC1 (prioridad 2) fi TC2 (prioridad 3) fi TC5 (prioridad 1) fi TC6 (prioridad 3) TC3 (prioridad 2) TC4 (prioridad 2) fi TC7 (prioridad 1) n ¿Qué caso de prueba debe ejecutarse en sexto lugar?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "TC 3",
+    "correcta": true
+   },
+   {
+    "letra": "b",
+    "texto": "TC 5",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "TC 6",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "TC 2",
+    "correcta": false
+   }
+  ],
+  "examen": "C"
+ },
+ {
+  "n": "33",
+  "pregunta": "¿Qué muestra el modelo de pirámide de pruebas?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Que las pruebas pueden tener diferentes prioridades",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Que las pruebas pueden tener diferentes niveles de granularidad",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "Que las pruebas pueden requerir diferentes criterios de cobertura",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Que las pruebas pueden depender de otras pruebas",
+    "correcta": false
+   }
+  ],
+  "examen": "C"
+ },
+ {
+  "n": "34",
+  "pregunta": "¿Cuál es la relación entre los cuadrantes de prueba, los niveles de prueba y los tipos de prueba?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Los cuadrantes de prueba representan combinaciones particulares de niveles de prueba y tipos de prueba, definiendo su ubicación en el ciclo de vida del desarrollo de software",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Los cuadrantes de prueba describen el grado de granularidad de los tipos de prueba individuales realizados en cada nivel de prueba",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Los cuadrantes de prueba asignan los tipos de prueba que pueden realizarse a los niveles de prueba",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Los cuadrantes de prueba agrupan los niveles de prueba y los tipos de prueba según varios criterios, como la orientación a interesados específicos",
+    "correcta": true
+   }
+  ],
+  "examen": "C"
+ },
+ {
+  "n": "35",
+  "pregunta": "¿Cuál de las siguientes es un ejemplo de cómo el análisis de riesgos del producto puede influir en la exhaustividad y el alcance de las pruebas?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "El monitoreo continuo de riesgos nos permite identificar un riesgo emergente lo antes posible",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "La identificación de riesgos nos permite implementar actividades de mitigación de riesgos y reducir el nivel de riesgo",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "El nivel de riesgo evaluado nos ayuda a seleccionar el rigor de las pruebas",
+    "correcta": true
+   },
+   {
+    "letra": "d",
+    "texto": "El análisis de riesgos nos permite derivar elementos de cobertura",
+    "correcta": false
+   }
+  ],
+  "examen": "C"
+ },
+ {
+  "n": "36",
+  "pregunta": "¿Cuál de las siguientes actividades del proceso de prueba hace el MAYOR uso de los informes de progreso de pruebas?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Diseño de pruebas",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Finalización de pruebas",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "Análisis de pruebas",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Planificación de pruebas",
+    "correcta": false
+   }
+  ],
+  "examen": "C"
+ },
+ {
+  "n": "37",
+  "pregunta": "¿Cuál de las siguientes NO es un ejemplo de cómo la gestión de la configuración apoya las pruebas?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Todos los commits al repositorio están identificados de forma única y con control de versiones",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Se realiza un seguimiento de todos los cambios en los elementos del entorno de prueba",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Todas las especificaciones de requisitos están referenciadas de forma inequívoca en los planes de prueba",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Todos los defectos identificados tienen un estado asignado",
+    "correcta": true
+   }
+  ],
+  "examen": "C"
+ },
+ {
+  "n": "38",
+  "pregunta": "Considere el siguiente informe de defectos para una aplicación de compras web: Aplicación: WebShop v0.99 Defecto: El botón de inicio de sesión no funciona Pasos para reproducir: Iniciar el sitio web fi Hacer clic en el botón de inicio de sesión Resultado esperado: El usuario debe ser redirigido a la página de inicio de sesión. Resultado real: El botón de inicio de sesión no responde al hacer clic. Gravedad: Alta | Prioridad: Urgente ¿Cuál es la información MÁS importante que falta en este informe de defectos?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Nombre del probador y fecha",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Elementos del entorno de prueba y sus números de versión",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "Identificación del objeto de prueba",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Impacto en los intereses de los interesados",
+    "correcta": false
+   }
+  ],
+  "examen": "C"
+ },
+ {
+  "n": "39",
+  "pregunta": "¿Las herramientas de cuál de las siguientes categorías ayudan con la organización de los casos de prueba, los defectos detectados y la gestión de la configuración?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Herramientas de ejecución de pruebas y cobertura",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Herramientas de diseño e implementación de pruebas",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Herramientas de gestión de defectos",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Herramientas de gestión de pruebas",
+    "correcta": true
+   }
+  ],
+  "examen": "C"
+ },
+ {
+  "n": "40",
+  "pregunta": "¿Cuál de los siguientes es el que MÁS probablemente sea un beneficio de la automatización de pruebas?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "La capacidad de generar casos de prueba sin acceso a la base de prueba",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "El logro de una mayor cobertura mediante una evaluación más objetiva",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "El aumento de los tiempos de ejecución de pruebas disponibles con mayor potencia de procesamiento",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "La prevención de errores humanos mediante una mayor consistencia y repetibilidad",
+    "correcta": true
+   }
+  ],
+  "examen": "C"
+ },
+ {
+  "n": "1",
+  "pregunta": "¿Cuál de las siguientes es un objetivo típico de las pruebas?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Encontrar y corregir defectos en el objeto de prueba",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Mantener una comunicación efectiva con los desarrolladores",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Validar que se han cumplido los requisitos legales",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Generar confianza en la calidad del objeto de prueba",
+    "correcta": true
+   }
+  ],
+  "examen": "D"
+ },
+ {
+  "n": "2",
+  "pregunta": "Un diseñador documenta un diseño de interfaz de usuario que no aborda adecuadamente a los usuarios con discapacidad porque el diseñador está cansado. El programador implementa la interfaz según el diseño pero, bajo una presión de tiempo severa, no incluye el manejo adecuado de excepciones en el código para los cálculos de bonificaciones. Cuando el sistema entra en operación, algunos usuarios con discapacidad presentan quejas y la empresa es multada por la autoridad regulatoria. Nadie nota que los cálculos de bonificaciones son a veces incorrectos. ¿Cuál de las siguientes afirmaciones es CORRECTA?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "El cálculo incorrecto de bonificaciones es un defecto que ocurre ocasionalmente",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "La multa recibida por no atender a algunos usuarios con discapacidad es un fallo",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "El programador que trabaja bajo una presión de tiempo severa es una causa raíz",
+    "correcta": true
+   },
+   {
+    "letra": "d",
+    "texto": "El diseño de la interfaz de usuario incluye un error del diseñador",
+    "correcta": false
+   }
+  ],
+  "examen": "D"
+ },
+ {
+  "n": "3",
+  "pregunta": "Los testers utilizan condiciones de prueba para generar casos de prueba y ejecutar pruebas. Aunque las condiciones de prueba permanecen iguales, los casos de prueba se varían cada vez. ¿Cuál de los siguientes 'principios de prueba' se está abordando mediante la variación de casos de prueba?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Las pruebas se desgastan",
+    "correcta": true
+   },
+   {
+    "letra": "b",
+    "texto": "La falacia de la ausencia de defectos",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Las pruebas tempranas ahorran tiempo y dinero",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Los defectos se agrupan",
+    "correcta": false
+   }
+  ],
+  "examen": "D"
+ },
+ {
+  "n": "4",
+  "pregunta": "Dadas las siguientes tareas de prueba: 1. Derivar casos de prueba a partir de condiciones de prueba 2. Identificar productos de trabajo de prueba reutilizables 3. Organizar casos de prueba en procedimientos de prueba 4. Evaluar la base de prueba y el objeto de prueba Y las siguientes actividades de prueba: A. Análisis de prueba B. Diseño de prueba C. Implementación de prueba D. Finalización de prueba ¿Cuál de las siguientes COINCIDE MEJOR las tareas con las actividades?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "1B, 2A, 3D, 4C ISTQB® Certified Tester Foundation Level — Examen Muestra Conjunto D v1.5 Page 1",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "1B, 2D, 3C, 4A",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "1C, 2A, 3B, 4D",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "1C, 2D, 3A, 4B",
+    "correcta": false
+   }
+  ],
+  "examen": "D"
+ },
+ {
+  "n": "5",
+  "pregunta": "Dado el siguiente producto de trabajo de prueba: i. Informe de finalización de pruebas ii. Datos almacenados en una base de datos usados como entradas y resultados esperados iii. La lista de elementos necesarios para construir el entorno de prueba iv. Secuencias documentadas de casos de prueba en orden de ejecución v. Casos de prueba ¿Cuál de las siguientes opciones MEJOR muestra el producto de trabajo generado como resultado de la implementación de pruebas?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "ii, iv",
+    "correcta": true
+   },
+   {
+    "letra": "b",
+    "texto": "iii, v",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "i, ii, v",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "i, iii, iv",
+    "correcta": false
+   }
+  ],
+  "examen": "D"
+ },
+ {
+  "n": "6",
+  "pregunta": "¿Cuál de las siguientes opciones describe MÁS PROBABLEMENTE una tarea realizada por alguien en un rol de gestión de pruebas?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Evaluar la base de prueba y el objeto de prueba",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Definir los requisitos del entorno de prueba",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Evaluar la capacidad de prueba del objeto de prueba",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Crear el informe de finalización de pruebas",
+    "correcta": true
+   }
+  ],
+  "examen": "D"
+ },
+ {
+  "n": "7",
+  "pregunta": "¿Cuál de las siguientes es una ventaja del enfoque de todo el equipo?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Mejora de la comunicación entre los miembros del equipo",
+    "correcta": true
+   },
+   {
+    "letra": "b",
+    "texto": "Disminución de la responsabilidad individual por la calidad",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Despliegue más rápido de entregables a los usuarios finales",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Reducción de la colaboración con usuarios de negocio externos",
+    "correcta": false
+   }
+  ],
+  "examen": "D"
+ },
+ {
+  "n": "8",
+  "pregunta": "Dadas las siguientes ventajas y desventajas de la independencia en las pruebas: i. Los testers trabajan en un lugar diferente al de los desarrolladores ii. Los testers cuestionan las suposiciones que los programadores hacen al escribir código iii. Se ha establecido una dinámica de confrontación entre testers y desarrolladores iv. Los desarrolladores se han convencido de que los testers son los principales responsables de la calidad v. Los testers tienen sesgos diferentes a los de los desarrolladores ¿Cuáles se consideran MÁS PROBABLEMENTE ventajas?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "i, iv",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "ii, v",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "i, iii, iv",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "ii, iii, v",
+    "correcta": false
+   }
+  ],
+  "examen": "D"
+ },
+ {
+  "n": "9",
+  "pregunta": "ISTQB® Certified Tester Foundation Level — Examen Muestra Conjunto D v1.5 Page 2 ¿Cuál de las siguientes es una buena práctica de pruebas que aplica a todos los ciclos de vida de desarrollo de software?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Cada nivel de prueba tiene objetivos de prueba específicos y diferenciados",
+    "correcta": true
+   },
+   {
+    "letra": "b",
+    "texto": "La implementación y ejecución de pruebas para un nivel dado deben comenzar durante la fase de desarrollo correspondiente",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Los testers deben iniciar el diseño de pruebas tan pronto como los borradores de los productos de trabajo relevantes estén disponibles",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Cada actividad de prueba dinámica tiene una actividad de prueba estática correspondiente",
+    "correcta": false
+   }
+  ],
+  "examen": "D"
+ },
+ {
+  "n": "10",
+  "pregunta": "¿Cuál de los siguientes es un ejemplo de un enfoque de prueba primero en el desarrollo?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Desarrollo Orientado por Comportamiento (BDD)",
+    "correcta": true
+   },
+   {
+    "letra": "b",
+    "texto": "Desarrollo Orientado por Nivel de Prueba",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Desarrollo Orientado por Función",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Desarrollo Orientado por Rendimiento",
+    "correcta": false
+   }
+  ],
+  "examen": "D"
+ },
+ {
+  "n": "11",
+  "pregunta": "¿Cuál de los siguientes es MÁS PROBABLEMENTE un desafío al implementar DevOps?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Asegurarse de que las características de calidad no funcionales no se pasen por alto",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Gestionar entornos de prueba en continuo cambio",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "La necesidad de más testers manuales con experiencia adecuada",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Configurar la automatización de pruebas como parte del pipeline de entrega",
+    "correcta": true
+   }
+  ],
+  "examen": "D"
+ },
+ {
+  "n": "12",
+  "pregunta": "¿Cuál de los siguientes describe MEJOR las retrospectivas?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Las retrospectivas permiten a los miembros del equipo identificar a otros que no contribuyeron plenamente a la calidad",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Las retrospectivas dan a los testers la oportunidad de identificar actividades exitosas para retenerlas en futuras mejoras",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "Las retrospectivas son donde los miembros del equipo ágil pueden expresar sus preocupaciones sobre la gestión y los clientes",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Las retrospectivas dan a los equipos ágiles un foro donde se enfocan en discutir el plan y las decisiones técnicas para la próxima iteración",
+    "correcta": false
+   }
+  ],
+  "examen": "D"
+ },
+ {
+  "n": "13",
+  "pregunta": "¿Cuál de las siguientes pruebas se realizaría MÁS PROBABLEMENTE como parte de las pruebas funcionales?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "La prueba verifica que la función de ordenación coloca los elementos de la lista en orden ascendente",
+    "correcta": true
+   },
+   {
+    "letra": "b",
+    "texto": "La prueba verifica si la función de ordenación completa el ordenamiento en menos de un segundo",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "La prueba verifica con qué facilidad se puede cambiar la función de ordenación de ascendente a descendente",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "La prueba verifica que la función de ordenación funciona correctamente al migrar de arquitectura 32-bit a 64-bit",
+    "correcta": false
+   }
+  ],
+  "examen": "D"
+ },
+ {
+  "n": "14",
+  "pregunta": "¿Cuál de las siguientes opciones es MÁS PROBABLE que sea un desencadenante de pruebas de mantenimiento en un sistema de cambio de divisas?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Los desarrolladores reportaron que modificar el sistema era difícil y los testers decidieron verificarlo ISTQB® Certified Tester Foundation Level — Examen Muestra Conjunto D v1.5 Page 3",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "La opción de reembolso del sistema fue eliminada porque no siempre devolvía el monto correcto a los clientes",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "El equipo ágil comenzó a desarrollar una historia de usuario que añade una función de fidelización al sistema",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "La opción de soporte de idiomas del sistema se usó para habilitar transacciones tanto en inglés como en el idioma local",
+    "correcta": false
+   }
+  ],
+  "examen": "D"
+ },
+ {
+  "n": "15",
+  "pregunta": "¿Cuál de los siguientes NO PUEDE ser examinado mediante pruebas estáticas?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Contrato",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Plan de pruebas",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Código cifrado",
+    "correcta": true
+   },
+   {
+    "letra": "d",
+    "texto": "Charter de prueba",
+    "correcta": false
+   }
+  ],
+  "examen": "D"
+ },
+ {
+  "n": "16",
+  "pregunta": "¿Cuál de las siguientes afirmaciones sobre el valor de las pruebas estáticas es CORRECTA?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Los tipos de defectos encontrados por las pruebas estáticas son diferentes de los que pueden encontrarse con las pruebas dinámicas",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Las pruebas dinámicas pueden detectar los tipos de defectos que encuentran las pruebas estáticas, más algunos adicionales",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Las pruebas dinámicas pueden identificar algunos de los defectos que encuentran las pruebas estáticas, pero no todos",
+    "correcta": true
+   },
+   {
+    "letra": "d",
+    "texto": "Las pruebas estáticas pueden identificar los tipos de defectos que encuentran las pruebas dinámicas, más algunos adicionales",
+    "correcta": false
+   }
+  ],
+  "examen": "D"
+ },
+ {
+  "n": "17",
+  "pregunta": "Dadas las siguientes descripciones de actividades de revisión: 1. Las anomalías detectadas se deliberan y se toman decisiones sobre su estado, propietario y próximos pasos 2. Los defectos se registran y se abordan las actualizaciones necesarias antes de aceptar el producto de trabajo 3. Los revisores utilizan técnicas para generar sugerencias, preguntas y detectar anomalías 4. Se establecen el objetivo de la revisión y su cronograma 5. Los participantes obtienen acceso al elemento que se va a revisar ¿Cuál es la secuencia CORRECTA de actividades en el proceso de revisión?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "4 – 3 – 5 – 2 – 1",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "4 – 5 – 3 – 1 – 2",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "5 – 4 – 1 – 3 – 2",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "5 – 4 – 3 – 2 – 1",
+    "correcta": false
+   }
+  ],
+  "examen": "D"
+ },
+ {
+  "n": "18",
+  "pregunta": "¿Qué participante en el proceso de revisión es responsable de garantizar que las reuniones de revisión se desarrollen de manera efectiva y que todos puedan expresar sus opiniones libremente?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Gerente",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Moderador",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "Presidente",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Líder de revisión",
+    "correcta": false
+   }
+  ],
+  "examen": "D"
+ },
+ {
+  "n": "19",
+  "pregunta": "ISTQB® Certified Tester Foundation Level — Examen Muestra Conjunto D v1.5 Page 4 Realizas pruebas de sistema de una aplicación web de comercio electrónico con el siguiente requisito: REQ 05-017. Si el costo total de las compras supera $100, el cliente obtiene un 5% de descuento en compras posteriores. De lo contrario, el cliente no recibe descuento. ¿Qué técnicas de prueba serán MÁS útiles para diseñar casos de prueba basados en este requisito?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Técnicas de prueba de caja blanca",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Técnicas de prueba de caja negra",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "Técnicas de prueba basadas en experiencia",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Técnicas de prueba basadas en riesgo",
+    "correcta": false
+   }
+  ],
+  "examen": "D"
+ },
+ {
+  "n": "20",
+  "pregunta": "El sistema de venta de entradas de cine calcula el tipo de descuento basándose en el año de nacimiento (AN) y el año actual (AA): D = AA – AN (cid:127) Si D < 0 fi mensaje de error (cid:127) Si 0 £ D < 18 fi descuento estudiante (cid:127) Si 18 £ D < 65 fi sin descuento (cid:127) Si D ‡ 65 fi descuento jubilado Casos existentes: AN=1990/AA=2020 (sin descuento); AN=2030/AA=2029 (error). ¿Qué DOS conjuntos de datos de prueba se deben agregar para lograr cobertura completa de particiones de equivalencia válidas?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "AN = 2001, AA = 2065",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "AN = 1900, AA = 1965",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "AN = 1965, AA = 1900",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "AN = 2011, AA = 2029",
+    "correcta": false
+   },
+   {
+    "letra": "e",
+    "texto": "AN = 2000, AA = 2000",
+    "correcta": true
+   }
+  ],
+  "examen": "D"
+ },
+ {
+  "n": "21",
+  "pregunta": "Pruebas en un sistema de control de temperatura. Si la temperatura está entre 0 y 2 grados inclusive fi 'temperatura OK'. Menor fi 'temperatura demasiado baja'. Mayor fi 'temperatura demasiado alta'. Usando análisis de valores límite de dos valores, ¿qué conjunto de entradas ofrece el MAYOR nivel de cobertura de valores límite?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "–1, 3",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "0, 2",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "–1, 0, 2, 3",
+    "correcta": true
+   },
+   {
+    "letra": "d",
+    "texto": "–2, 0, 2, 4",
+    "correcta": false
+   }
+  ],
+  "examen": "D"
+ },
+ {
+  "n": "22",
+  "pregunta": "Diseñas casos de prueba basados en una tabla de decisión (columnas R1–R7): C1 Edad: R1=0-18, R2=19-65, R3=19-65, R4=>65, R5=0-18, R6=19-65, R7=>65 C2 Experiencia: R1=–, R2=0-4, R3=>4, R4=–, R5=–, R6=–, R7=– C3 ¿Registrado?: R1=NO, R2=NO, R3=NO, R4=NO, R5=SÍ, R6=SÍ, R7=SÍ Categoría: R1=A, R2=A, R3=B, R4=B, R5=B, R6=D, R7=C CPs existentes cubren R2, R3, R7, R6. ¿Qué caso de prueba AUMENTARÁ la cobertura de la tabla de decisión? ISTQB® Certified Tester Foundation Level — Examen Muestra Conjunto D v1.5 Page 5",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Hombre de 66 años, no registrado, sin experiencia; resultado esperado: categoría B",
+    "correcta": true
+   },
+   {
+    "letra": "b",
+    "texto": "Mujer de 55 años, no registrada, 2 años de experiencia; resultado esperado: categoría A",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Mujer de 19 años, registrada, 5 años de experiencia; resultado esperado: categoría D",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Ningún caso de prueba adicional puede aumentar la cobertura ya alcanzada",
+    "correcta": false
+   }
+  ],
+  "examen": "D"
+ },
+ {
+  "n": "23",
+  "pregunta": "Aplicas pruebas de transición de estados a un sistema de reserva de habitaciones de hotel con estados S1–S4 y eventos Available, NotAvailable, ChangeRoom, Cancel, Pay. Todos los casos de prueba empiezan en S1 (Solicitando). ¿Qué secuencia logra la MAYOR cobertura de transiciones válidas?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "NotAvailable, Available, ChangeRoom, NotAvailable, Cancel",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Available, ChangeRoom, NotAvailable, Available, Pay",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "Available, ChangeRoom, Available, ChangeRoom, NotAvailable",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "NotAvailable, Cancel, ChangeRoom, Available, Pay",
+    "correcta": false
+   }
+  ],
+  "examen": "D"
+ },
+ {
+  "n": "24",
+  "pregunta": "Tu suite de pruebas S para el programa P logra 100% de cobertura de sentencias. Consiste en tres casos de prueba, cada uno con 50% de cobertura de sentencias. ¿Cuál de las siguientes afirmaciones es CORRECTA?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Ejecutar S provocará todos los fallos posibles en P",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "S logra 100% de cobertura de ramas para P",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Cada sentencia ejecutable en P que contiene un defecto fue ejecutada al menos una vez",
+    "correcta": true
+   },
+   {
+    "letra": "d",
+    "texto": "Tras eliminar un caso de prueba de S, los dos restantes seguirán logrando 100% de cobertura de sentencias",
+    "correcta": false
+   }
+  ],
+  "examen": "D"
+ },
+ {
+  "n": "25",
+  "pregunta": "¿Por qué las pruebas de caja blanca facilitan la detección de defectos incluso cuando la especificación del software es vaga, desactualizada o incompleta?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Los casos de prueba se diseñan basándose en la estructura del objeto de prueba en lugar de la especificación",
+    "correcta": true
+   },
+   {
+    "letra": "b",
+    "texto": "Para cada técnica de caja blanca, la cobertura puede definirse bien y medirse fácilmente",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Las técnicas de caja blanca están muy bien diseñadas para detectar omisiones en los requisitos",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Las técnicas de caja blanca pueden usarse tanto en pruebas estáticas como dinámicas",
+    "correcta": false
+   }
+  ],
+  "examen": "D"
+ },
+ {
+  "n": "26",
+  "pregunta": "¿Cuál de los siguientes NO es anticipado por el tester al aplicar conjetura de errores?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "El desarrollador malinterpretó la fórmula en la historia de usuario para calcular el interés",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "El desarrollador escribió 'FA = A*(1+IR^N)' en lugar de 'FA = A*(1+IR)^N' en el código fuente",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "El desarrollador no asistió al seminario sobre la nueva legislación de tasas de interés compuesto",
+    "correcta": true
+   },
+   {
+    "letra": "d",
+    "texto": "La precisión del interés calculado por el sistema no es suficientemente exacta",
+    "correcta": false
+   }
+  ],
+  "examen": "D"
+ },
+ {
+  "n": "27",
+  "pregunta": "¿Cuál de las siguientes afirmaciones es verdadera sobre las pruebas exploratorias?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Los casos de prueba se diseñan antes de que comience la sesión de pruebas exploratorias",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "El tester puede realizar la ejecución de pruebas, pero no puede realizar el diseño de pruebas",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Los resultados de las pruebas exploratorias son buenos predictores del número de defectos restantes",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Durante las pruebas exploratorias el tester puede usar técnicas de prueba de caja negra ISTQB® Certified Tester Foundation Level — Examen Muestra Conjunto D v1.5 Page 6",
+    "correcta": true
+   }
+  ],
+  "examen": "D"
+ },
+ {
+  "n": "28",
+  "pregunta": "¿Qué práctica colaborativa de escritura de historias de usuario permite al equipo lograr un entendimiento colectivo de lo que debe entregarse?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Planning poker, para que el equipo logre consenso sobre el esfuerzo necesario para implementar una historia de usuario",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Revisiones, para que el equipo detecte inconsistencias y contradicciones en una historia de usuario",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Planificación de iteración, para priorizar las historias de usuario con mayor valor de negocio",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Conversación, para que los miembros del equipo entiendan cómo se usará el software",
+    "correcta": true
+   }
+  ],
+  "examen": "D"
+ },
+ {
+  "n": "29",
+  "pregunta": "Historia de usuario: Como cliente, quiero filtrar resultados de búsqueda por rango de precios. Criterios de aceptación: 1) Funciona desde versión 3.0+; 2) Permite min/max; 3) Resultados se actualizan dinámicamente. Precondición: Producto A=$100, Producto B=$110. ¿Cuál es el MEJOR ejemplo de caso de prueba para esta historia de usuario?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Establecer filtro $90–$100 fi solo Producto A. Cambiar max a $110 fi se muestran ambos productos A y B",
+    "correcta": true
+   },
+   {
+    "letra": "b",
+    "texto": "Ingresar a la página fi precios por defecto son $100 y $110. Agregar Producto C a $120 fi el max por defecto cambia a $120",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Establecer filtro $90–$115 fi ambos productos. Cambiar moneda USDfiEUR fi el rango del filtro se actualiza correctamente",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Abrir en Edge, Chrome y Opera; filtro $90–$110 fi ambos productos, mismo diseño en los tres navegadores",
+    "correcta": false
+   }
+  ],
+  "examen": "D"
+ },
+ {
+  "n": "30",
+  "pregunta": "¿Cuáles de los siguientes definen MEJOR los criterios de SALIDA en un proyecto de pruebas? (Selecciona DOS)",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "El presupuesto está aprobado",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "El presupuesto se agota",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "La base de prueba está disponible",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Los casos de prueba lograron al menos 80% de cobertura de sentencias",
+    "correcta": true
+   },
+   {
+    "letra": "e",
+    "texto": "Todos los analistas de prueba tienen la certificación ISTQB Foundation Level",
+    "correcta": false
+   }
+  ],
+  "examen": "D"
+ },
+ {
+  "n": "31",
+  "pregunta": "El equipo usa estimación de tres puntos para ejecutar un solo caso de prueba: Mejor caso: 1 hora | Más probable: 3 horas | Peor caso: 8 horas ¿Cuál es la estimación final para ejecutar los CUATRO casos de prueba?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "14 horas",
+    "correcta": true
+   },
+   {
+    "letra": "b",
+    "texto": "3,5 horas",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "16 horas",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "12 horas",
+    "correcta": false
+   }
+  ],
+  "examen": "D"
+ },
+ {
+  "n": "32",
+  "pregunta": "Matriz de trazabilidad (X = cubierto): CP1: Req1, Req3, Req4, Req7 CP2: Req1, Req5, Req7 CP3: Req5, Req6 CP4: Req2 ISTQB® Certified Tester Foundation Level — Examen Muestra Conjunto D v1.5 Page 7 Usando la técnica de priorización por cobertura adicional, ¿qué caso de prueba debe ejecutarse en ÚLTIMO lugar?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "CP1",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "CP2",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "CP3",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "CP4",
+    "correcta": false
+   }
+  ],
+  "examen": "D"
+ },
+ {
+  "n": "33",
+  "pregunta": "¿Cómo pueden los cuadrantes de prueba ser beneficiosos para las pruebas?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Ayudan en la planificación de pruebas dividiendo el proceso en cuatro fases correspondientes a los cuatro niveles básicos de prueba",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Ayudan a evaluar la cobertura de alto nivel basándose en la cobertura de bajo nivel",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Ayudan a las partes interesadas no técnicas a entender los diferentes tipos de prueba y que algunos tipos son más relevantes para ciertos niveles de prueba",
+    "correcta": true
+   },
+   {
+    "letra": "d",
+    "texto": "Ayudan a los equipos ágiles a desarrollar una estrategia de comunicación basada en la clasificación de personas según cuatro tipos psicológicos básicos",
+    "correcta": false
+   }
+  ],
+  "examen": "D"
+ },
+ {
+  "n": "34",
+  "pregunta": "Para un riesgo dado, su nivel de riesgo es $1.000 y su probabilidad de riesgo se estima en 50%. ¿Cuál es el impacto del riesgo?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "$500",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "$2.000",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "$50.000",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "$200",
+    "correcta": false
+   }
+  ],
+  "examen": "D"
+ },
+ {
+  "n": "35",
+  "pregunta": "¿Cuáles de los siguientes son riesgos de producto? (Selecciona DOS)",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Expansión del alcance (scope creep)",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Arquitectura deficiente",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "Reducción de costos",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Soporte de herramientas deficiente",
+    "correcta": false
+   },
+   {
+    "letra": "e",
+    "texto": "Tiempo de respuesta demasiado largo",
+    "correcta": true
+   }
+  ],
+  "examen": "D"
+ },
+ {
+  "n": "36",
+  "pregunta": "¿Cuál de los siguientes NO es un propósito válido de un informe de prueba?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Realizar un seguimiento del progreso de las pruebas e identificar áreas que requieren más atención",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Proporcionar información sobre las pruebas ejecutadas, sus resultados y los defectos encontrados",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Proporcionar información sobre cada defecto, como los pasos para reproducirlo",
+    "correcta": true
+   },
+   {
+    "letra": "d",
+    "texto": "Proporcionar información sobre las pruebas planificadas para el próximo período",
+    "correcta": false
+   }
+  ],
+  "examen": "D"
+ },
+ {
+  "n": "37",
+  "pregunta": "El usuario reportó un fallo de software. Un ingeniero solicitó el número de versión y el equipo reensamblé todos los archivos de esa versión, lo que permitió a un desarrollador encontrar y corregir el defecto. ¿Cuál de los siguientes habilitó esta actividad?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Gestión de riesgos ISTQB® Certified Tester Foundation Level — Examen Muestra Conjunto D v1.5 Page 8",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Monitoreo y control de pruebas",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Enfoque de todo el equipo",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Gestión de configuración",
+    "correcta": true
+   }
+  ],
+  "examen": "D"
+ },
+ {
+  "n": "38",
+  "pregunta": "Considera un informe de defecto para un Sistema de Préstamo de Libros: 'No se puede devolver un libro' — el sistema no registra la devolución. Entorno: Windows 10 / Google Chrome. Los pasos están documentados. Falta la Prioridad. ¿Qué adición es MÁS PROBABLE que ayude al desarrollador a reproducir el fallo rápidamente?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "Agregar información sobre qué usuarios y qué libros produce el fallo en la sección 'Descripción'",
+    "correcta": true
+   },
+   {
+    "letra": "b",
+    "texto": "Completar el valor faltante del campo 'Prioridad'",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Agregar volcados de memoria e instantáneas de base de datos tomadas después de cada paso en la sección 'Adjuntos'",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "Repetir el mismo caso de prueba para diferentes entornos y escribir informes de defecto separados para cada uno",
+    "correcta": false
+   }
+  ],
+  "examen": "D"
+ },
+ {
+  "n": "39",
+  "pregunta": "Dadas las categorías de herramientas de prueba: i. Herramientas de colaboración ii. Herramientas DevOps iii. Herramientas de gestión iv. Herramientas de prueba no funcional v. Herramientas de diseño e implementación de pruebas ¿Las herramientas de cuáles categorías facilitan MÁS PROBABLEMENTE la ejecución de pruebas?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "i, v",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "ii, iv",
+    "correcta": true
+   },
+   {
+    "letra": "c",
+    "texto": "i, iii, v",
+    "correcta": false
+   },
+   {
+    "letra": "d",
+    "texto": "ii, iii, iv",
+    "correcta": false
+   }
+  ],
+  "examen": "D"
+ },
+ {
+  "n": "40",
+  "pregunta": "¿Cuál de los siguientes es MÁS PROBABLE que sea un riesgo de la automatización de pruebas?",
+  "opciones": [
+   {
+    "letra": "a",
+    "texto": "La detección de defectos adicionales de alta severidad",
+    "correcta": false
+   },
+   {
+    "letra": "b",
+    "texto": "Proporcionar medidas demasiado complicadas para que los humanos las deriven",
+    "correcta": false
+   },
+   {
+    "letra": "c",
+    "texto": "Incompatibilidad con la plataforma de desarrollo",
+    "correcta": true
+   },
+   {
+    "letra": "d",
+    "texto": "Tiempos de ejecución de pruebas sustancialmente reducidos ISTQB® Certified Tester Foundation Level — Examen Muestra Conjunto D v1.5 Page 9",
+    "correcta": false
+   }
+  ],
+  "examen": "D"
+ }
+]
