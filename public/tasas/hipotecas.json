@@ -1,20 +1,45 @@
 {
   "lastUpdated": "2026-06-18",
-  "nota": "Valores de referencia iniciales. GitHub Actions los reemplaza con datos extraídos por el scraper (server/scraper).",
   "colombia": [
-    { "entidad": "Fondo Nacional del Ahorro", "plazo": "Hasta 30 años", "tasa": 10.5 },
-    { "entidad": "BBVA Colombia", "plazo": "Hasta 20 años", "tasa": 11.2 },
-    { "entidad": "Bancolombia", "plazo": "Hasta 20 años", "tasa": 11.5 },
-    { "entidad": "Davivienda", "plazo": "Hasta 20 años", "tasa": 11.8 },
-    { "entidad": "Scotiabank Colpatria", "plazo": "Hasta 20 años", "tasa": 11.9 },
-    { "entidad": "Banco de Bogotá", "plazo": "Hasta 20 años", "tasa": 12.0 }
+    {
+      "entidad": "Fondo Nacional del Ahorro",
+      "plazo": "Hasta 30 años",
+      "fuente": "https://www.fna.gov.co/vivienda/credito-hipotecario",
+      "tasa": null
+    },
+    {
+      "entidad": "Bancolombia",
+      "plazo": "Hasta 20 años",
+      "fuente": "https://www.bancolombia.com/personas/credito-hipotecario",
+      "tasa": null
+    },
+    {
+      "entidad": "BBVA Colombia",
+      "plazo": "Hasta 20 años",
+      "fuente": "https://www.bbva.com.co/personas/productos/creditos/credito-de-vivienda.html",
+      "tasa": null
+    },
+    {
+      "entidad": "Davivienda",
+      "plazo": "Hasta 20 años",
+      "fuente": "https://www.davivienda.com/wps/portal/personas/nuevo/personas/creditos/credito_de_vivienda",
+      "tasa": null
+    }
   ],
   "mundo": [
-    { "pais": "España", "plazo": "30 años", "tasa": 3.5, "moneda": "EUR" },
-    { "pais": "Alemania", "plazo": "20 años", "tasa": 3.7, "moneda": "EUR" },
-    { "pais": "Reino Unido", "plazo": "25 años", "tasa": 5.0, "moneda": "GBP" },
-    { "pais": "Estados Unidos", "plazo": "30 años fijo", "tasa": 6.8, "moneda": "USD" },
-    { "pais": "México", "plazo": "20 años", "tasa": 10.5, "moneda": "MXN" },
-    { "pais": "Brasil", "plazo": "20 años", "tasa": 11.0, "moneda": "BRL" }
+    {
+      "pais": "Estados Unidos",
+      "plazo": "30 años fijo",
+      "moneda": "USD",
+      "fuente": "https://tradingeconomics.com/united-states/30-year-mortgage-rate",
+      "tasa": 6.52
+    },
+    {
+      "pais": "España",
+      "plazo": "30 años",
+      "moneda": "EUR",
+      "fuente": "https://tradingeconomics.com/spain/mortgage-rate",
+      "tasa": 3.2
+    }
   ]
 }
