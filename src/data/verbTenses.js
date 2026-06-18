@@ -1,0 +1,239 @@
+// Tiempos verbales por idioma. Para cada idioma se indica un verbo modelo y sus
+// principales tiempos: nombre, uso, CONSTRUCCIÓN (cómo se forma), ejemplo,
+// pronunciación aproximada (rom, para alfabetos no latinos) y traducción (es).
+//
+// Estructura:
+//   { verb, tenses: [{ name, use, build, ex, rom?, es }] }
+
+export const verbTenses = {
+  en: {
+    verb: 'to speak (hablar)',
+    tenses: [
+      { name: 'Present Simple', use: 'Hechos y hábitos.', build: 'Forma base del verbo; se añade -s en la 3.ª persona del singular (he speaks).', ex: 'I speak English.', es: 'Hablo inglés.' },
+      { name: 'Present Continuous', use: 'Acción en curso ahora.', build: 'Verbo to be (am/is/are) + gerundio en -ing.', ex: 'I am speaking now.', es: 'Estoy hablando ahora.' },
+      { name: 'Past Simple', use: 'Acción pasada y terminada.', build: 'Regulares: base + -ed (talked). Irregulares: forma propia (spoke).', ex: 'I spoke yesterday.', es: 'Hablé ayer.' },
+      { name: 'Present Perfect', use: 'Pasado con relación al presente.', build: 'have / has + participio pasado (spoken).', ex: 'I have spoken.', es: 'He hablado.' },
+      { name: 'Future (will)', use: 'Predicción o decisión.', build: 'will + verbo en forma base.', ex: 'I will speak.', es: 'Hablaré.' },
+      { name: 'Future (going to)', use: 'Plan o intención.', build: 'to be (am/is/are) + going to + verbo base.', ex: 'I am going to speak.', es: 'Voy a hablar.' },
+      { name: 'Conditional', use: 'Situación hipotética.', build: 'would + verbo en forma base.', ex: 'I would speak.', es: 'Hablaría.' },
+    ],
+  },
+  fr: {
+    verb: 'parler (hablar)',
+    tenses: [
+      { name: 'Présent', use: 'Presente y hábitos.', build: 'Raíz + terminaciones -e, -es, -e, -ons, -ez, -ent.', ex: 'Je parle.', es: 'Hablo.' },
+      { name: 'Passé composé', use: 'Pasado terminado.', build: 'Auxiliar avoir/être en presente + participio pasado (parlé).', ex: "J'ai parlé.", es: 'He hablado / hablé.' },
+      { name: 'Imparfait', use: 'Descripción o hábito pasado.', build: 'Raíz de "nous" del presente + -ais, -ais, -ait, -ions, -iez, -aient.', ex: 'Je parlais.', es: 'Hablaba.' },
+      { name: 'Futur simple', use: 'Futuro.', build: 'Infinitivo + -ai, -as, -a, -ons, -ez, -ont.', ex: 'Je parlerai.', es: 'Hablaré.' },
+      { name: 'Futur proche', use: 'Futuro inmediato.', build: 'Verbo aller en presente + infinitivo.', ex: 'Je vais parler.', es: 'Voy a hablar.' },
+      { name: 'Conditionnel', use: 'Hipótesis y cortesía.', build: 'Infinitivo + terminaciones del imperfecto (-ais, -ais, -ait…).', ex: 'Je parlerais.', es: 'Hablaría.' },
+      { name: 'Subjonctif présent', use: 'Deseo, duda, emoción.', build: 'Raíz de "ils" del presente + -e, -es, -e, -ions, -iez, -ent.', ex: 'que je parle', es: 'que hable.' },
+    ],
+  },
+  de: {
+    verb: 'sprechen (hablar)',
+    tenses: [
+      { name: 'Präsens', use: 'Presente y futuro cercano.', build: 'Raíz + -e, -st, -t, -en, -t, -en. Verbos fuertes cambian la vocal (du sprichst).', ex: 'Ich spreche.', es: 'Hablo.' },
+      { name: 'Perfekt', use: 'Pasado en lengua hablada.', build: 'haben/sein en presente + participio (ge-...-t / ge-...-en).', ex: 'Ich habe gesprochen.', es: 'He hablado.' },
+      { name: 'Präteritum', use: 'Pasado en lengua escrita.', build: 'Débiles: raíz + -te. Fuertes: cambio de vocal (sprach).', ex: 'Ich sprach.', es: 'Hablé / hablaba.' },
+      { name: 'Plusquamperfekt', use: 'Pasado anterior a otro pasado.', build: 'haben/sein en Präteritum (hatte/war) + participio.', ex: 'Ich hatte gesprochen.', es: 'Había hablado.' },
+      { name: 'Futur I', use: 'Futuro.', build: 'werden conjugado + infinitivo al final.', ex: 'Ich werde sprechen.', es: 'Hablaré.' },
+      { name: 'Konjunktiv II', use: 'Condicional e hipótesis.', build: 'würde + infinitivo, o forma propia (spräche).', ex: 'Ich würde sprechen.', es: 'Hablaría.' },
+    ],
+  },
+  nl: {
+    verb: 'spreken (hablar)',
+    tenses: [
+      { name: 'Tegenwoordige tijd', use: 'Presente.', build: 'Raíz (ik), raíz + -t (jij/hij), infinitivo en plural.', ex: 'Ik spreek.', es: 'Hablo.' },
+      { name: 'Voltooid tegenwoordige tijd', use: 'Pretérito perfecto.', build: 'hebben/zijn + participio (prefijo ge-): gesproken.', ex: 'Ik heb gesproken.', es: 'He hablado.' },
+      { name: 'Onvoltooid verleden tijd', use: 'Pasado.', build: 'Regulares: raíz + -te(n)/-de(n). Fuertes: cambio de vocal (sprak).', ex: 'Ik sprak.', es: 'Hablé / hablaba.' },
+      { name: 'Toekomende tijd', use: 'Futuro.', build: 'zullen (zal/zult) + infinitivo.', ex: 'Ik zal spreken.', es: 'Hablaré.' },
+      { name: 'Conditionalis', use: 'Condicional.', build: 'zou / zouden + infinitivo.', ex: 'Ik zou spreken.', es: 'Hablaría.' },
+    ],
+  },
+  sv: {
+    verb: 'tala (hablar)',
+    tenses: [
+      { name: 'Presens', use: 'Presente.', build: 'Raíz + -r (-ar/-er); igual para todas las personas.', ex: 'Jag talar.', es: 'Hablo.' },
+      { name: 'Preteritum', use: 'Pasado.', build: 'Raíz + -de/-te/-dde. Fuertes: cambio de vocal.', ex: 'Jag talade.', es: 'Hablé / hablaba.' },
+      { name: 'Perfekt', use: 'Pretérito perfecto.', build: 'har + supino (forma en -t): har talat.', ex: 'Jag har talat.', es: 'He hablado.' },
+      { name: 'Pluskvamperfekt', use: 'Pluscuamperfecto.', build: 'hade + supino: hade talat.', ex: 'Jag hade talat.', es: 'Había hablado.' },
+      { name: 'Futurum', use: 'Futuro.', build: 'ska / kommer att + infinitivo.', ex: 'Jag ska tala.', es: 'Hablaré.' },
+      { name: 'Konditionalis', use: 'Condicional.', build: 'skulle + infinitivo.', ex: 'Jag skulle tala.', es: 'Hablaría.' },
+    ],
+  },
+  no: {
+    verb: 'snakke (hablar)',
+    tenses: [
+      { name: 'Presens', use: 'Presente.', build: 'Raíz + -r; igual para todas las personas.', ex: 'Jeg snakker.', es: 'Hablo.' },
+      { name: 'Preteritum', use: 'Pasado.', build: 'Raíz + -et/-te/-de. Fuertes: cambio de vocal.', ex: 'Jeg snakket.', es: 'Hablé / hablaba.' },
+      { name: 'Presens perfektum', use: 'Pretérito perfecto.', build: 'har + participio: har snakket.', ex: 'Jeg har snakket.', es: 'He hablado.' },
+      { name: 'Futurum', use: 'Futuro.', build: 'skal / vil + infinitivo.', ex: 'Jeg skal snakke.', es: 'Hablaré.' },
+      { name: 'Kondisjonalis', use: 'Condicional.', build: 'skulle / ville + infinitivo.', ex: 'Jeg skulle snakke.', es: 'Hablaría.' },
+    ],
+  },
+  da: {
+    verb: 'tale (hablar)',
+    tenses: [
+      { name: 'Nutid (presens)', use: 'Presente.', build: 'Raíz + -r; igual para todas las personas.', ex: 'Jeg taler.', es: 'Hablo.' },
+      { name: 'Datid (præteritum)', use: 'Pasado.', build: 'Raíz + -ede/-te. Fuertes: cambio de vocal.', ex: 'Jeg talte.', es: 'Hablé / hablaba.' },
+      { name: 'Førnutid (perfektum)', use: 'Pretérito perfecto.', build: 'har/er + participio: har talt.', ex: 'Jeg har talt.', es: 'He hablado.' },
+      { name: 'Fremtid', use: 'Futuro.', build: 'vil / skal + infinitivo.', ex: 'Jeg vil tale.', es: 'Hablaré.' },
+      { name: 'Konditionalis', use: 'Condicional.', build: 'ville / skulle + infinitivo.', ex: 'Jeg ville tale.', es: 'Hablaría.' },
+    ],
+  },
+  it: {
+    verb: 'parlare (hablar)',
+    tenses: [
+      { name: 'Presente', use: 'Presente y hábitos.', build: 'Raíz + -o, -i, -a, -iamo, -ate, -ano.', ex: 'Io parlo.', es: 'Hablo.' },
+      { name: 'Passato prossimo', use: 'Pasado reciente o relevante.', build: 'avere/essere en presente + participio (-ato/-uto/-ito).', ex: 'Ho parlato.', es: 'He hablado.' },
+      { name: 'Imperfetto', use: 'Descripción o hábito pasado.', build: 'Raíz + -avo, -avi, -ava, -avamo, -avate, -avano.', ex: 'Parlavo.', es: 'Hablaba.' },
+      { name: 'Passato remoto', use: 'Pasado lejano (literario).', build: 'Raíz + -ai, -asti, -ò, -ammo, -aste, -arono.', ex: 'Parlai.', es: 'Hablé.' },
+      { name: 'Futuro semplice', use: 'Futuro.', build: 'Infinitivo sin -e + -ò, -ai, -à, -emo, -ete, -anno.', ex: 'Parlerò.', es: 'Hablaré.' },
+      { name: 'Condizionale', use: 'Condicional.', build: 'Infinitivo sin -e + -ei, -esti, -ebbe, -emmo, -este, -ebbero.', ex: 'Parlerei.', es: 'Hablaría.' },
+      { name: 'Congiuntivo presente', use: 'Deseo, duda, opinión.', build: 'Raíz + -i, -i, -i, -iamo, -iate, -ino.', ex: 'che io parli', es: 'que hable.' },
+    ],
+  },
+  pt: {
+    verb: 'falar (hablar)',
+    tenses: [
+      { name: 'Presente', use: 'Presente y hábitos.', build: 'Raíz + -o, -as, -a, -amos, -ais, -am.', ex: 'Eu falo.', es: 'Hablo.' },
+      { name: 'Pretérito perfeito', use: 'Pasado terminado.', build: 'Raíz + -ei, -aste, -ou, -amos, -astes, -aram.', ex: 'Eu falei.', es: 'Hablé.' },
+      { name: 'Pretérito imperfeito', use: 'Descripción o hábito pasado.', build: 'Raíz + -ava, -avas, -ava, -ávamos, -áveis, -avam.', ex: 'Eu falava.', es: 'Hablaba.' },
+      { name: 'Futuro', use: 'Futuro.', build: 'Infinitivo + -ei, -ás, -á, -emos, -eis, -ão.', ex: 'Eu falarei.', es: 'Hablaré.' },
+      { name: 'Futuro do pretérito', use: 'Condicional.', build: 'Infinitivo + -ia, -ias, -ia, -íamos, -íeis, -iam.', ex: 'Eu falaria.', es: 'Hablaría.' },
+      { name: 'Subjuntivo presente', use: 'Deseo, duda, hipótesis.', build: 'Raíz + -e, -es, -e, -emos, -eis, -em.', ex: 'que eu fale', es: 'que hable.' },
+    ],
+  },
+  ca: {
+    verb: 'parlar (hablar)',
+    tenses: [
+      { name: 'Present', use: 'Presente.', build: 'Raíz + -o, -es, -a, -em, -eu, -en.', ex: 'Jo parlo.', es: 'Hablo.' },
+      { name: 'Passat perifràstic', use: 'Pasado (forma típica catalana).', build: 'Presente de anar (vaig, vas, va, vam, vau, van) + infinitivo.', ex: 'Vaig parlar.', es: 'Hablé.' },
+      { name: 'Imperfet', use: 'Descripción o hábito pasado.', build: 'Raíz + -ava, -aves, -ava, -àvem, -àveu, -aven.', ex: 'Parlava.', es: 'Hablaba.' },
+      { name: 'Futur', use: 'Futuro.', build: 'Infinitivo + -é, -às, -à, -em, -eu, -an.', ex: 'Parlaré.', es: 'Hablaré.' },
+      { name: 'Condicional', use: 'Condicional.', build: 'Infinitivo + -ia, -ies, -ia, -íem, -íeu, -ien.', ex: 'Parlaria.', es: 'Hablaría.' },
+      { name: 'Subjuntiu present', use: 'Deseo, duda.', build: 'Raíz + -i, -is, -i, -em, -eu, -in.', ex: 'que jo parli', es: 'que hable.' },
+    ],
+  },
+  ro: {
+    verb: 'a vorbi (hablar)',
+    tenses: [
+      { name: 'Prezent', use: 'Presente.', build: 'Raíz + terminaciones según la conjugación (vorbesc, vorbești, vorbește…).', ex: 'Eu vorbesc.', es: 'Hablo.' },
+      { name: 'Perfect compus', use: 'Pasado terminado.', build: 'a avea (am, ai, a, am, ați, au) + participio (vorbit).', ex: 'Am vorbit.', es: 'He hablado / hablé.' },
+      { name: 'Imperfect', use: 'Descripción o hábito pasado.', build: 'Raíz + -am, -ai, -a, -am, -ați, -au.', ex: 'Vorbeam.', es: 'Hablaba.' },
+      { name: 'Viitor', use: 'Futuro.', build: 'a vrea auxiliar (voi, vei, va, vom, veți, vor) + infinitivo.', ex: 'Voi vorbi.', es: 'Hablaré.' },
+      { name: 'Condițional', use: 'Condicional.', build: 'aș, ai, ar, am, ați, ar + infinitivo.', ex: 'Aș vorbi.', es: 'Hablaría.' },
+      { name: 'Conjunctiv', use: 'Deseo, finalidad.', build: 'Partícula să + presente (con cambio en la 3.ª persona).', ex: 'să vorbesc', es: 'que hable.' },
+    ],
+  },
+  ru: {
+    verb: 'говорить / сказать (hablar / decir)',
+    tenses: [
+      { name: 'Presente', use: 'Acción actual (imperfectivo).', build: 'Raíz + terminaciones personales (-ю, -ишь, -ит, -им, -ите, -ят).', ex: 'Я говорю.', rom: 'ya govoryú', es: 'Hablo.' },
+      { name: 'Pasado', use: 'Acción pasada.', build: 'Raíz del infinitivo + -л / -ла / -ло / -ли (según género y número).', ex: 'Я говорил(а).', rom: 'ya govoríl(a)', es: 'Hablaba / hablé.' },
+      { name: 'Futuro imperfectivo', use: 'Futuro en proceso.', build: 'Presente de быть (буду, будешь…) + infinitivo imperfectivo.', ex: 'Я буду говорить.', rom: 'ya búdu govorít', es: 'Hablaré (estaré hablando).' },
+      { name: 'Futuro perfectivo', use: 'Acción futura única.', build: 'Se conjuga el verbo perfectivo en forma de presente (скажу, поговорю).', ex: 'Я скажу.', rom: 'ya skazhú', es: 'Diré.' },
+      { name: 'Imperativo', use: 'Orden.', build: 'Raíz del presente + -и / -й.', ex: 'Говори!', rom: 'govorí', es: '¡Habla!' },
+      { name: 'Condicional', use: 'Hipótesis.', build: 'Verbo en pasado + partícula бы.', ex: 'Я говорил бы.', rom: 'ya govoríl by', es: 'Hablaría.' },
+    ],
+  },
+  uk: {
+    verb: 'говорити (hablar)',
+    tenses: [
+      { name: 'Presente', use: 'Acción actual.', build: 'Raíz + terminaciones personales (-ю, -иш, -ить, -имо, -ите, -ять).', ex: 'Я говорю.', rom: 'ya hovoryú', es: 'Hablo.' },
+      { name: 'Pasado', use: 'Acción pasada.', build: 'Raíz + -в / -ла / -ло / -ли (según género y número).', ex: 'Я говорив / говорила.', rom: 'ya hovorýv / hovoryla', es: 'Hablaba / hablé.' },
+      { name: 'Futuro', use: 'Acción futura.', build: 'буду + infinitivo, o forma sintética (говоритиму).', ex: 'Я буду говорити.', rom: 'ya búdu hovorýty', es: 'Hablaré.' },
+      { name: 'Imperativo', use: 'Orden.', build: 'Raíz del presente + -и.', ex: 'Говори!', rom: 'hovorý', es: '¡Habla!' },
+      { name: 'Condicional', use: 'Hipótesis.', build: 'Verbo en pasado + partícula би.', ex: 'Я говорив би.', rom: 'ya hovorýv by', es: 'Hablaría.' },
+    ],
+  },
+  pl: {
+    verb: 'mówić (hablar)',
+    tenses: [
+      { name: 'Czas teraźniejszy', use: 'Presente.', build: 'Raíz + terminaciones personales (-ę, -isz, -i, -imy, -icie, -ią).', ex: 'Mówię.', es: 'Hablo.' },
+      { name: 'Czas przeszły', use: 'Pasado.', build: 'Raíz + -ł / -ła / -ło + terminación personal (varía por género): mówiłem (m.), mówiłam (f.).', ex: 'Mówiłem / Mówiłam.', es: 'Hablaba / hablé.' },
+      { name: 'Czas przyszły', use: 'Futuro.', build: 'będę, będziesz… + infinitivo (o forma de pasado).', ex: 'Będę mówić.', es: 'Hablaré.' },
+      { name: 'Tryb rozkazujący', use: 'Imperativo.', build: 'Raíz del presente sin terminación.', ex: 'Mów!', es: '¡Habla!' },
+      { name: 'Tryb przypuszczający', use: 'Condicional.', build: 'Verbo en pasado + partícula by + terminación personal.', ex: 'Mówiłbym.', es: 'Hablaría.' },
+    ],
+  },
+  el: {
+    verb: 'μιλάω (hablar)',
+    tenses: [
+      { name: 'Ενεστώτας', use: 'Presente.', build: 'Raíz + -ω/-άω, -εις/-άς, -ει/-άει, -ουμε, -ετε, -ουν.', ex: 'Μιλάω.', rom: 'miláo', es: 'Hablo.' },
+      { name: 'Αόριστος', use: 'Pasado puntual.', build: 'Raíz de aoristo (con -σ-) + -α, -ες, -ε, -αμε, -ατε, -αν.', ex: 'Μίλησα.', rom: 'mílisa', es: 'Hablé.' },
+      { name: 'Παρατατικός', use: 'Pasado continuo/habitual.', build: 'Raíz + -ούσα, -ούσες, -ούσε, -ούσαμε, -ούσατε, -ούσαν.', ex: 'Μιλούσα.', rom: 'milúsa', es: 'Hablaba.' },
+      { name: 'Μέλλοντας', use: 'Futuro.', build: 'Partícula θα + subjuntivo de aoristo (θα μιλήσω).', ex: 'Θα μιλήσω.', rom: 'tha milíso', es: 'Hablaré.' },
+      { name: 'Παρακείμενος', use: 'Pretérito perfecto.', build: 'Presente de έχω + forma invariable (απαρέμφατο): έχω μιλήσει.', ex: 'Έχω μιλήσει.', rom: 'ého milísi', es: 'He hablado.' },
+    ],
+  },
+  tr: {
+    verb: 'konuşmak (hablar)',
+    tenses: [
+      { name: 'Şimdiki zaman', use: 'Presente / acción en curso.', build: 'Raíz + -(ı)yor + sufijo personal: konuş-uyor-um.', ex: 'Konuşuyorum.', es: 'Estoy hablando.' },
+      { name: 'Geniş zaman', use: 'Presente habitual (aoristo).', build: 'Raíz + -(ı)r/-er + sufijo personal: konuş-ur-um.', ex: 'Konuşurum.', es: 'Hablo (habitualmente).' },
+      { name: 'Geçmiş zaman', use: 'Pasado.', build: 'Raíz + -dı/-di (con armonía vocálica) + sufijo personal: konuş-tu-m.', ex: 'Konuştum.', es: 'Hablé.' },
+      { name: 'Gelecek zaman', use: 'Futuro.', build: 'Raíz + -(y)acak/-ecek + sufijo personal: konuş-acağ-ım.', ex: 'Konuşacağım.', es: 'Hablaré.' },
+      { name: 'Emir kipi', use: 'Imperativo.', build: 'La raíz desnuda para "tú".', ex: 'Konuş!', es: '¡Habla!' },
+    ],
+  },
+  ja: {
+    verb: '話す (hanasu, hablar)',
+    tenses: [
+      { name: '現在・未来 (no pasado)', use: 'Presente y futuro (no se distinguen).', build: 'Raíz cortés (ren’yōkei) + ます: hanashi-masu.', ex: '話します。', rom: 'hanashimasu', es: 'Hablo / hablaré.' },
+      { name: '過去 (pasado)', use: 'Acción pasada.', build: 'Raíz + ました: hanashi-mashita.', ex: '話しました。', rom: 'hanashimashita', es: 'Hablé.' },
+      { name: '進行 (て+いる)', use: 'Acción en curso.', build: 'Forma -て (hanashite) + います.', ex: '話しています。', rom: 'hanashite imasu', es: 'Estoy hablando.' },
+      { name: '否定 (negativo)', use: 'Negación en presente.', build: 'Raíz + ません: hanashi-masen.', ex: '話しません。', rom: 'hanashimasen', es: 'No hablo.' },
+      { name: '否定過去', use: 'Negación en pasado.', build: 'Raíz + ませんでした: hanashi-masen deshita.', ex: '話しませんでした。', rom: 'hanashimasen deshita', es: 'No hablé.' },
+    ],
+  },
+  zh: {
+    verb: '说 (shuō, hablar/decir)',
+    tenses: [
+      { name: 'General', use: 'El verbo no se conjuga.', build: 'El verbo no cambia; el tiempo se deduce del contexto o de palabras de tiempo (今天, 明天).', ex: '我说。', rom: 'wǒ shuō', es: 'Hablo / digo.' },
+      { name: 'En curso (在)', use: 'Acción que ocurre ahora.', build: '在 (o 正在…呢) delante del verbo.', ex: '我在说。', rom: 'wǒ zài shuō', es: 'Estoy hablando.' },
+      { name: 'Completado (了)', use: 'Acción terminada.', build: 'Partícula 了 después del verbo.', ex: '我说了。', rom: 'wǒ shuō le', es: 'Hablé / he hablado.' },
+      { name: 'Experiencia (过)', use: 'Haberlo hecho alguna vez.', build: 'Partícula 过 después del verbo.', ex: '我说过。', rom: 'wǒ shuō guò', es: 'He hablado (alguna vez).' },
+      { name: 'Futuro (会/要)', use: 'Intención o futuro.', build: 'Auxiliar 会 o 要 delante del verbo.', ex: '我会说。', rom: 'wǒ huì shuō', es: 'Hablaré.' },
+    ],
+  },
+  ko: {
+    verb: '말하다 (malhada, hablar)',
+    tenses: [
+      { name: '현재 (presente)', use: 'Presente.', build: 'Raíz + -아요/-어요/-여요 (forma cortés).', ex: '말해요.', rom: 'malhaeyo', es: 'Hablo.' },
+      { name: '과거 (pasado)', use: 'Pasado.', build: 'Raíz + -았/-었 + -어요.', ex: '말했어요.', rom: 'malhaesseoyo', es: 'Hablé.' },
+      { name: '미래 (futuro)', use: 'Futuro / intención.', build: 'Raíz + -(으)ㄹ 거예요.', ex: '말할 거예요.', rom: 'malhal geoyeyo', es: 'Hablaré.' },
+      { name: '진행 (progresivo)', use: 'Acción en curso.', build: 'Raíz + -고 있어요.', ex: '말하고 있어요.', rom: 'malhago isseoyo', es: 'Estoy hablando.' },
+      { name: '명령 (imperativo)', use: 'Orden cortés.', build: 'Raíz + -(으)세요.', ex: '말하세요.', rom: 'malhaseyo', es: 'Hable.' },
+    ],
+  },
+  hi: {
+    verb: 'बोलना (bolna, hablar)',
+    tenses: [
+      { name: 'वर्तमान (presente)', use: 'Presente habitual (forma masc.).', build: 'Raíz + -ता/-ती/-ते (concuerda en género/número) + auxiliar हूँ/है/हैं.', ex: 'मैं बोलता हूँ।', rom: 'main bolta hun', es: 'Hablo.' },
+      { name: 'भूतकाल (pasado)', use: 'Pasado.', build: 'Transitivos: sujeto + ने + participio (बोला); construcción ergativa.', ex: 'मैंने बोला।', rom: 'mainne bola', es: 'Hablé.' },
+      { name: 'अपूर्ण भूत (imperfecto)', use: 'Hábito pasado.', build: 'Raíz + -ता/-ती/-ते + था/थी/थे.', ex: 'मैं बोलता था।', rom: 'main bolta tha', es: 'Hablaba.' },
+      { name: 'भविष्य (futuro)', use: 'Futuro (forma masc.).', build: 'Raíz + -ूँगा/-ेगा/-ेंगे (concuerda en género/número).', ex: 'मैं बोलूँगा।', rom: 'main bolunga', es: 'Hablaré.' },
+      { name: 'वर्तमान सातत्य (continuo)', use: 'Acción en curso.', build: 'Raíz + रहा/रही/रहे + हूँ/है/हैं.', ex: 'मैं बोल रहा हूँ।', rom: 'main bol raha hun', es: 'Estoy hablando.' },
+    ],
+  },
+  ar: {
+    verb: 'تكلَّم (takallama, hablar)',
+    tenses: [
+      { name: 'الماضي (pasado)', use: 'Acción terminada.', build: 'Se parte de la 3.ª masc. sing. y se añaden sufijos de persona (-تُ para "yo").', ex: 'تكلمتُ', rom: 'takallamtu', es: 'Hablé.' },
+      { name: 'المضارع (presente)', use: 'Acción presente o habitual.', build: 'Prefijos personales (أ-, تـ-, يـ-, نـ-) sobre la raíz.', ex: 'أتكلم', rom: 'atakallam', es: 'Hablo.' },
+      { name: 'المستقبل (futuro)', use: 'Futuro.', build: 'Prefijo سـ (o سوف) delante del presente.', ex: 'سأتكلم', rom: 'sa-atakallam', es: 'Hablaré.' },
+      { name: 'الأمر (imperativo)', use: 'Orden.', build: 'Forma derivada del presente, sin prefijo de persona.', ex: 'تكلَّم!', rom: 'takallam', es: '¡Habla!' },
+    ],
+  },
+  he: {
+    verb: 'לדבר (ledaber, hablar)',
+    tenses: [
+      { name: 'הווה (presente)', use: 'Presente (funciona como participio).', build: 'Patrón del binyán; concuerda en género/número: מְדַבֵּר (m.), מְדַבֶּרֶת (f.).', ex: 'אני מדבר', rom: 'ani medaber', es: 'Hablo.' },
+      { name: 'עבר (pasado)', use: 'Pasado.', build: 'Raíz de 3 consonantes + sufijos de persona (-תי = "yo").', ex: 'דיברתי', rom: 'dibarti', es: 'Hablé.' },
+      { name: 'עתיד (futuro)', use: 'Futuro.', build: 'Prefijos personales (א-, ת-, י-, נ-) sobre la raíz.', ex: 'אדבר', rom: 'adaber', es: 'Hablaré.' },
+      { name: 'ציווי (imperativo)', use: 'Orden (forma masc.).', build: 'Base del futuro sin el prefijo de persona.', ex: 'דבר!', rom: 'daber', es: '¡Habla!' },
+    ],
+  },
+}
