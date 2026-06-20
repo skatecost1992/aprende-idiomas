@@ -34,14 +34,29 @@ export default function Roadmap({ categories }) {
                 <div className="level-body">
                   <p className="level-descriptor">{lvl.descriptor}</p>
 
+                  {lvl.concepts && (
+                    <div className="level-concepts">
+                      <h4>🧠 Conceptos del nivel</h4>
+                      <p>{lvl.concepts}</p>
+                    </div>
+                  )}
+
                   <div className="level-cols">
                     <div>
                       <h4>📐 Gramática y estructuras</h4>
-                      <ul>{lvl.grammar.map((g, k) => <li key={k}>{g}</li>)}</ul>
+                      <ul className="level-detail">
+                        {lvl.grammar.map((g, k) => (
+                          <li key={k}><strong>{g.t}</strong><span>{g.d}</span></li>
+                        ))}
+                      </ul>
                     </div>
                     <div>
                       <h4>🎧 Destrezas a practicar</h4>
-                      <ul>{lvl.skills.map((s, k) => <li key={k}>{s}</li>)}</ul>
+                      <ul className="level-detail">
+                        {lvl.skills.map((s, k) => (
+                          <li key={k}><strong>{s.t}</strong><span>{s.d}</span></li>
+                        ))}
+                      </ul>
                     </div>
                   </div>
 

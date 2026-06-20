@@ -8,14 +8,15 @@ export default function Grammar({ language, level }) {
   const code = language.code
   const hasExamples = EXAMPLE_LANGS.includes(code)
 
-  // Niveles a mostrar según el filtro activo.
-  const levelCodes = level === 'all' ? ['B1', 'B2'] : [level].filter((l) => grammar[l])
+  // Niveles a mostrar según el filtro activo (en orden A1 -> C2).
+  const ORDER = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']
+  const levelCodes = (level === 'all' ? ORDER : [level]).filter((l) => grammar[l])
 
   if (levelCodes.length === 0) {
     return (
       <p className="empty-note">
-        Las lecciones de gramática en contexto están disponibles para los niveles
-        <strong> B1 y B2</strong>. Cambia el filtro de nivel para verlas, o consulta la
+        No hay lecciones de gramática en contexto para este nivel todavía (disponibles de
+        <strong> A1 a C1</strong>). Cambia el filtro de nivel, o consulta la
         <strong> 🧭 Ruta</strong> para el temario completo de cada nivel.
       </p>
     )
@@ -44,6 +45,24 @@ export default function Grammar({ language, level }) {
               <article key={lesson.id} className="lesson">
                 <h4 className="lesson-title">{lesson.title}</h4>
                 <p className="lesson-focus">{lesson.focus}</p>
+
+                {lesson.build && <p className="lesson-build">🔧 Cómo se construye: {lesson.build}</p>}
+
+                {lesson.forms && hasExamples && (
+                  <div className="lesson-forms">
+                    {lesson.forms.map((f, i) => (
+                      <div key={i} className="form-row">
+                        <span className={`form-tipo tipo-${f.tipo.toLowerCase()}`}>{f.tipo}</span>
+                        <span className="form-es">{f.es}</span>
+                        <span className="form-target" dir={language.rtl ? 'rtl' : 'ltr'}>
+                          {f.t[code]}
+                          <button className="speak-btn" title="Escuchar" onClick={() => speak(f.t[code], code)}>🔊</button>
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                )}
+
                 <ul className="lesson-examples">
                   {lesson.examples.map((ex, i) => {
                     const target = hasExamples ? ex.t[code] : null
