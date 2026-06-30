@@ -12,6 +12,7 @@ import Home from './components/Home.jsx'
 import LanguageStudy from './components/LanguageStudy.jsx'
 import AreaStudy from './components/AreaStudy.jsx'
 import Investments from './components/Investments.jsx'
+import ExchangeRates from './components/ExchangeRates.jsx'
 
 // Tema (módulo) inicial al abrir un área profesional: las guías si existen, si no
 // el lenguaje técnico (los módulos lingüísticos solo aplican a idiomas).
@@ -83,8 +84,11 @@ export default function App() {
           {view.type === 'area' && area && (
             <AreaStudy area={area} progress={progress} moduleId={view.module} />
           )}
-          {view.type === 'inv' && (
+          {view.type === 'inv' && view.kind !== 'cambio' && (
             <Investments key={view.kind} kind={view.kind} />
+          )}
+          {view.type === 'inv' && view.kind === 'cambio' && (
+            <ExchangeRates />
           )}
         </main>
       </div>

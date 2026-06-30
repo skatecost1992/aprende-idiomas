@@ -8,7 +8,7 @@
 // El scraping es costoso, así que se cachea el resultado (TTL configurable).
 const express = require('express')
 const cors = require('cors')
-const { scrapeCdt, scrapeHipotecas } = require('./scraper')
+const { scrapeCdt, scrapeHipotecas, scrapeExchangeRates } = require('./scraper')
 
 const app = express()
 app.use(cors()) // permite que el front (otro puerto) consuma la API
@@ -32,6 +32,7 @@ async function servir(tipo, fn, res) {
 
 app.get('/api/tasas/cdt', (req, res) => servir('cdt', scrapeCdt, res))
 app.get('/api/tasas/hipotecas', (req, res) => servir('hipotecas', scrapeHipotecas, res))
+app.get('/api/tasas/cambio', (req, res) => servir('cambio', scrapeExchangeRates, res))
 
 const PORT = process.env.PORT || 4000
 app.listen(PORT, () => console.log(`Scraper de tasas en http://localhost:${PORT}/api/tasas`))

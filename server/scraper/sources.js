@@ -11,6 +11,26 @@
 
 const RATE_REGEX = /(\d{1,2}[.,]\d{1,2})\s*%/
 
+// Regex para valores de tasa de cambio en COP (números como 4.152,30 ó 4,152.30).
+// Cubre rangos desde <100 (JPY) hasta >5000 (GBP, CHF).
+const FX_RATE_REGEX = /(\d{1,2}[.,]\d{2,4}|\d{3,6}[.,]\d{2,4})/
+
+// Fuentes para las tasas de cambio COP. Usa Google Finance (par XXX-COP).
+// El scraper intenta leer primero el atributo `data-last-price` del elemento
+// de precio; si no está presente, aplica FX_RATE_REGEX sobre el texto del cuerpo.
+const exchangeRateSources = [
+  { moneda: 'USD', nombre: 'Dólar americano',  bandera: '🇺🇸', url: 'https://www.google.com/finance/quote/USD-COP' },
+  { moneda: 'EUR', nombre: 'Euro',              bandera: '🇪🇺', url: 'https://www.google.com/finance/quote/EUR-COP' },
+  { moneda: 'GBP', nombre: 'Libra esterlina',  bandera: '🇬🇧', url: 'https://www.google.com/finance/quote/GBP-COP' },
+  { moneda: 'CHF', nombre: 'Franco suizo',     bandera: '🇨🇭', url: 'https://www.google.com/finance/quote/CHF-COP' },
+  { moneda: 'CAD', nombre: 'Dólar canadiense', bandera: '🇨🇦', url: 'https://www.google.com/finance/quote/CAD-COP' },
+  { moneda: 'AUD', nombre: 'Dólar australiano',bandera: '🇦🇺', url: 'https://www.google.com/finance/quote/AUD-COP' },
+  { moneda: 'BRL', nombre: 'Real brasileño',   bandera: '🇧🇷', url: 'https://www.google.com/finance/quote/BRL-COP' },
+  { moneda: 'CNY', nombre: 'Yuan chino',       bandera: '🇨🇳', url: 'https://www.google.com/finance/quote/CNY-COP' },
+  { moneda: 'MXN', nombre: 'Peso mexicano',    bandera: '🇲🇽', url: 'https://www.google.com/finance/quote/MXN-COP' },
+  { moneda: 'JPY', nombre: 'Yen japonés',      bandera: '🇯🇵', url: 'https://www.google.com/finance/quote/JPY-COP' },
+]
+
 const cdtSources = {
   // Tasas de CDT en Colombia (% E.A.). Sugerencia de fuentes oficiales/agregadoras:
   //  - Superintendencia Financiera de Colombia (tasas de captación)
@@ -44,4 +64,4 @@ const hipotecaSources = {
   ],
 }
 
-module.exports = { cdtSources, hipotecaSources, RATE_REGEX }
+module.exports = { cdtSources, hipotecaSources, exchangeRateSources, RATE_REGEX, FX_RATE_REGEX }

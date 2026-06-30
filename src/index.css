@@ -411,6 +411,11 @@ body {
 .inv-fuentes { font-size: .85rem; color: var(--muted); margin: 4px 0 14px; line-height: 1.6; }
 .inv-disclaimer { color: var(--muted); font-size: .82rem; line-height: 1.5; background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px; }
 
+/* ---- Tasas de cambio ---- */
+.fx-table .fx-flag { font-size: 1.3rem; margin-right: 6px; }
+.fx-table .fx-code { font-weight: 700; font-family: monospace; font-size: .9rem; vertical-align: middle; }
+.fx-table .fx-nombre { color: var(--muted); font-size: .88rem; }
+
 /* ---- Alfabeto ---- */
 .alpha-note { color: var(--muted); background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; line-height: 1.55; margin-bottom: 16px; }
 .alpha-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); gap: 10px; }

@@ -212,6 +212,11 @@ export default function Sidebar({ view, onArea, onLanguage, onHome, onInv }) {
               <span>🏠 Créditos hipotecarios</span>
             </button>
           </li>
+          <li>
+            <button className={`side-area ${view.type === 'inv' && view.kind === 'cambio' ? 'current' : ''}`} onClick={() => onInv('cambio')}>
+              <span>💱 Tasas de cambio</span>
+            </button>
+          </li>
         </ul>
       )}
     </nav>

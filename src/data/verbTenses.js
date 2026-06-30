@@ -77,7 +77,14 @@ export const verbTenses = {
   fr: {
     verb: 'parler (hablar)',
     tenses: [
-      { name: 'Présent', use: 'Presente y hábitos.', build: 'Raíz + terminaciones -e, -es, -e, -ons, -ez, -ent.', ex: 'Je parle.', es: 'Hablo.' },
+      { name: 'Présent', use: 'Presente y hábitos.', build: 'Raíz + terminaciones -e, -es, -e, -ons, -ez, -ent.', ex: 'Je parle.', es: 'Hablo.', table: [
+        { af: 'Je parle', int: 'Est-ce que je parle ?', neg: 'Je ne parle pas' },
+        { af: 'Tu parles', int: 'Parles-tu ?', neg: 'Tu ne parles pas' },
+        { af: 'Il parle', int: 'Parle-t-il ?', neg: 'Il ne parle pas' },
+        { af: 'Nous parlons', int: 'Parlons-nous ?', neg: 'Nous ne parlons pas' },
+        { af: 'Vous parlez', int: 'Parlez-vous ?', neg: 'Vous ne parlez pas' },
+        { af: 'Ils parlent', int: 'Parlent-ils ?', neg: 'Ils ne parlent pas' },
+      ] },
       { name: 'Passé composé', use: 'Pasado terminado.', build: 'Auxiliar avoir/être en presente + participio pasado (parlé).', ex: "J'ai parlé.", es: 'He hablado / hablé.' },
       { name: 'Imparfait', use: 'Descripción o hábito pasado.', build: 'Raíz de "nous" del presente + -ais, -ais, -ait, -ions, -iez, -aient.', ex: 'Je parlais.', es: 'Hablaba.' },
       { name: 'Futur simple', use: 'Futuro.', build: 'Infinitivo + -ai, -as, -a, -ons, -ez, -ont.', ex: 'Je parlerai.', es: 'Hablaré.' },
@@ -89,7 +96,14 @@ export const verbTenses = {
   de: {
     verb: 'sprechen (hablar)',
     tenses: [
-      { name: 'Präsens', use: 'Presente y futuro cercano.', build: 'Raíz + -e, -st, -t, -en, -t, -en. Verbos fuertes cambian la vocal (du sprichst).', ex: 'Ich spreche.', es: 'Hablo.' },
+      { name: 'Präsens', use: 'Presente y futuro cercano.', build: 'Raíz + -e, -st, -t, -en, -t, -en. Verbos fuertes cambian la vocal (du sprichst).', ex: 'Ich spreche.', es: 'Hablo.', table: [
+        { af: 'Ich spreche', int: 'Spreche ich?', neg: 'Ich spreche nicht' },
+        { af: 'Du sprichst', int: 'Sprichst du?', neg: 'Du sprichst nicht' },
+        { af: 'Er spricht', int: 'Spricht er?', neg: 'Er spricht nicht' },
+        { af: 'Wir sprechen', int: 'Sprechen wir?', neg: 'Wir sprechen nicht' },
+        { af: 'Ihr sprecht', int: 'Sprecht ihr?', neg: 'Ihr sprecht nicht' },
+        { af: 'Sie sprechen', int: 'Sprechen sie?', neg: 'Sie sprechen nicht' },
+      ] },
       { name: 'Perfekt', use: 'Pasado en lengua hablada.', build: 'haben/sein en presente + participio (ge-...-t / ge-...-en).', ex: 'Ich habe gesprochen.', es: 'He hablado.' },
       { name: 'Präteritum', use: 'Pasado en lengua escrita.', build: 'Débiles: raíz + -te. Fuertes: cambio de vocal (sprach).', ex: 'Ich sprach.', es: 'Hablé / hablaba.' },
       { name: 'Plusquamperfekt', use: 'Pasado anterior a otro pasado.', build: 'haben/sein en Präteritum (hatte/war) + participio.', ex: 'Ich hatte gesprochen.', es: 'Había hablado.' },
@@ -100,7 +114,14 @@ export const verbTenses = {
   nl: {
     verb: 'spreken (hablar)',
     tenses: [
-      { name: 'Tegenwoordige tijd', use: 'Presente.', build: 'Raíz (ik), raíz + -t (jij/hij), infinitivo en plural.', ex: 'Ik spreek.', es: 'Hablo.' },
+      { name: 'Tegenwoordige tijd', use: 'Presente.', build: 'Raíz (ik), raíz + -t (jij/hij), infinitivo en plural.', ex: 'Ik spreek.', es: 'Hablo.', table: [
+        { af: 'Ik spreek', int: 'Spreek ik?', neg: 'Ik spreek niet' },
+        { af: 'Jij spreekt', int: 'Spreek jij?', neg: 'Jij spreekt niet' },
+        { af: 'Hij spreekt', int: 'Spreekt hij?', neg: 'Hij spreekt niet' },
+        { af: 'Wij spreken', int: 'Spreken wij?', neg: 'Wij spreken niet' },
+        { af: 'Jullie spreken', int: 'Spreken jullie?', neg: 'Jullie spreken niet' },
+        { af: 'Zij spreken', int: 'Spreken zij?', neg: 'Zij spreken niet' },
+      ] },
       { name: 'Voltooid tegenwoordige tijd', use: 'Pretérito perfecto.', build: 'hebben/zijn + participio (prefijo ge-): gesproken.', ex: 'Ik heb gesproken.', es: 'He hablado.' },
       { name: 'Onvoltooid verleden tijd', use: 'Pasado.', build: 'Regulares: raíz + -te(n)/-de(n). Fuertes: cambio de vocal (sprak).', ex: 'Ik sprak.', es: 'Hablé / hablaba.' },
       { name: 'Toekomende tijd', use: 'Futuro.', build: 'zullen (zal/zult) + infinitivo.', ex: 'Ik zal spreken.', es: 'Hablaré.' },
@@ -110,7 +131,14 @@ export const verbTenses = {
   sv: {
     verb: 'tala (hablar)',
     tenses: [
-      { name: 'Presens', use: 'Presente.', build: 'Raíz + -r (-ar/-er); igual para todas las personas.', ex: 'Jag talar.', es: 'Hablo.' },
+      { name: 'Presens', use: 'Presente.', build: 'Raíz + -r (-ar/-er); igual para todas las personas.', ex: 'Jag talar.', es: 'Hablo.', table: [
+        { af: 'Jag talar', int: 'Talar jag?', neg: 'Jag talar inte' },
+        { af: 'Du talar', int: 'Talar du?', neg: 'Du talar inte' },
+        { af: 'Han talar', int: 'Talar han?', neg: 'Han talar inte' },
+        { af: 'Vi talar', int: 'Talar vi?', neg: 'Vi talar inte' },
+        { af: 'Ni talar', int: 'Talar ni?', neg: 'Ni talar inte' },
+        { af: 'De talar', int: 'Talar de?', neg: 'De talar inte' },
+      ] },
       { name: 'Preteritum', use: 'Pasado.', build: 'Raíz + -de/-te/-dde. Fuertes: cambio de vocal.', ex: 'Jag talade.', es: 'Hablé / hablaba.' },
       { name: 'Perfekt', use: 'Pretérito perfecto.', build: 'har + supino (forma en -t): har talat.', ex: 'Jag har talat.', es: 'He hablado.' },
       { name: 'Pluskvamperfekt', use: 'Pluscuamperfecto.', build: 'hade + supino: hade talat.', ex: 'Jag hade talat.', es: 'Había hablado.' },
@@ -121,7 +149,14 @@ export const verbTenses = {
   no: {
     verb: 'snakke (hablar)',
     tenses: [
-      { name: 'Presens', use: 'Presente.', build: 'Raíz + -r; igual para todas las personas.', ex: 'Jeg snakker.', es: 'Hablo.' },
+      { name: 'Presens', use: 'Presente.', build: 'Raíz + -r; igual para todas las personas.', ex: 'Jeg snakker.', es: 'Hablo.', table: [
+        { af: 'Jeg snakker', int: 'Snakker jeg?', neg: 'Jeg snakker ikke' },
+        { af: 'Du snakker', int: 'Snakker du?', neg: 'Du snakker ikke' },
+        { af: 'Han snakker', int: 'Snakker han?', neg: 'Han snakker ikke' },
+        { af: 'Vi snakker', int: 'Snakker vi?', neg: 'Vi snakker ikke' },
+        { af: 'Dere snakker', int: 'Snakker dere?', neg: 'Dere snakker ikke' },
+        { af: 'De snakker', int: 'Snakker de?', neg: 'De snakker ikke' },
+      ] },
       { name: 'Preteritum', use: 'Pasado.', build: 'Raíz + -et/-te/-de. Fuertes: cambio de vocal.', ex: 'Jeg snakket.', es: 'Hablé / hablaba.' },
       { name: 'Presens perfektum', use: 'Pretérito perfecto.', build: 'har + participio: har snakket.', ex: 'Jeg har snakket.', es: 'He hablado.' },
       { name: 'Futurum', use: 'Futuro.', build: 'skal / vil + infinitivo.', ex: 'Jeg skal snakke.', es: 'Hablaré.' },
@@ -131,7 +166,14 @@ export const verbTenses = {
   da: {
     verb: 'tale (hablar)',
     tenses: [
-      { name: 'Nutid (presens)', use: 'Presente.', build: 'Raíz + -r; igual para todas las personas.', ex: 'Jeg taler.', es: 'Hablo.' },
+      { name: 'Nutid (presens)', use: 'Presente.', build: 'Raíz + -r; igual para todas las personas.', ex: 'Jeg taler.', es: 'Hablo.', table: [
+        { af: 'Jeg taler', int: 'Taler jeg?', neg: 'Jeg taler ikke' },
+        { af: 'Du taler', int: 'Taler du?', neg: 'Du taler ikke' },
+        { af: 'Han taler', int: 'Taler han?', neg: 'Han taler ikke' },
+        { af: 'Vi taler', int: 'Taler vi?', neg: 'Vi taler ikke' },
+        { af: 'I taler', int: 'Taler I?', neg: 'I taler ikke' },
+        { af: 'De taler', int: 'Taler de?', neg: 'De taler ikke' },
+      ] },
       { name: 'Datid (præteritum)', use: 'Pasado.', build: 'Raíz + -ede/-te. Fuertes: cambio de vocal.', ex: 'Jeg talte.', es: 'Hablé / hablaba.' },
       { name: 'Førnutid (perfektum)', use: 'Pretérito perfecto.', build: 'har/er + participio: har talt.', ex: 'Jeg har talt.', es: 'He hablado.' },
       { name: 'Fremtid', use: 'Futuro.', build: 'vil / skal + infinitivo.', ex: 'Jeg vil tale.', es: 'Hablaré.' },
@@ -141,7 +183,14 @@ export const verbTenses = {
   it: {
     verb: 'parlare (hablar)',
     tenses: [
-      { name: 'Presente', use: 'Presente y hábitos.', build: 'Raíz + -o, -i, -a, -iamo, -ate, -ano.', ex: 'Io parlo.', es: 'Hablo.' },
+      { name: 'Presente', use: 'Presente y hábitos.', build: 'Raíz + -o, -i, -a, -iamo, -ate, -ano.', ex: 'Io parlo.', es: 'Hablo.', table: [
+        { af: 'Io parlo', int: 'Parlo?', neg: 'Non parlo' },
+        { af: 'Tu parli', int: 'Parli?', neg: 'Non parli' },
+        { af: 'Lui parla', int: 'Parla?', neg: 'Non parla' },
+        { af: 'Noi parliamo', int: 'Parliamo?', neg: 'Non parliamo' },
+        { af: 'Voi parlate', int: 'Parlate?', neg: 'Non parlate' },
+        { af: 'Loro parlano', int: 'Parlano?', neg: 'Non parlano' },
+      ] },
       { name: 'Passato prossimo', use: 'Pasado reciente o relevante.', build: 'avere/essere en presente + participio (-ato/-uto/-ito).', ex: 'Ho parlato.', es: 'He hablado.' },
       { name: 'Imperfetto', use: 'Descripción o hábito pasado.', build: 'Raíz + -avo, -avi, -ava, -avamo, -avate, -avano.', ex: 'Parlavo.', es: 'Hablaba.' },
       { name: 'Passato remoto', use: 'Pasado lejano (literario).', build: 'Raíz + -ai, -asti, -ò, -ammo, -aste, -arono.', ex: 'Parlai.', es: 'Hablé.' },
@@ -153,7 +202,14 @@ export const verbTenses = {
   pt: {
     verb: 'falar (hablar)',
     tenses: [
-      { name: 'Presente', use: 'Presente y hábitos.', build: 'Raíz + -o, -as, -a, -amos, -ais, -am.', ex: 'Eu falo.', es: 'Hablo.' },
+      { name: 'Presente', use: 'Presente y hábitos.', build: 'Raíz + -o, -as, -a, -amos, -ais, -am.', ex: 'Eu falo.', es: 'Hablo.', table: [
+        { af: 'Eu falo', int: 'Falo?', neg: 'Não falo' },
+        { af: 'Tu falas', int: 'Falas?', neg: 'Não falas' },
+        { af: 'Ele fala', int: 'Fala?', neg: 'Não fala' },
+        { af: 'Nós falamos', int: 'Falamos?', neg: 'Não falamos' },
+        { af: 'Vós falais', int: 'Falais?', neg: 'Não falais' },
+        { af: 'Eles falam', int: 'Falam?', neg: 'Não falam' },
+      ] },
       { name: 'Pretérito perfeito', use: 'Pasado terminado.', build: 'Raíz + -ei, -aste, -ou, -amos, -astes, -aram.', ex: 'Eu falei.', es: 'Hablé.' },
       { name: 'Pretérito imperfeito', use: 'Descripción o hábito pasado.', build: 'Raíz + -ava, -avas, -ava, -ávamos, -áveis, -avam.', ex: 'Eu falava.', es: 'Hablaba.' },
       { name: 'Futuro', use: 'Futuro.', build: 'Infinitivo + -ei, -ás, -á, -emos, -eis, -ão.', ex: 'Eu falarei.', es: 'Hablaré.' },
@@ -164,7 +220,14 @@ export const verbTenses = {
   ca: {
     verb: 'parlar (hablar)',
     tenses: [
-      { name: 'Present', use: 'Presente.', build: 'Raíz + -o, -es, -a, -em, -eu, -en.', ex: 'Jo parlo.', es: 'Hablo.' },
+      { name: 'Present', use: 'Presente.', build: 'Raíz + -o, -es, -a, -em, -eu, -en.', ex: 'Jo parlo.', es: 'Hablo.', table: [
+        { af: 'Jo parlo', int: 'Parlo?', neg: 'No parlo' },
+        { af: 'Tu parles', int: 'Parles?', neg: 'No parles' },
+        { af: 'Ell parla', int: 'Parla?', neg: 'No parla' },
+        { af: 'Nosaltres parlem', int: 'Parlem?', neg: 'No parlem' },
+        { af: 'Vosaltres parleu', int: 'Parleu?', neg: 'No parleu' },
+        { af: 'Ells parlen', int: 'Parlen?', neg: 'No parlen' },
+      ] },
       { name: 'Passat perifràstic', use: 'Pasado (forma típica catalana).', build: 'Presente de anar (vaig, vas, va, vam, vau, van) + infinitivo.', ex: 'Vaig parlar.', es: 'Hablé.' },
       { name: 'Imperfet', use: 'Descripción o hábito pasado.', build: 'Raíz + -ava, -aves, -ava, -àvem, -àveu, -aven.', ex: 'Parlava.', es: 'Hablaba.' },
       { name: 'Futur', use: 'Futuro.', build: 'Infinitivo + -é, -às, -à, -em, -eu, -an.', ex: 'Parlaré.', es: 'Hablaré.' },
@@ -175,7 +238,14 @@ export const verbTenses = {
   ro: {
     verb: 'a vorbi (hablar)',
     tenses: [
-      { name: 'Prezent', use: 'Presente.', build: 'Raíz + terminaciones según la conjugación (vorbesc, vorbești, vorbește…).', ex: 'Eu vorbesc.', es: 'Hablo.' },
+      { name: 'Prezent', use: 'Presente.', build: 'Raíz + terminaciones según la conjugación (vorbesc, vorbești, vorbește…).', ex: 'Eu vorbesc.', es: 'Hablo.', table: [
+        { af: 'Eu vorbesc', int: 'Vorbesc?', neg: 'Nu vorbesc' },
+        { af: 'Tu vorbești', int: 'Vorbești?', neg: 'Nu vorbești' },
+        { af: 'El vorbește', int: 'Vorbește?', neg: 'Nu vorbește' },
+        { af: 'Noi vorbim', int: 'Vorbim?', neg: 'Nu vorbim' },
+        { af: 'Voi vorbiți', int: 'Vorbiți?', neg: 'Nu vorbiți' },
+        { af: 'Ei vorbesc', int: 'Vorbesc?', neg: 'Nu vorbesc' },
+      ] },
       { name: 'Perfect compus', use: 'Pasado terminado.', build: 'a avea (am, ai, a, am, ați, au) + participio (vorbit).', ex: 'Am vorbit.', es: 'He hablado / hablé.' },
       { name: 'Imperfect', use: 'Descripción o hábito pasado.', build: 'Raíz + -am, -ai, -a, -am, -ați, -au.', ex: 'Vorbeam.', es: 'Hablaba.' },
       { name: 'Viitor', use: 'Futuro.', build: 'a vrea auxiliar (voi, vei, va, vom, veți, vor) + infinitivo.', ex: 'Voi vorbi.', es: 'Hablaré.' },
@@ -186,7 +256,14 @@ export const verbTenses = {
   ru: {
     verb: 'говорить / сказать (hablar / decir)',
     tenses: [
-      { name: 'Presente', use: 'Acción actual (imperfectivo).', build: 'Raíz + terminaciones personales (-ю, -ишь, -ит, -им, -ите, -ят).', ex: 'Я говорю.', rom: 'ya govoryú', es: 'Hablo.' },
+      { name: 'Presente', use: 'Acción actual (imperfectivo).', build: 'Raíz + terminaciones personales (-ю, -ишь, -ит, -им, -ите, -ят).', ex: 'Я говорю.', rom: 'ya govoryú', es: 'Hablo.', table: [
+        { af: 'Я говорю (ya govoryú)', int: 'Я говорю? (ya govoryú?)', neg: 'Я не говорю (ya ne govoryú)' },
+        { af: 'Ты говоришь (ty govorísh)', int: 'Ты говоришь? (ty govorísh?)', neg: 'Ты не говоришь (ty ne govorísh)' },
+        { af: 'Он говорит (on govorít)', int: 'Он говорит? (on govorít?)', neg: 'Он не говорит (on ne govorít)' },
+        { af: 'Мы говорим (my govorím)', int: 'Мы говорим? (my govorím?)', neg: 'Мы не говорим (my ne govorím)' },
+        { af: 'Вы говорите (vy govoríte)', int: 'Вы говорите? (vy govoríte?)', neg: 'Вы не говорите (vy ne govoríte)' },
+        { af: 'Они говорят (oní govoryát)', int: 'Они говорят? (oní govoryát?)', neg: 'Они не говорят (oní ne govoryát)' },
+      ] },
       { name: 'Pasado', use: 'Acción pasada.', build: 'Raíz del infinitivo + -л / -ла / -ло / -ли (según género y número).', ex: 'Я говорил(а).', rom: 'ya govoríl(a)', es: 'Hablaba / hablé.' },
       { name: 'Futuro imperfectivo', use: 'Futuro en proceso.', build: 'Presente de быть (буду, будешь…) + infinitivo imperfectivo.', ex: 'Я буду говорить.', rom: 'ya búdu govorít', es: 'Hablaré (estaré hablando).' },
       { name: 'Futuro perfectivo', use: 'Acción futura única.', build: 'Se conjuga el verbo perfectivo en forma de presente (скажу, поговорю).', ex: 'Я скажу.', rom: 'ya skazhú', es: 'Diré.' },
@@ -197,7 +274,14 @@ export const verbTenses = {
   uk: {
     verb: 'говорити (hablar)',
     tenses: [
-      { name: 'Presente', use: 'Acción actual.', build: 'Raíz + terminaciones personales (-ю, -иш, -ить, -имо, -ите, -ять).', ex: 'Я говорю.', rom: 'ya hovoryú', es: 'Hablo.' },
+      { name: 'Presente', use: 'Acción actual.', build: 'Raíz + terminaciones personales (-ю, -иш, -ить, -имо, -ите, -ять).', ex: 'Я говорю.', rom: 'ya hovoryú', es: 'Hablo.', table: [
+        { af: 'Я говорю (ya hovoryú)', int: 'Я говорю? (ya hovoryú?)', neg: 'Я не говорю (ya ne hovoryú)' },
+        { af: 'Ти говориш (ty hovórysh)', int: 'Ти говориш? (ty hovórysh?)', neg: 'Ти не говориш (ty ne hovórysh)' },
+        { af: 'Він говорить (vin hovorýt)', int: 'Він говорить? (vin hovorýt?)', neg: 'Він не говорить (vin ne hovorýt)' },
+        { af: 'Ми говоримо (my hovorymó)', int: 'Ми говоримо? (my hovorymó?)', neg: 'Ми не говоримо (my ne hovorymó)' },
+        { af: 'Ви говорите (vy hovoryte)', int: 'Ви говорите? (vy hovoryte?)', neg: 'Ви не говорите (vy ne hovoryte)' },
+        { af: 'Вони говорять (vony hovoryát)', int: 'Вони говорять? (vony hovoryát?)', neg: 'Вони не говорять (vony ne hovoryát)' },
+      ] },
       { name: 'Pasado', use: 'Acción pasada.', build: 'Raíz + -в / -ла / -ло / -ли (según género y número).', ex: 'Я говорив / говорила.', rom: 'ya hovorýv / hovoryla', es: 'Hablaba / hablé.' },
       { name: 'Futuro', use: 'Acción futura.', build: 'буду + infinitivo, o forma sintética (говоритиму).', ex: 'Я буду говорити.', rom: 'ya búdu hovorýty', es: 'Hablaré.' },
       { name: 'Imperativo', use: 'Orden.', build: 'Raíz del presente + -и.', ex: 'Говори!', rom: 'hovorý', es: '¡Habla!' },
@@ -207,7 +291,14 @@ export const verbTenses = {
   pl: {
     verb: 'mówić (hablar)',
     tenses: [
-      { name: 'Czas teraźniejszy', use: 'Presente.', build: 'Raíz + terminaciones personales (-ę, -isz, -i, -imy, -icie, -ią).', ex: 'Mówię.', es: 'Hablo.' },
+      { name: 'Czas teraźniejszy', use: 'Presente.', build: 'Raíz + terminaciones personales (-ę, -isz, -i, -imy, -icie, -ią).', ex: 'Mówię.', es: 'Hablo.', table: [
+        { af: 'Ja mówię', int: 'Czy mówię?', neg: 'Nie mówię' },
+        { af: 'Ty mówisz', int: 'Czy mówisz?', neg: 'Nie mówisz' },
+        { af: 'On mówi', int: 'Czy mówi?', neg: 'Nie mówi' },
+        { af: 'My mówimy', int: 'Czy mówimy?', neg: 'Nie mówimy' },
+        { af: 'Wy mówicie', int: 'Czy mówicie?', neg: 'Nie mówicie' },
+        { af: 'Oni mówią', int: 'Czy mówią?', neg: 'Nie mówią' },
+      ] },
       { name: 'Czas przeszły', use: 'Pasado.', build: 'Raíz + -ł / -ła / -ło + terminación personal (varía por género): mówiłem (m.), mówiłam (f.).', ex: 'Mówiłem / Mówiłam.', es: 'Hablaba / hablé.' },
       { name: 'Czas przyszły', use: 'Futuro.', build: 'będę, będziesz… + infinitivo (o forma de pasado).', ex: 'Będę mówić.', es: 'Hablaré.' },
       { name: 'Tryb rozkazujący', use: 'Imperativo.', build: 'Raíz del presente sin terminación.', ex: 'Mów!', es: '¡Habla!' },
@@ -217,7 +308,14 @@ export const verbTenses = {
   el: {
     verb: 'μιλάω (hablar)',
     tenses: [
-      { name: 'Ενεστώτας', use: 'Presente.', build: 'Raíz + -ω/-άω, -εις/-άς, -ει/-άει, -ουμε, -ετε, -ουν.', ex: 'Μιλάω.', rom: 'miláo', es: 'Hablo.' },
+      { name: 'Ενεστώτας', use: 'Presente.', build: 'Raíz + -ω/-άω, -εις/-άς, -ει/-άει, -ουμε, -ετε, -ουν.', ex: 'Μιλάω.', rom: 'miláo', es: 'Hablo.', table: [
+        { af: 'Μιλάω (miláo)', int: 'Μιλάω; (miláo?)', neg: 'Δεν μιλάω (den miláo)' },
+        { af: 'Μιλάς (milás)', int: 'Μιλάς; (milás?)', neg: 'Δεν μιλάς (den milás)' },
+        { af: 'Μιλάει (milái)', int: 'Μιλάει; (milái?)', neg: 'Δεν μιλάει (den milái)' },
+        { af: 'Μιλάμε (miláme)', int: 'Μιλάμε; (miláme?)', neg: 'Δεν μιλάμε (den miláme)' },
+        { af: 'Μιλάτε (miláte)', int: 'Μιλάτε; (miláte?)', neg: 'Δεν μιλάτε (den miláte)' },
+        { af: 'Μιλάνε (miláne)', int: 'Μιλάνε; (miláne?)', neg: 'Δεν μιλάνε (den miláne)' },
+      ] },
       { name: 'Αόριστος', use: 'Pasado puntual.', build: 'Raíz de aoristo (con -σ-) + -α, -ες, -ε, -αμε, -ατε, -αν.', ex: 'Μίλησα.', rom: 'mílisa', es: 'Hablé.' },
       { name: 'Παρατατικός', use: 'Pasado continuo/habitual.', build: 'Raíz + -ούσα, -ούσες, -ούσε, -ούσαμε, -ούσατε, -ούσαν.', ex: 'Μιλούσα.', rom: 'milúsa', es: 'Hablaba.' },
       { name: 'Μέλλοντας', use: 'Futuro.', build: 'Partícula θα + subjuntivo de aoristo (θα μιλήσω).', ex: 'Θα μιλήσω.', rom: 'tha milíso', es: 'Hablaré.' },
@@ -227,7 +325,14 @@ export const verbTenses = {
   tr: {
     verb: 'konuşmak (hablar)',
     tenses: [
-      { name: 'Şimdiki zaman', use: 'Presente / acción en curso.', build: 'Raíz + -(ı)yor + sufijo personal: konuş-uyor-um.', ex: 'Konuşuyorum.', es: 'Estoy hablando.' },
+      { name: 'Şimdiki zaman', use: 'Presente / acción en curso.', build: 'Raíz + -(ı)yor + sufijo personal: konuş-uyor-um.', ex: 'Konuşuyorum.', es: 'Estoy hablando.', table: [
+        { af: 'Konuşuyorum', int: 'Konuşuyor muyum?', neg: 'Konuşmuyorum' },
+        { af: 'Konuşuyorsun', int: 'Konuşuyor musun?', neg: 'Konuşmuyorsun' },
+        { af: 'Konuşuyor', int: 'Konuşuyor mu?', neg: 'Konuşmuyor' },
+        { af: 'Konuşuyoruz', int: 'Konuşuyor muyuz?', neg: 'Konuşmuyoruz' },
+        { af: 'Konuşuyorsunuz', int: 'Konuşuyor musunuz?', neg: 'Konuşmuyorsunuz' },
+        { af: 'Konuşuyorlar', int: 'Konuşuyorlar mı?', neg: 'Konuşmuyorlar' },
+      ] },
       { name: 'Geniş zaman', use: 'Presente habitual (aoristo).', build: 'Raíz + -(ı)r/-er + sufijo personal: konuş-ur-um.', ex: 'Konuşurum.', es: 'Hablo (habitualmente).' },
       { name: 'Geçmiş zaman', use: 'Pasado.', build: 'Raíz + -dı/-di (con armonía vocálica) + sufijo personal: konuş-tu-m.', ex: 'Konuştum.', es: 'Hablé.' },
       { name: 'Gelecek zaman', use: 'Futuro.', build: 'Raíz + -(y)acak/-ecek + sufijo personal: konuş-acağ-ım.', ex: 'Konuşacağım.', es: 'Hablaré.' },
@@ -237,7 +342,13 @@ export const verbTenses = {
   ja: {
     verb: '話す (hanasu, hablar)',
     tenses: [
-      { name: '現在・未来 (no pasado)', use: 'Presente y futuro (no se distinguen).', build: 'Raíz cortés (ren’yōkei) + ます: hanashi-masu.', ex: '話します。', rom: 'hanashimasu', es: 'Hablo / hablaré.' },
+      { name: '現在・未来 (no pasado)', use: 'Presente y futuro (no se distinguen).', build: 'Raíz cortés (ren’yōkei) + ます: hanashi-masu. El verbo NO cambia según la persona; solo cambia el pronombre.', ex: '話します。', rom: 'hanashimasu', es: 'Hablo / hablaré.', table: [
+        { af: '私は話します (watashi wa hanashimasu)', int: '話しますか (hanashimasu ka?)', neg: '話しません (hanashimasen)' },
+        { af: 'あなたは話します (anata wa hanashimasu)', int: '話しますか (hanashimasu ka?)', neg: '話しません (hanashimasen)' },
+        { af: '彼は話します (kare wa hanashimasu)', int: '話しますか (hanashimasu ka?)', neg: '話しません (hanashimasen)' },
+        { af: '私たちは話します (watashitachi wa hanashimasu)', int: '話しますか (hanashimasu ka?)', neg: '話しません (hanashimasen)' },
+        { af: '彼らは話します (karera wa hanashimasu)', int: '話しますか (hanashimasu ka?)', neg: '話しません (hanashimasen)' },
+      ] },
       { name: '過去 (pasado)', use: 'Acción pasada.', build: 'Raíz + ました: hanashi-mashita.', ex: '話しました。', rom: 'hanashimashita', es: 'Hablé.' },
       { name: '進行 (て+いる)', use: 'Acción en curso.', build: 'Forma -て (hanashite) + います.', ex: '話しています。', rom: 'hanashite imasu', es: 'Estoy hablando.' },
       { name: '否定 (negativo)', use: 'Negación en presente.', build: 'Raíz + ません: hanashi-masen.', ex: '話しません。', rom: 'hanashimasen', es: 'No hablo.' },
@@ -247,7 +358,14 @@ export const verbTenses = {
   zh: {
     verb: '说 (shuō, hablar/decir)',
     tenses: [
-      { name: 'General', use: 'El verbo no se conjuga.', build: 'El verbo no cambia; el tiempo se deduce del contexto o de palabras de tiempo (今天, 明天).', ex: '我说。', rom: 'wǒ shuō', es: 'Hablo / digo.' },
+      { name: 'General', use: 'El verbo no se conjuga.', build: 'El verbo no cambia; el tiempo se deduce del contexto o de palabras de tiempo (今天, 明天). Solo cambia el pronombre.', ex: '我说。', rom: 'wǒ shuō', es: 'Hablo / digo.', table: [
+        { af: '我说 (wǒ shuō)', int: '我说吗? (wǒ shuō ma?)', neg: '我不说 (wǒ bù shuō)' },
+        { af: '你说 (nǐ shuō)', int: '你说吗? (nǐ shuō ma?)', neg: '你不说 (nǐ bù shuō)' },
+        { af: '他说 (tā shuō)', int: '他说吗? (tā shuō ma?)', neg: '他不说 (tā bù shuō)' },
+        { af: '我们说 (wǒmen shuō)', int: '我们说吗? (wǒmen shuō ma?)', neg: '我们不说 (wǒmen bù shuō)' },
+        { af: '你们说 (nǐmen shuō)', int: '你们说吗? (nǐmen shuō ma?)', neg: '你们不说 (nǐmen bù shuō)' },
+        { af: '他们说 (tāmen shuō)', int: '他们说吗? (tāmen shuō ma?)', neg: '他们不说 (tāmen bù shuō)' },
+      ] },
       { name: 'En curso (在)', use: 'Acción que ocurre ahora.', build: '在 (o 正在…呢) delante del verbo.', ex: '我在说。', rom: 'wǒ zài shuō', es: 'Estoy hablando.' },
       { name: 'Completado (了)', use: 'Acción terminada.', build: 'Partícula 了 después del verbo.', ex: '我说了。', rom: 'wǒ shuō le', es: 'Hablé / he hablado.' },
       { name: 'Experiencia (过)', use: 'Haberlo hecho alguna vez.', build: 'Partícula 过 después del verbo.', ex: '我说过。', rom: 'wǒ shuō guò', es: 'He hablado (alguna vez).' },
@@ -257,7 +375,13 @@ export const verbTenses = {
   ko: {
     verb: '말하다 (malhada, hablar)',
     tenses: [
-      { name: '현재 (presente)', use: 'Presente.', build: 'Raíz + -아요/-어요/-여요 (forma cortés).', ex: '말해요.', rom: 'malhaeyo', es: 'Hablo.' },
+      { name: '현재 (presente)', use: 'Presente.', build: 'Raíz + -아요/-어요/-여요 (forma cortés). El verbo no cambia según la persona; solo el pronombre.', ex: '말해요.', rom: 'malhaeyo', es: 'Hablo.', table: [
+        { af: '저는 말해요 (jeoneun malhaeyo)', int: '말해요? (malhaeyo?)', neg: '말하지 않아요 (malhaji anhayo)' },
+        { af: '너는 말해요 (neoneun malhaeyo)', int: '말해요? (malhaeyo?)', neg: '말하지 않아요 (malhaji anhayo)' },
+        { af: '그는 말해요 (geuneun malhaeyo)', int: '말해요? (malhaeyo?)', neg: '말하지 않아요 (malhaji anhayo)' },
+        { af: '우리는 말해요 (urineun malhaeyo)', int: '말해요? (malhaeyo?)', neg: '말하지 않아요 (malhaji anhayo)' },
+        { af: '그들은 말해요 (geudeureun malhaeyo)', int: '말해요? (malhaeyo?)', neg: '말하지 않아요 (malhaji anhayo)' },
+      ] },
       { name: '과거 (pasado)', use: 'Pasado.', build: 'Raíz + -았/-었 + -어요.', ex: '말했어요.', rom: 'malhaesseoyo', es: 'Hablé.' },
       { name: '미래 (futuro)', use: 'Futuro / intención.', build: 'Raíz + -(으)ㄹ 거예요.', ex: '말할 거예요.', rom: 'malhal geoyeyo', es: 'Hablaré.' },
       { name: '진행 (progresivo)', use: 'Acción en curso.', build: 'Raíz + -고 있어요.', ex: '말하고 있어요.', rom: 'malhago isseoyo', es: 'Estoy hablando.' },
@@ -267,7 +391,14 @@ export const verbTenses = {
   hi: {
     verb: 'बोलना (bolna, hablar)',
     tenses: [
-      { name: 'वर्तमान (presente)', use: 'Presente habitual (forma masc.).', build: 'Raíz + -ता/-ती/-ते (concuerda en género/número) + auxiliar हूँ/है/हैं.', ex: 'मैं बोलता हूँ।', rom: 'main bolta hun', es: 'Hablo.' },
+      { name: 'वर्तमान (presente)', use: 'Presente habitual (forma masc.).', build: 'Raíz + -ता/-ती/-ते (concuerda en género/número) + auxiliar हूँ/है/हैं.', ex: 'मैं बोलता हूँ।', rom: 'main bolta hun', es: 'Hablo.', table: [
+        { af: 'मैं बोलता हूँ (main bolta hun)', int: 'क्या मैं बोलता हूँ? (kya main bolta hun?)', neg: 'मैं नहीं बोलता (main nahi bolta)' },
+        { af: 'तू बोलता है (tu bolta hai)', int: 'क्या तू बोलता है? (kya tu bolta hai?)', neg: 'तू नहीं बोलता (tu nahi bolta)' },
+        { af: 'वह बोलता है (vah bolta hai)', int: 'क्या वह बोलता है? (kya vah bolta hai?)', neg: 'वह नहीं बोलता (vah nahi bolta)' },
+        { af: 'हम बोलते हैं (ham bolte hain)', int: 'क्या हम बोलते हैं? (kya ham bolte hain?)', neg: 'हम नहीं बोलते (ham nahi bolte)' },
+        { af: 'तुम बोलते हो (tum bolte ho)', int: 'क्या तुम बोलते हो? (kya tum bolte ho?)', neg: 'तुम नहीं बोलते (tum nahi bolte)' },
+        { af: 'वे बोलते हैं (ve bolte hain)', int: 'क्या वे बोलते हैं? (kya ve bolte hain?)', neg: 'वे नहीं बोलते (ve nahi bolte)' },
+      ] },
       { name: 'भूतकाल (pasado)', use: 'Pasado.', build: 'Transitivos: sujeto + ने + participio (बोला); construcción ergativa.', ex: 'मैंने बोला।', rom: 'mainne bola', es: 'Hablé.' },
       { name: 'अपूर्ण भूत (imperfecto)', use: 'Hábito pasado.', build: 'Raíz + -ता/-ती/-ते + था/थी/थे.', ex: 'मैं बोलता था।', rom: 'main bolta tha', es: 'Hablaba.' },
       { name: 'भविष्य (futuro)', use: 'Futuro (forma masc.).', build: 'Raíz + -ूँगा/-ेगा/-ेंगे (concuerda en género/número).', ex: 'मैं बोलूँगा।', rom: 'main bolunga', es: 'Hablaré.' },
@@ -278,7 +409,14 @@ export const verbTenses = {
     verb: 'تكلَّم (takallama, hablar)',
     tenses: [
       { name: 'الماضي (pasado)', use: 'Acción terminada.', build: 'Se parte de la 3.ª masc. sing. y se añaden sufijos de persona (-تُ para "yo").', ex: 'تكلمتُ', rom: 'takallamtu', es: 'Hablé.' },
-      { name: 'المضارع (presente)', use: 'Acción presente o habitual.', build: 'Prefijos personales (أ-, تـ-, يـ-, نـ-) sobre la raíz.', ex: 'أتكلم', rom: 'atakallam', es: 'Hablo.' },
+      { name: 'المضارع (presente)', use: 'Acción presente o habitual.', build: 'Prefijos personales (أ-, تـ-, يـ-, نـ-) sobre la raíz.', ex: 'أتكلم', rom: 'atakallam', es: 'Hablo.', table: [
+        { af: 'أنا أتكلم (ana atakallam)', int: 'هل أتكلم؟ (hal atakallam?)', neg: 'لا أتكلم (la atakallam)' },
+        { af: 'أنت تتكلم (anta tatakallam)', int: 'هل تتكلم؟ (hal tatakallam?)', neg: 'لا تتكلم (la tatakallam)' },
+        { af: 'هو يتكلم (huwa yatakallam)', int: 'هل يتكلم؟ (hal yatakallam?)', neg: 'لا يتكلم (la yatakallam)' },
+        { af: 'نحن نتكلم (nahnu natakallam)', int: 'هل نتكلم؟ (hal natakallam?)', neg: 'لا نتكلم (la natakallam)' },
+        { af: 'أنتم تتكلمون (antum tatakallamun)', int: 'هل تتكلمون؟ (hal tatakallamun?)', neg: 'لا تتكلمون (la tatakallamun)' },
+        { af: 'هم يتكلمون (hum yatakallamun)', int: 'هل يتكلمون؟ (hal yatakallamun?)', neg: 'لا يتكلمون (la yatakallamun)' },
+      ] },
       { name: 'المستقبل (futuro)', use: 'Futuro.', build: 'Prefijo سـ (o سوف) delante del presente.', ex: 'سأتكلم', rom: 'sa-atakallam', es: 'Hablaré.' },
       { name: 'الأمر (imperativo)', use: 'Orden.', build: 'Forma derivada del presente, sin prefijo de persona.', ex: 'تكلَّم!', rom: 'takallam', es: '¡Habla!' },
     ],
@@ -286,7 +424,14 @@ export const verbTenses = {
   he: {
     verb: 'לדבר (ledaber, hablar)',
     tenses: [
-      { name: 'הווה (presente)', use: 'Presente (funciona como participio).', build: 'Patrón del binyán; concuerda en género/número: מְדַבֵּר (m.), מְדַבֶּרֶת (f.).', ex: 'אני מדבר', rom: 'ani medaber', es: 'Hablo.' },
+      { name: 'הווה (presente)', use: 'Presente (funciona como participio).', build: 'Patrón del binyán; concuerda en género/número: מְדַבֵּר (m.), מְדַבֶּרֶת (f.).', ex: 'אני מדבר', rom: 'ani medaber', es: 'Hablo.', table: [
+        { af: 'אני מדבר (ani medaber)', int: 'אני מדבר? (ani medaber?)', neg: 'אני לא מדבר (ani lo medaber)' },
+        { af: 'אתה מדבר (ata medaber)', int: 'אתה מדבר? (ata medaber?)', neg: 'אתה לא מדבר (ata lo medaber)' },
+        { af: 'הוא מדבר (hu medaber)', int: 'הוא מדבר? (hu medaber?)', neg: 'הוא לא מדבר (hu lo medaber)' },
+        { af: 'אנחנו מדברים (anachnu medabrim)', int: 'אנחנו מדברים? (anachnu medabrim?)', neg: 'אנחנו לא מדברים (anachnu lo medabrim)' },
+        { af: 'אתם מדברים (atem medabrim)', int: 'אתם מדברים? (atem medabrim?)', neg: 'אתם לא מדברים (atem lo medabrim)' },
+        { af: 'הם מדברים (hem medabrim)', int: 'הם מדברים? (hem medabrim?)', neg: 'הם לא מדברים (hem lo medabrim)' },
+      ] },
       { name: 'עבר (pasado)', use: 'Pasado.', build: 'Raíz de 3 consonantes + sufijos de persona (-תי = "yo").', ex: 'דיברתי', rom: 'dibarti', es: 'Hablé.' },
       { name: 'עתיד (futuro)', use: 'Futuro.', build: 'Prefijos personales (א-, ת-, י-, נ-) sobre la raíz.', ex: 'אדבר', rom: 'adaber', es: 'Hablaré.' },
       { name: 'ציווי (imperativo)', use: 'Orden (forma masc.).', build: 'Base del futuro sin el prefijo de persona.', ex: 'דבר!', rom: 'daber', es: '¡Habla!' },
