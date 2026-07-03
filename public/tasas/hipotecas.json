@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-02",
+  "lastUpdated": "2026-07-03",
   "colombia": [
     {
       "entidad": "Fondo Nacional del Ahorro",
@@ -11,7 +11,7 @@
       "entidad": "Bancolombia",
       "plazo": "Hasta 20 años",
       "fuente": "https://www.bancolombia.com/personas/credito-hipotecario",
-      "tasa": null
+      "tasa": 0.99
     },
     {
       "entidad": "BBVA Colombia",
@@ -39,7 +39,7 @@
       "plazo": "30 años",
       "moneda": "EUR",
       "fuente": "https://tradingeconomics.com/spain/mortgage-rate",
-      "tasa": 3.2
+      "tasa": 0.4
     }
   ]
 }
