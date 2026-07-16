@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-15",
+  "lastUpdated": "2026-07-16",
   "colombia": [
     {
       "entidad": "Fondo Nacional del Ahorro",
@@ -11,7 +11,7 @@
       "entidad": "Bancolombia",
       "plazo": "Hasta 20 años",
       "fuente": "https://www.bancolombia.com/personas/credito-hipotecario",
-      "tasa": 0.99
+      "tasa": null
     },
     {
       "entidad": "BBVA Colombia",
