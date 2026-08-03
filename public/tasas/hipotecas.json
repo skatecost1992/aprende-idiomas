@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-02",
+  "lastUpdated": "2026-08-03",
   "colombia": [
     {
       "entidad": "Fondo Nacional del Ahorro",
@@ -39,7 +39,7 @@
       "plazo": "30 años",
       "moneda": "EUR",
       "fuente": "https://tradingeconomics.com/spain/mortgage-rate",
-      "tasa": 12
+      "tasa": 0.4
     }
   ]
 }
