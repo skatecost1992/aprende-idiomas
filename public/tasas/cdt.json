@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-10",
+  "lastUpdated": "2026-08-11",
   "colombia": [
     {
       "entidad": "Bancolombia",
@@ -29,7 +29,7 @@
       "entidad": "Banco Popular",
       "plazo": "360 días",
       "fuente": "https://www.bancopopular.com.co/",
-      "tasa": 9.5
+      "tasa": 12.5
     }
   ],
   "mundo": [
@@ -38,7 +38,7 @@
       "plazo": "1 año",
       "moneda": "USD",
       "fuente": "https://tradingeconomics.com/united-states/deposit-interest-rate",
-      "tasa": 61.4
+      "tasa": null
     },
     {
       "pais": "Zona Euro",
