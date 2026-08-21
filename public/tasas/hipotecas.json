@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-20",
+  "lastUpdated": "2026-08-21",
   "colombia": [
     {
       "entidad": "Fondo Nacional del Ahorro",
@@ -32,7 +32,7 @@
       "plazo": "30 años fijo",
       "moneda": "USD",
       "fuente": "https://tradingeconomics.com/united-states/30-year-mortgage-rate",
-      "tasa": 6.67
+      "tasa": 6.65
     },
     {
       "pais": "España",
