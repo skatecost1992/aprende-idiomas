@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-09",
+  "lastUpdated": "2026-09-10",
   "colombia": [
     {
       "entidad": "Bancolombia",
@@ -38,14 +38,14 @@
       "plazo": "1 año",
       "moneda": "USD",
       "fuente": "https://tradingeconomics.com/united-states/deposit-interest-rate",
-      "tasa": null
+      "tasa": 4.9
     },
     {
       "pais": "Zona Euro",
       "plazo": "1 año",
       "moneda": "EUR",
       "fuente": "https://tradingeconomics.com/euro-area/deposit-interest-rate",
-      "tasa": 2.25
+      "tasa": 2.5
     }
   ]
 }
