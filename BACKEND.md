@@ -35,6 +35,11 @@ React (este repo)  ──HTTPS──►  API (Node/Express)  ──►  Base de 
 | POST | `/api/payments/webhook` | La pasarela confirma el pago (firmado). |
 | GET/PUT | `/api/progress` | Leer/guardar progreso y skills. |
 
+El vocabulario que el estudiante añade desde la pestaña **➕ Mi vocabulario** ya tiene
+su propio servicio, independiente de este: [`server/vocabulario`](server/vocabulario).
+Cuando exista el backend de usuarios, conviene mover su almacenamiento a la misma base
+de datos y asociar cada palabra a un `user_id`.
+
 ## Flujo de pago PSE (Colombia)
 
 PSE (Pagos Seguros en Línea) se integra a través de una pasarela autorizada como

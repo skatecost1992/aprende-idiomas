@@ -2,8 +2,22 @@ import { useState } from 'react'
 import { speak } from '../utils/speak.js'
 import { listsFor } from '../data/langLists.js'
 
+// Resalta el verbo modal dentro de la frase de ejemplo, como en las tablas de
+// gramática: "I **can** speak French".
+function resaltar(frase, modal) {
+  const i = frase.toLowerCase().indexOf(modal.toLowerCase())
+  if (i === -1) return frase
+  return (
+    <>
+      {frase.slice(0, i)}
+      <strong>{frase.slice(i, i + modal.length)}</strong>
+      {frase.slice(i + modal.length)}
+    </>
+  )
+}
+
 // Listas de verbos por idioma (inglés, alemán, francés): irregulares, regulares,
-// phrasal/separables y vocabulario técnico, con botón para escuchar.
+// phrasal/separables, modales y vocabulario técnico, con botón para escuchar.
 export default function EnglishLists({ language }) {
   const sections = listsFor(language.code)
   const [subId, setSubId] = useState(sections ? sections[0].id : null)
@@ -28,6 +42,7 @@ export default function EnglishLists({ language }) {
       {active.note && <p className="muted small">{active.note}</p>}
 
       {active.type === 'verbs' && (
+        <div className="tabla-wrap">
         <table className="en-table">
           <thead><tr>{active.cols.map((c) => <th key={c.k}>{c.l}</th>)}<th></th></tr></thead>
           <tbody>
@@ -41,6 +56,7 @@ export default function EnglishLists({ language }) {
             ))}
           </tbody>
         </table>
+        </div>
       )}
 
       {active.type === 'phrases' && (
@@ -53,6 +69,32 @@ export default function EnglishLists({ language }) {
             </li>
           ))}
         </ul>
+      )}
+
+      {active.type === 'modals' && (
+        <div className="tabla-wrap">
+        <table className="en-table modal-table">
+          <thead>
+            <tr><th>Modal</th><th>Función</th><th>Ejemplos</th><th></th></tr>
+          </thead>
+          <tbody>
+            {active.rows.map((m) => (
+              <tr key={m.v}>
+                <td className="en-strong modal-v">{m.v}</td>
+                <td className="en-es">{m.fn}</td>
+                <td>
+                  <ul className="modal-ex">
+                    {m.ex.map((frase, i) => (
+                      <li key={i}>{resaltar(frase, m.v)}</li>
+                    ))}
+                  </ul>
+                </td>
+                <td>{speakBtn(m.ex[0])}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        </div>
       )}
 
       {active.type === 'terms' && (

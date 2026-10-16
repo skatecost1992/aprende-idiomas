@@ -1,0 +1,15 @@
+{
+  "name": "aprende-vocabulario",
+  "version": "1.0.0",
+  "private": true,
+  "description": "API de vocabulario personalizado por idioma para la pestaña \"Mi vocabulario\" de Aprende.",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}

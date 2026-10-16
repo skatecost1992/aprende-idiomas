@@ -1,0 +1,336 @@
+{
+  "info": {
+    "_postman_id": "9f2c1d4a-6b3e-4f70-9c11-8ad5e2f10c31",
+    "name": "Aprende — Vocabulario",
+    "description": "API de vocabulario personalizado por idioma (server/vocabulario).\n\nLevanta el servicio con `npm start` dentro de `server/vocabulario` (puerto 4100 por defecto) y ejecuta las peticiones en orden: **Crear palabra** guarda el id en la variable `wordId`, que usan Obtener, Actualizar y Eliminar.\n\nVariables de la colección:\n- `baseUrl`: http://localhost:4100\n- `lang`: código del idioma (en, fr, de, ... 22 en total)\n- `wordId`: se rellena solo al crear una palabra",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    { "key": "baseUrl", "value": "http://localhost:4100", "type": "string" },
+    { "key": "lang", "value": "en", "type": "string" },
+    { "key": "wordId", "value": "", "type": "string" }
+  ],
+  "item": [
+    {
+      "name": "Estado del servicio",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/health",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "health"]
+        },
+        "description": "Comprueba que el servicio responde e informa dónde guarda el JSON y cuántas palabras hay por idioma."
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('Responde 200', () => pm.response.to.have.status(200));",
+              "pm.test('Estado ok', () => pm.expect(pm.response.json().status).to.eql('ok'));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Idiomas admitidos",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/vocabulario/idiomas",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "vocabulario", "idiomas"]
+        },
+        "description": "Devuelve los 22 idiomas con su código y los niveles MCER válidos (A1–C2)."
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('Responde 200', () => pm.response.to.have.status(200));",
+              "pm.test('Trae 22 idiomas', () => pm.expect(pm.response.json().idiomas).to.have.lengthOf(22));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Listar vocabulario de un idioma",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/vocabulario/{{lang}}",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "vocabulario", "{{lang}}"]
+        },
+        "description": "Todas las palabras guardadas para el idioma `lang`."
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('Responde 200', () => pm.response.to.have.status(200));",
+              "pm.test('Devuelve un arreglo de items', () => pm.expect(pm.response.json().items).to.be.an('array'));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Listar con filtros (nivel, categoría, búsqueda)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/vocabulario/{{lang}}?level=A1&categoria=Comida&q=man",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "vocabulario", "{{lang}}"],
+          "query": [
+            { "key": "level", "value": "A1", "description": "Nivel MCER: A1, A2, B1, B2, C1 o C2." },
+            { "key": "categoria", "value": "Comida", "description": "Coincidencia exacta, sin distinguir mayúsculas." },
+            { "key": "q", "value": "man", "description": "Busca el texto en el español y en la traducción." }
+          ]
+        },
+        "description": "Los tres filtros son opcionales y se combinan entre sí."
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": ["pm.test('Responde 200', () => pm.response.to.have.status(200));"]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Crear palabra",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"es\": \"Manzana\",\n  \"w\": \"Apple\",\n  \"p\": \"ápel\",\n  \"level\": \"A1\",\n  \"category\": \"Comida\"\n}",
+          "options": { "raw": { "language": "json" } }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/vocabulario/{{lang}}",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "vocabulario", "{{lang}}"]
+        },
+        "description": "`es` y `w` son obligatorios. `p` (pronunciación) y `category` son opcionales; `level` por defecto es A1.\n\nDevuelve 409 si ya existe una palabra con el mismo término en español para ese idioma.\n\nEl test guarda el `id` en la variable `wordId`."
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('Responde 201', () => pm.response.to.have.status(201));",
+              "const body = pm.response.json();",
+              "pm.test('Devuelve un id', () => pm.expect(body.id).to.be.a('string'));",
+              "pm.collectionVariables.set('wordId', body.id);"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Obtener palabra por id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/vocabulario/{{lang}}/{{wordId}}",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "vocabulario", "{{lang}}", "{{wordId}}"]
+        },
+        "description": "Usa el `wordId` que dejó la petición Crear palabra."
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": ["pm.test('Responde 200', () => pm.response.to.have.status(200));"]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Actualizar palabra",
+      "request": {
+        "method": "PUT",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"w\": \"Apple (fruit)\",\n  \"level\": \"A2\"\n}",
+          "options": { "raw": { "language": "json" } }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/vocabulario/{{lang}}/{{wordId}}",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "vocabulario", "{{lang}}", "{{wordId}}"]
+        },
+        "description": "Actualización parcial: envía solo los campos que cambian."
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('Responde 200', () => pm.response.to.have.status(200));",
+              "pm.test('Aplicó el cambio', () => pm.expect(pm.response.json().level).to.eql('A2'));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Carga por lotes",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"items\": [\n    { \"es\": \"Pan\", \"w\": \"Bread\", \"level\": \"A1\", \"category\": \"Comida\" },\n    { \"es\": \"Agua\", \"w\": \"Water\", \"level\": \"A1\", \"category\": \"Comida\" },\n    { \"es\": \"Presupuesto\", \"w\": \"Budget\", \"level\": \"B2\", \"category\": \"Negocios\" }\n  ]\n}",
+          "options": { "raw": { "language": "json" } }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/vocabulario/{{lang}}/lote",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "vocabulario", "{{lang}}", "lote"]
+        },
+        "description": "Crea hasta 500 palabras de una vez. Las que fallan (duplicadas o inválidas) se devuelven en `rechazadas` con su motivo; el resto sí se crea."
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('Responde 201', () => pm.response.to.have.status(201));",
+              "pm.test('Informa cuántas creó', () => pm.expect(pm.response.json().creadas).to.be.a('number'));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Eliminar palabra",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/vocabulario/{{lang}}/{{wordId}}",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "vocabulario", "{{lang}}", "{{wordId}}"]
+        },
+        "description": "Responde 204 sin cuerpo cuando la palabra se borra."
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('Responde 204', () => pm.response.to.have.status(204));",
+              "pm.collectionVariables.set('wordId', '');"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Errores",
+      "description": "Casos que debe rechazar el servicio.",
+      "item": [
+        {
+          "name": "Idioma no admitido (404)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/vocabulario/xx",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "vocabulario", "xx"]
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": ["pm.test('Responde 404', () => pm.response.to.have.status(404));"]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Faltan campos obligatorios (400)",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"w\": \"Apple\"\n}",
+              "options": { "raw": { "language": "json" } }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/vocabulario/{{lang}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "vocabulario", "{{lang}}"]
+            },
+            "description": "Falta `es`, el término en español."
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": ["pm.test('Responde 400', () => pm.response.to.have.status(400));"]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Nivel inválido (400)",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"es\": \"Prueba\",\n  \"w\": \"Test\",\n  \"level\": \"D1\"\n}",
+              "options": { "raw": { "language": "json" } }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/vocabulario/{{lang}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "vocabulario", "{{lang}}"]
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": ["pm.test('Responde 400', () => pm.response.to.have.status(400));"]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

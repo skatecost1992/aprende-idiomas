@@ -48,11 +48,27 @@ export default function Grammar({ language, level }) {
 
                 {lesson.build && <p className="lesson-build">🔧 Cómo se construye: {lesson.build}</p>}
 
+                {/* Marcadores temporales: las palabras que avisan de que toca
+                    este tiempo y no otro. Se ven mejor como lista que dentro
+                    de la explicación. */}
+                {lesson.markers && (
+                  <div className="lesson-markers">
+                    <span className="markers-label">⏱️ Te avisan de que toca este tiempo:</span>
+                    <span className="cat-chips">
+                      {lesson.markers.map((m, i) => (
+                        <span key={i} className="cat-chip">{m}</span>
+                      ))}
+                    </span>
+                  </div>
+                )}
+
                 {lesson.forms && hasExamples && (
                   <div className="lesson-forms">
                     {lesson.forms.map((f, i) => (
                       <div key={i} className="form-row">
-                        <span className={`form-tipo tipo-${f.tipo.toLowerCase()}`}>{f.tipo}</span>
+                        {/* El tipo puede ser Afirmativa/Negativa/... o el nombre
+                            de un uso ("Sigue vigente"), así que se normaliza. */}
+                        <span className={`form-tipo tipo-${f.tipo.toLowerCase().replace(/\s+/g, '-')}`}>{f.tipo}</span>
                         <span className="form-es">{f.es}</span>
                         <span className="form-target" dir={language.rtl ? 'rtl' : 'ltr'}>
                           {f.t[code]}

@@ -7,7 +7,10 @@ import Grammar from './Grammar.jsx'
 import Alphabet from './Alphabet.jsx'
 import VerbTenses from './VerbTenses.jsx'
 import EnglishLists from './EnglishLists.jsx'
+import A1Course from './A1Course.jsx'
+import { hasA1Course } from '../data/a1Course.js'
 import { listsFor } from '../data/langLists.js'
+import MyVocabulary from './MyVocabulary.jsx'
 import Flashcards from './Flashcards.jsx'
 import Quiz from './Quiz.jsx'
 import ProgressBar from './ProgressBar.jsx'
@@ -16,6 +19,7 @@ const MODES = [
   { id: 'ruta', label: 'Ruta A1–C2', icon: '🧭' },
   { id: 'alfabeto', label: 'Alfabeto', icon: '🔤' },
   { id: 'browse', label: 'Explorar', icon: '📖' },
+  { id: 'mivocab', label: 'Mi vocabulario', icon: '➕' },
   { id: 'verbos', label: 'Tiempos verbales', icon: '⏳' },
   { id: 'grammar', label: 'Gramática', icon: '📐' },
   { id: 'cards', label: 'Tarjetas', icon: '🃏' },
@@ -24,6 +28,8 @@ const MODES = [
 
 // Pestaña extra para idiomas con listas de verbos (inglés, alemán, francés).
 const LISTAS_MODE = { id: 'listas', label: 'Listas de verbos', icon: '📋' }
+// Curso A1 guiado (metodología can-do + chunks + input comprensible + recuerdo activo).
+const A1_MODE = { id: 'cursoa1', label: 'Curso A1', icon: '🎓' }
 
 // Vista completa de aprendizaje de un idioma (ruta MCER, vocabulario, gramática,
 // tarjetas y quiz) con filtro por nivel y panel de progreso.
@@ -31,7 +37,9 @@ export default function LanguageStudy({ language, progress }) {
   const [mode, setMode] = useState('ruta')
   const [level, setLevel] = useState('all')
   const filtered = level === 'all' ? categories : categories.filter((c) => c.level === level)
-  const modes = listsFor(language.code) ? [...MODES, LISTAS_MODE] : MODES
+  let modes = MODES
+  if (hasA1Course(language.code)) modes = [MODES[0], A1_MODE, ...MODES.slice(1)] // Curso A1 tras la Ruta
+  if (listsFor(language.code)) modes = [...modes, LISTAS_MODE]
 
   return (
     <div>
@@ -53,7 +61,7 @@ export default function LanguageStudy({ language, progress }) {
         ))}
       </nav>
 
-      {mode !== 'ruta' && mode !== 'verbos' && mode !== 'alfabeto' && mode !== 'listas' && (
+      {mode !== 'ruta' && mode !== 'verbos' && mode !== 'alfabeto' && mode !== 'listas' && mode !== 'cursoa1' && mode !== 'mivocab' && (
         <div className="level-filter">
           <button className={`chip ${level === 'all' ? 'active' : ''}`} onClick={() => setLevel('all')}>Todos</button>
           {levels.map((l) => (
@@ -75,7 +83,9 @@ export default function LanguageStudy({ language, progress }) {
       {mode === 'alfabeto' && <Alphabet language={language} />}
       {mode === 'verbos' && <VerbTenses language={language} />}
       {mode === 'listas' && <EnglishLists language={language} />}
+      {mode === 'cursoa1' && <A1Course language={language} progress={progress} />}
       {mode === 'browse' && <Browse key={`${language.code}-${level}`} language={language} categories={filtered} />}
+      {mode === 'mivocab' && <MyVocabulary language={language} />}
       {mode === 'grammar' && <Grammar language={language} level={level} />}
       {mode === 'cards' && (
         <Flashcards

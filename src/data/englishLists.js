@@ -27,6 +27,131 @@ export const phrasalVerbs = [
   { v: 'throw away', es: 'tirar a la basura', ex: 'Throw away the trash.' },
   { v: 'fill in', es: 'rellenar (un formulario)', ex: 'Fill in the form.' },
   { v: 'get along with', es: 'llevarse bien con', ex: 'I get along with her.' },
+
+  // --- break ---
+  { v: 'break up', es: 'romper (una pareja)', ex: 'They broke up last year.' },
+  { v: 'break in', es: 'entrar a robar', ex: 'Someone broke in last night.' },
+  { v: 'break out', es: 'estallar (un incendio, una guerra)', ex: 'A fire broke out.' },
+
+  // --- bring ---
+  { v: 'bring up', es: 'criar; sacar un tema', ex: 'She brought up a good point.' },
+  { v: 'bring back', es: 'traer de vuelta; recordar', ex: 'That song brings back memories.' },
+
+  // --- call ---
+  { v: 'call back', es: 'devolver la llamada', ex: "I'll call you back." },
+  { v: 'call off', es: 'cancelar', ex: 'They called off the meeting.' },
+
+  // --- come ---
+  { v: 'come in', es: 'entrar, pasar', ex: 'Come in, please.' },
+  { v: 'come across', es: 'encontrarse por casualidad', ex: 'I came across an old photo.' },
+  { v: 'come up with', es: 'idear, ocurrírsele a uno', ex: 'She came up with a plan.' },
+  { v: 'come over', es: 'pasarse por casa', ex: 'Come over tonight.' },
+  { v: 'come out', es: 'salir, publicarse', ex: 'The film comes out in May.' },
+
+  // --- cut ---
+  { v: 'cut off', es: 'cortar (el suministro)', ex: 'They cut off the electricity.' },
+  { v: 'cut down on', es: 'reducir el consumo de', ex: 'Cut down on sugar.' },
+
+  // --- get ---
+  { v: 'get on', es: 'subirse a (bus, tren, avión)', ex: 'Get on the bus.' },
+  { v: 'get off', es: 'bajarse de', ex: 'Get off at the next stop.' },
+  { v: 'get back', es: 'volver; recuperar', ex: 'I got back home late.' },
+  { v: 'get over', es: 'superar, recuperarse de', ex: 'She got over the flu.' },
+  { v: 'get out', es: 'salir (de un sitio)', ex: 'Get out of the car.' },
+  { v: 'get through', es: 'conseguir contactar; superar', ex: "I couldn't get through." },
+  { v: 'get rid of', es: 'deshacerse de', ex: 'Get rid of those old shoes.' },
+  { v: 'get together', es: 'reunirse, quedar', ex: "Let's get together on Friday." },
+
+  // --- give ---
+  { v: 'give in', es: 'ceder, rendirse', ex: "Don't give in." },
+  { v: 'give out', es: 'repartir', ex: 'Give out the papers.' },
+  { v: 'give away', es: 'regalar; revelar', ex: 'She gave away her books.' },
+
+  // --- go ---
+  { v: 'go out', es: 'salir (de fiesta)', ex: "Let's go out tonight." },
+  { v: 'go back', es: 'volver', ex: 'I want to go back.' },
+  { v: 'go through', es: 'pasar por (una experiencia)', ex: 'She went through a hard time.' },
+  { v: 'go off', es: 'sonar (una alarma); estropearse', ex: 'The alarm went off.' },
+  { v: 'go over', es: 'repasar', ex: "Let's go over the plan." },
+  { v: 'go ahead', es: 'adelante, seguir', ex: 'Go ahead and start.' },
+
+  // --- hang ---
+  { v: 'hang up', es: 'colgar el teléfono', ex: "Don't hang up!" },
+  { v: 'hang out', es: 'pasar el rato', ex: 'We hung out at the park.' },
+
+  // --- look ---
+  { v: 'look up', es: 'buscar (en un diccionario)', ex: 'Look up the word.' },
+  { v: 'look out', es: 'cuidado, atención (ante un peligro)', ex: 'Look out!' },
+  { v: 'look into', es: 'investigar', ex: "We'll look into it." },
+  { v: 'look up to', es: 'admirar', ex: 'I look up to my sister.' },
+  { v: 'look down on', es: 'despreciar', ex: "Don't look down on others." },
+
+  // --- make ---
+  { v: 'make up', es: 'inventar; reconciliarse', ex: 'He made up a story.' },
+  { v: 'make up for', es: 'compensar', ex: "I'll make up for it." },
+
+  // --- put ---
+  { v: 'put off', es: 'posponer, aplazar', ex: "Don't put it off." },
+  { v: 'put out', es: 'apagar (un fuego)', ex: 'They put out the fire.' },
+  { v: 'put up with', es: 'soportar, aguantar', ex: "I can't put up with the noise." },
+  { v: 'put away', es: 'guardar, recoger', ex: 'Put away your toys.' },
+  { v: 'put down', es: 'dejar (en el suelo)', ex: 'Put down the box.' },
+
+  // --- run ---
+  { v: 'run into', es: 'encontrarse con alguien', ex: 'I ran into an old friend.' },
+  { v: 'run away', es: 'huir, escaparse', ex: 'The dog ran away.' },
+
+  // --- take ---
+  { v: 'take care of', es: 'cuidar de, ocuparse de', ex: 'Take care of yourself.' },
+  { v: 'take out', es: 'sacar', ex: 'Take out the rubbish.' },
+  { v: 'take over', es: 'tomar el control', ex: 'She took over the company.' },
+  { v: 'take up', es: 'empezar (una afición)', ex: 'I took up yoga.' },
+  { v: 'take after', es: 'parecerse a (un familiar)', ex: 'She takes after her mother.' },
+
+  // --- turn ---
+  { v: 'turn up', es: 'aparecer; subir el volumen', ex: 'Turn up the volume.' },
+  { v: 'turn down', es: 'rechazar; bajar el volumen', ex: 'He turned down the offer.' },
+  { v: 'turn into', es: 'convertirse en', ex: 'The caterpillar turned into a butterfly.' },
+  { v: 'turn out', es: 'resultar (ser)', ex: 'It turned out well.' },
+  { v: 'turn around', es: 'darse la vuelta', ex: 'Turn around!' },
+
+  // --- otros de uso diario ---
+  { v: 'calm down', es: 'calmarse', ex: 'Calm down!' },
+  { v: 'catch up', es: 'ponerse al día', ex: "Let's catch up soon." },
+  { v: 'check in', es: 'registrarse (hotel, aeropuerto)', ex: 'Check in at the desk.' },
+  { v: 'check out', es: 'dejar el hotel; echar un vistazo', ex: 'Check out this song.' },
+  { v: 'count on', es: 'contar con', ex: 'You can count on me.' },
+  { v: 'deal with', es: 'lidiar con, encargarse de', ex: "I'll deal with it." },
+  { v: 'drop off', es: 'dejar a alguien (en un sitio)', ex: "I'll drop you off." },
+  { v: 'eat out', es: 'comer fuera', ex: 'We eat out on Fridays.' },
+  { v: 'end up', es: 'acabar (de una manera)', ex: 'We ended up at a café.' },
+  { v: 'figure out', es: 'averiguar, entender', ex: "I can't figure it out." },
+  { v: 'grow up', es: 'crecer, criarse', ex: 'I grew up in Madrid.' },
+  { v: 'hand in', es: 'entregar', ex: 'Hand in your homework.' },
+  { v: 'hold on', es: 'esperar un momento', ex: 'Hold on a second.' },
+  { v: 'hurry up', es: 'darse prisa', ex: 'Hurry up!' },
+  { v: 'keep on', es: 'seguir haciendo algo', ex: 'Keep on trying.' },
+  { v: 'keep up with', es: 'seguir el ritmo de', ex: "I can't keep up with you." },
+  { v: 'let down', es: 'decepcionar, fallar a alguien', ex: "Don't let me down." },
+  { v: 'log in', es: 'iniciar sesión', ex: 'Log in with your email.' },
+  { v: 'move in', es: 'mudarse (a una casa)', ex: 'They moved in last week.' },
+  { v: 'pass away', es: 'fallecer', ex: 'His grandfather passed away.' },
+  { v: 'pay back', es: 'devolver el dinero', ex: "I'll pay you back." },
+  { v: 'point out', es: 'señalar, hacer notar', ex: 'She pointed out the error.' },
+  { v: 'settle down', es: 'asentarse, echar raíces', ex: 'He settled down in Rome.' },
+  { v: 'sign up', es: 'apuntarse, registrarse', ex: 'I signed up for the course.' },
+  { v: 'slow down', es: 'reducir la velocidad', ex: 'Slow down!' },
+  { v: 'sort out', es: 'resolver; ordenar', ex: 'We sorted out the problem.' },
+  { v: 'speak up', es: 'hablar más alto', ex: 'Speak up, please.' },
+  { v: 'stay up', es: 'quedarse despierto', ex: 'I stayed up late.' },
+  { v: 'tell off', es: 'regañar', ex: 'The teacher told him off.' },
+  { v: 'think over', es: 'reflexionar sobre algo', ex: 'Think it over.' },
+  { v: 'try on', es: 'probarse (ropa)', ex: 'Try on these jeans.' },
+  { v: 'warm up', es: 'calentar, calentarse', ex: 'Warm up before running.' },
+  { v: 'watch out for', es: 'estar atento a, cuidarse de', ex: 'Watch out for scams.' },
+  { v: 'wear out', es: 'desgastar(se)', ex: 'These shoes wore out.' },
+  { v: 'work on', es: 'trabajar en algo', ex: "I'm working on a project." },
+  { v: 'write down', es: 'anotar', ex: 'Write down the address.' },
 ]
 
 // Verbos regulares: el pasado y el participio se forman añadiendo -ed.
@@ -133,4 +258,244 @@ export const techTerms = [
   { term: 'Settings', es: 'Ajustes, configuración.' },
   { term: 'Deadline', es: 'Fecha límite.' },
   { term: 'Feedback', es: 'Retroalimentación, comentarios.' },
+]
+
+// --- Vocabulario de lectura ---
+// Palabras que aparecen una y otra vez en artículos, documentación y textos
+// técnicos, y que no son vocabulario de principiante ni término técnico: son el
+// pegamento del idioma. Varias tienen más de una traducción según el contexto y
+// aquí van todas, separadas por comas.
+export const readingWords = [
+  { term: 'takeaways', es: 'conclusiones, ideas clave' },
+  { term: 'comprehensive', es: 'integral, exhaustivo, completo' },
+  { term: 'approach', es: 'enfoque, planteamiento; acercarse a' },
+  { term: 'enhance', es: 'mejorar, potenciar' },
+  { term: 'entirely', es: 'completamente, por entero' },
+  { term: 'throughout', es: 'a lo largo de, durante todo' },
+  { term: 'however', es: 'sin embargo, no obstante' },
+  { term: 'rather', es: 'más bien; rather than: en lugar de' },
+  { term: 'still', es: 'aún, todavía' },
+  { term: 'isolated', es: 'aislado, aislada' },
+  { term: 'tricky', es: 'engañoso, complicado' },
+  { term: 'wiser', es: 'más sabio, más prudente' },
+  { term: 'straight', es: 'recto; directo, sin rodeos' },
+  { term: 'forward', es: 'hacia delante, adelante; directo' },
+  { term: 'become', es: 'convertirse en, llegar a ser, volverse' },
+  { term: 'holds', es: 'contiene, sostiene; se mantiene' },
+  { term: 'handles', es: 'maneja, gestiona; asas, manijas' },
+  { term: 'fits', es: 'encaja, queda bien' },
+  { term: 'referred', es: 'referido, mencionado' },
+  { term: 'surrounded', es: 'rodeado' },
+  { term: 'parentheses', es: 'paréntesis' },
+  { term: 'quotes', es: 'comillas; citas' },
+  { term: 'truth', es: 'verdad' },
+  { term: 'wonders', es: 'se pregunta; maravillas' },
+  { term: 'certainly', es: 'ciertamente, sin duda' },
+  { term: 'sticking', es: 'pegado, adherido; adherencia' },
+  { term: 'measurements', es: 'medidas, mediciones' },
+  { term: 'might', es: 'podría (posibilidad)' },
+  { term: 'would', es: 'condicional -ría (would go: iría)' },
+  { term: 'world', es: 'mundo' },
+  { term: 'word', es: 'palabra' },
+  { term: 'work', es: 'trabajo; funcionar' },
+
+  // Trabajo y carrera profesional
+  { term: 'advancement', es: 'avance, progreso; ascenso' },
+  { term: 'promotions', es: 'ascensos; promociones' },
+  { term: 'career ladder', es: 'escalafón, carrera profesional' },
+  { term: 'ladder', es: 'escalera (de mano)' },
+  { term: 'rate', es: 'tarifa, tasa; ritmo' },
+  { term: 'climb', es: 'escalar, subir, trepar' },
+  { term: 'corporate', es: 'corporativo, de empresa' },
+  { term: 'teamwork', es: 'trabajo en equipo' },
+  { term: 'pursue', es: 'perseguir, buscar (un objetivo)' },
+  { term: 'gain', es: 'ganar, obtener; ganancia' },
+  { term: 'comprises', es: 'comprende, consta de' },
+  { term: 'savvy', es: 'maña, conocimiento práctico; entendido' },
+  { term: 'grow', es: 'crecer; cultivar' },
+  { term: 'archive', es: 'archivo; archivar' },
+  { term: 'within', es: 'dentro de' },
+  { term: 'through', es: 'a través de' },
+  { term: 'fitting', es: 'adecuado, apropiado, oportuno' },
+  { term: 'accuracy', es: 'precisión, exactitud' },
+  { term: 'peer', es: 'compañero, igual, par' },
+  { term: 'grateful', es: 'agradecido' },
+  { term: 'hopefully', es: 'ojalá, esperemos que' },
+  { term: 'effect', es: 'efecto' },
+  { term: 'being', es: 'ser, estar, siendo; existir' },
+
+  // Sucesos y crónica negra
+  { term: 'extortion', es: 'extorsión' },
+  { term: 'kidnap', es: 'secuestrar' },
+  { term: 'torture', es: 'tortura; torturar' },
+  { term: 'kill them', es: 'matarlos (coloquial: kill \'em)' },
+  { term: 'dying', es: 'muriendo, agonizante' },
+  { term: 'cemetery', es: 'cementerio' },
+  { term: 'mad', es: 'loco, demente; furioso' },
+
+  // Varios
+  { term: 'journey', es: 'viaje, trayecto' },
+  { term: 'heavyweight', es: 'de peso pesado; peso pesado' },
+  { term: 'useless', es: 'inútil' },
+  { term: 'get into', es: 'meterse en, entrar en' },
+  { term: 'sniff', es: 'oler, olfatear' },
+  { term: 'bowl', es: 'tazón, cuenco' },
+  { term: 'grazed', es: 'rozó; pastó (el ganado)' },
+  { term: 'lubed', es: 'lubricado' },
+  { term: 'partridge', es: 'perdiz' },
+
+  // Estudios y vida laboral
+  { term: 'career', es: 'carrera profesional, trayectoria' },
+  { term: 'major', es: 'especialidad, carrera (universitaria); principal' },
+  { term: 'stipend', es: 'estipendio, asignación' },
+  { term: 'duty', es: 'deber, obligación' },
+  { term: 'responsible', es: 'responsable' },
+  { term: 'guidelines', es: 'directrices, pautas' },
+  { term: 'breach', es: 'incumplimiento; brecha' },
+  { term: 'boundaries', es: 'límites (personales)' },
+  { term: 'ensure', es: 'asegurar, garantizar' },
+  { term: 'regardless', es: 'independientemente, a pesar de todo' },
+
+  // Juicios y actitudes
+  { term: 'fair', es: 'justo; feria' },
+  { term: 'unfair', es: 'injusto' },
+  { term: 'blame', es: 'culpa; culpar, echar la culpa' },
+  { term: 'aware', es: 'consciente, al tanto' },
+  { term: 'certainty', es: 'certeza, seguridad' },
+  { term: 'accurate', es: 'preciso, exacto' },
+  { term: 'enthusiasm', es: 'entusiasmo' },
+  { term: 'stressful', es: 'estresante' },
+  { term: 'stressed out', es: 'estresado, agobiado' },
+  { term: 'care', es: 'cuidado; importar (I care: me importa)' },
+  { term: "I don't care", es: 'no me importa' },
+
+  // Viajes y objetos
+  { term: 'trip', es: 'viaje (desplazamiento)' },
+  { term: 'travel', es: 'viajar' },
+  { term: 'luggage', es: 'equipaje' },
+  { term: 'couch', es: 'sofá' },
+  { term: 'bell', es: 'campana; timbre' },
+  { term: 'ground', es: 'suelo; fundamento, base' },
+
+  // Expresiones y palabras sueltas
+  { term: 'here we have', es: 'aquí tenemos' },
+  { term: 'how about', es: 'qué tal, qué te parece' },
+  { term: 'brief', es: 'breve; informe breve' },
+  { term: 'call', es: 'llamada; llamar' },
+  { term: 'count', es: 'contar' },
+  { term: 'smoother', es: 'más suave' },
+  { term: 'treated', es: 'tratado' },
+  { term: 'talking', es: 'hablando' },
+
+  // Ética, cumplimiento y conducta
+  { term: 'accountability', es: 'responsabilidad, rendición de cuentas' },
+  { term: 'non-compliance', es: 'incumplimiento' },
+  { term: 'to violate', es: 'infringir, incumplir, violar' },
+  { term: 'punishment', es: 'castigo, sanción' },
+  { term: 'to lie', es: 'mentir' },
+  { term: 'stealing', es: 'robo; robando' },
+  { term: 'overseeing', es: 'supervisar, supervisando' },
+  { term: 'awareness', es: 'conciencia, concienciación' },
+  { term: 'conscious', es: 'consciente' },
+  { term: 'behavior', es: 'comportamiento, conducta' },
+  { term: 'behave', es: 'comportarse' },
+  { term: 'manner', es: 'manera, modo' },
+  { term: 'treatment', es: 'trato; tratamiento' },
+  { term: 'treating', es: 'tratando' },
+  { term: 'dealing', es: 'trato, interacción; lidiar con' },
+  { term: 'fairness', es: 'equidad, justicia, imparcialidad' },
+  { term: 'trustworthy', es: 'de confianza, fiable' },
+  { term: 'undermine', es: 'socavar, minar' },
+  { term: 'leak', es: 'filtración, fuga; filtrar' },
+  { term: 'shareholders', es: 'accionistas' },
+  { term: 'accountant', es: 'contable, contador' },
+  { term: 'interns', es: 'becarios, pasantes' },
+  { term: 'to favor', es: 'favorecer' },
+
+  // Valoración y argumentación
+  { term: 'strength', es: 'fuerza; fortaleza, punto fuerte' },
+  { term: 'weakness', es: 'debilidad, punto débil' },
+  { term: 'weaknesses', es: 'debilidades, puntos débiles' },
+  { term: 'disadvantage', es: 'desventaja' },
+  { term: 'advice', es: 'consejo, consejos' },
+  { term: 'praise', es: 'elogio; elogiar' },
+  { term: 'awful', es: 'pésimo, horrible' },
+  { term: 'enough', es: 'suficiente, bastante' },
+  { term: 'certain', es: 'cierto, seguro; determinado' },
+  { term: 'regarding', es: 'en cuanto a, respecto a' },
+  { term: 'even', es: 'incluso; par; igualado' },
+  { term: 'thoughts', es: 'pensamientos; opiniones' },
+  { term: 'more responsible', es: 'más responsable (comparativo)' },
+  { term: 'most responsible', es: 'el más responsable (superlativo)' },
+
+  // Crecimiento y trabajo en equipo
+  { term: 'leadership', es: 'liderazgo' },
+  { term: 'engage', es: 'involucrarse, implicarse' },
+  { term: 'room for improvement', es: 'margen de mejora' },
+  { term: 'ongoing', es: 'en marcha, en curso; continuo' },
+  { term: 'lasting', es: 'duradero' },
+  { term: 'research', es: 'investigación; investigar' },
+  { term: 'conference', es: 'congreso, conferencia' },
+  { term: 'hit the books', es: 'ponerse a estudiar (coloquial)' },
+  { term: 'held', es: 'sostenido, mantenido; celebrado (un acto)' },
+  { term: 'backward', es: 'hacia atrás; atrasado' },
+  { term: 'narrow', es: 'estrecho; estrechar, reducir' },
+
+  // Varios
+  { term: 'weather', es: 'tiempo (meteorológico)' },
+  { term: 'hike', es: 'caminata; subida (de precios)' },
+  { term: 'compass', es: 'brújula' },
+]
+
+// --- Verbos modales ---
+// Acompañan a otro verbo y le añaden un matiz: capacidad, permiso, posibilidad,
+// obligación o cortesía. No llevan -s en tercera persona, van seguidos de
+// infinitivo sin "to", y forman la negación con "not" y la pregunta invirtiendo
+// el orden (You can go -> Can you go?).
+export const modalVerbs = [
+  {
+    v: 'can',
+    fn: 'Capacidad en presente, y también para pedir permiso de forma informal.',
+    ex: ['I can speak French.', 'Can I go to the party?'],
+  },
+  {
+    v: 'could',
+    fn: 'Capacidad en el pasado, permiso y peticiones corteses.',
+    ex: ['I could swim when I was five.', 'Could you wait a moment, please?'],
+  },
+  {
+    v: 'may',
+    fn: 'Posibilidad, y permiso en registro formal.',
+    ex: ['It may rain today.', 'May I come in?'],
+  },
+  {
+    v: 'might',
+    fn: 'Posibilidad, algo menos probable que con "may".',
+    ex: ['It might rain today.', 'She might call us later.'],
+  },
+  {
+    v: 'must',
+    fn: 'Obligación o necesidad urgente, y deducción lógica.',
+    ex: ['I must go to the market today.', 'You must be tired.'],
+  },
+  {
+    v: 'shall',
+    fn: 'Sugerencias y ofrecimientos, sobre todo en inglés británico.',
+    ex: ['Shall I carry your bag?', 'Shall we start?'],
+  },
+  {
+    v: 'should',
+    fn: 'Consejos y recomendaciones.',
+    ex: ['You should drive carefully.', 'You should see a doctor.'],
+  },
+  {
+    v: 'will',
+    fn: 'Futuro y decisiones del momento; también peticiones.',
+    ex: ['I will call you tomorrow.', 'Will you please shut the door?'],
+  },
+  {
+    v: 'would',
+    fn: 'Peticiones y ofrecimientos corteses, y hábitos del pasado.',
+    ex: ['Would you like some coffee?', 'Sometimes he would bring me flowers.'],
+  },
 ]

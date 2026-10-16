@@ -141,6 +141,10 @@ body {
 .feedback .ok { color: var(--green); font-weight: 600; }
 .feedback .no { color: var(--red); font-weight: 600; }
 
+/* Fuente de las preguntas: vocabulario o listas de verbos del idioma */
+.quiz-fuentes .chip.active { background: var(--primary); border-color: var(--primary); }
+.quiz-ejemplo { color: var(--muted); font-size: .88rem; font-style: italic; flex-basis: 100%; }
+
 .quiz-result { text-align: center; display: flex; flex-direction: column; gap: 14px; align-items: center; padding: 30px 0; }
 .big-score { font-size: 3rem; font-weight: 800; color: var(--accent); }
 
@@ -234,9 +238,15 @@ body {
 .lesson-title { font-size: 1.05rem; margin-bottom: 6px; }
 .lesson-focus { color: var(--muted); line-height: 1.55; margin-bottom: 12px; }
 .lesson-build { background: var(--bg-soft); border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; line-height: 1.5; font-size: .9rem; margin-bottom: 12px; }
+.lesson-markers { display: flex; flex-direction: column; gap: 8px; margin-bottom: 14px; }
+.markers-label { color: var(--muted); font-size: .85rem; }
+.lesson-markers .cat-chip { color: var(--accent); border-color: rgba(245,158,11,.35); }
+
 .lesson-forms { display: flex; flex-direction: column; gap: 6px; margin-bottom: 12px; }
 .form-row { display: grid; grid-template-columns: 96px 1fr 1.3fr; gap: 10px; align-items: baseline; padding: 6px 0; border-bottom: 1px solid var(--border); }
-.form-tipo { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .4px; padding: 2px 8px; border-radius: 999px; align-self: start; text-align: center; }
+/* Estilo por defecto: vale para las etiquetas de uso de cada lección; los
+   cuatro tipos clásicos lo sobrescriben con su propio color. */
+.form-tipo { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .4px; padding: 2px 8px; border-radius: 999px; align-self: start; text-align: center; background: rgba(148,163,184,.18); color: var(--muted); }
 .tipo-afirmativa { background: rgba(34,197,94,.18); color: #4ade80; }
 .tipo-negativa { background: rgba(239,68,68,.18); color: #f87171; }
 .tipo-pregunta { background: rgba(99,102,241,.2); color: #a5b4fc; }
@@ -429,6 +439,26 @@ body {
 .alpha-p { font-size: .78rem; color: var(--accent); text-align: center; line-height: 1.2; }
 .alpha-hint { margin-top: 14px; }
 
+/* ---- Curso A1 ---- */
+.a1-cando { background: rgba(34,197,94,.1); border: 1px solid var(--green); border-radius: 10px; padding: 10px 14px; margin: 12px 0; line-height: 1.5; }
+.a1-dialogue { display: flex; flex-direction: column; gap: 10px; }
+.a1-line { display: flex; gap: 10px; align-items: flex-start; }
+.a1-line.who-b { flex-direction: row-reverse; }
+.a1-who { width: 28px; height: 28px; border-radius: 50%; background: var(--primary); color: #fff; font-weight: 700; font-size: .8rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 4px; }
+.a1-line.who-b .a1-who { background: var(--accent); color: #0f172a; }
+.a1-bubble { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 10px 14px; max-width: 85%; display: flex; flex-direction: column; gap: 4px; }
+.a1-target { font-weight: 600; display: flex; align-items: baseline; gap: 6px; flex-wrap: wrap; }
+.a1-es-toggle { align-self: flex-start; background: none; border: none; color: var(--muted); font-size: .8rem; cursor: pointer; font-family: inherit; padding: 0; text-decoration: underline dotted; }
+.a1-es-toggle:hover { color: var(--text); }
+.a1-practice { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.a1-practice-item { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 10px 14px; }
+.a1-prompt { color: var(--muted); }
+.a1-answer { font-weight: 600; color: #4ade80; display: flex; align-items: baseline; gap: 6px; }
+.a1-reveal { background: var(--bg-soft); border: 1px solid var(--border); color: var(--accent); border-radius: 8px; padding: 4px 12px; cursor: pointer; font-family: inherit; font-size: .82rem; }
+.a1-reveal:hover { background: var(--card-hover); }
+.a1-tip { background: rgba(245,158,11,.1); border: 1px solid var(--accent); border-radius: 10px; padding: 10px 14px; margin: 12px 0; line-height: 1.5; font-size: .9rem; }
+.a1-footer { margin-top: 14px; line-height: 1.5; }
+
 /* ---- Listas de inglés ---- */
 .english-lists { margin-top: 4px; }
 .en-table { width: 100%; border-collapse: collapse; background: var(--card); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; margin-top: 8px; }
@@ -441,6 +471,18 @@ body {
 .en-list { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 8px; margin-top: 8px; }
 .en-item { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 10px 14px; display: flex; flex-direction: column; gap: 2px; }
 .en-item .en-ex { color: var(--accent); font-size: .85rem; font-style: italic; }
+
+/* ---- Tablas de verbos y modales ---- */
+/* Las tablas de idiomas con muchas columnas (pronunciación, clase) no caben en
+   móvil: se desplazan dentro de su propio contenedor en vez de romper la página. */
+.tabla-wrap { overflow-x: auto; }
+.tabla-wrap .en-table { min-width: 520px; }
+.modal-table { min-width: 520px; }
+.modal-table td { vertical-align: top; }
+.modal-v { font-style: italic; color: var(--accent); white-space: nowrap; }
+.modal-ex { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 5px; }
+.modal-ex li { font-style: italic; }
+.modal-ex strong { color: var(--accent); font-style: normal; }
 
 /* ---- Tiempos verbales ---- */
 .vt-verb { color: var(--muted); margin-bottom: 14px; }
@@ -551,7 +593,38 @@ body {
 .learn-btn:hover { color: var(--text); }
 .learn-btn.on { background: var(--green); border-color: var(--green); color: #fff; }
 
+/* ---- Mi vocabulario (alta de palabras propias por idioma) ---- */
+.mv-source {
+  color: var(--muted); font-size: .85rem; background: var(--bg-soft);
+  border: 1px solid var(--border); border-radius: 12px; padding: 10px 14px; margin-bottom: 16px;
+}
+.mv-form {
+  display: flex; flex-direction: column; gap: 12px; margin-bottom: 26px;
+  background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px;
+}
+.mv-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.mv-row:has(.mv-level) { grid-template-columns: 1fr 1fr 90px; }
+.mv-form label { display: flex; flex-direction: column; gap: 5px; font-size: .85rem; color: var(--muted); }
+.mv-form input, .mv-form select {
+  background: var(--bg-soft); border: 1px solid var(--border); color: var(--text);
+  padding: 10px 12px; border-radius: 10px; font-family: inherit; font-size: .95rem; width: 100%;
+}
+.mv-form input:focus, .mv-form select:focus { outline: none; border-color: var(--primary); }
+.mv-error { color: var(--red); font-size: .88rem; }
+.mv-ok { color: var(--green); font-size: .88rem; }
+.mv-actions { display: flex; align-items: center; gap: 12px; }
+.mv-save {
+  background: var(--primary); border: none; color: #fff; font-family: inherit; font-size: .95rem;
+  padding: 11px 18px; border-radius: 10px; cursor: pointer;
+}
+.mv-save:hover:enabled { background: var(--primary-hover); }
+.mv-save:disabled { opacity: .6; cursor: default; }
+.mv-item .word-es { display: flex; flex-direction: column; gap: 3px; }
+.mv-cat { font-size: .75rem; color: var(--accent); }
+.mv-item-actions { display: flex; gap: 2px; }
+
 @media (max-width: 520px) {
+  .mv-row, .mv-row:has(.mv-level) { grid-template-columns: 1fr; }
   .word-row { grid-template-columns: 1fr auto; }
   .word-arrow { display: none; }
   .options { grid-template-columns: 1fr; }
