@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-25",
+  "lastUpdated": "2026-11-26",
   "colombia": [
     {
       "entidad": "Bancolombia",
@@ -29,7 +29,7 @@
       "entidad": "Banco Popular",
       "plazo": "360 días",
       "fuente": "https://www.bancopopular.com.co/",
-      "tasa": 9
+      "tasa": 1.04
     }
   ],
   "mundo": [
